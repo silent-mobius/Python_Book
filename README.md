@@ -1,1 +1,1 @@
-# ORA-Modaiim School repository for Python Class 
+# ORA-Modaiim School Repository For Python Class.
