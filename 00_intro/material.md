@@ -46,7 +46,7 @@ Procedural programming is a programming paradigm, derived from structured progra
 ### Object Oriented Languages
 Object-oriented programming (OOP) is a programming paradigm based on the concept of "objects", which can contain data, in the form of fields (often known as attributes or properties), and code, in the form of procedures (often known as methods). A feature of objects is an object's procedures that can access and often modify the data fields of the object with which they are associated (objects have a notion of "this" or "self").
 
-• represent objects
-• define their properties
-• define ways to manipulate them
-• object inheritance
+*   Represent objects
+*   Define their properties
+*   Define ways to manipulate them
+*   Object inheritance
