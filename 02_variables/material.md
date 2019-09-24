@@ -17,3 +17,10 @@ x = 4 # x is of type int
 x = "rhcp" # x is now of type str
 print(x)
 ```
+
+String variables can be declared either by using single or double quotes:
+```python3
+x = "John"
+# is the same as
+x = 'John'
+```
