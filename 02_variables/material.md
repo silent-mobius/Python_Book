@@ -96,7 +96,7 @@ Sequence| 	list, tuple, range
 Mapping | 	dict
 Set | 	set, frozenset
 Boolean | 	bool
-Binary| 	bytes, bytearray, memoryview
+Binary| 	bytes,bytearray
 
 ### Getting the Data Type
 
@@ -256,6 +256,8 @@ print(type(b))
 print(type(c))
 ```
 > **Note: You cannot convert complex numbers into another number type.**
+
+---
 
 ### Somewhat Advanced
 ### Random Number
