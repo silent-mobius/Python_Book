@@ -152,7 +152,7 @@ Other Examples of Print Statement:
 
 The following are other different ways the print statement can be put to use.
 
-> Example-1:
+#### Example-1:
 
 ```python3
 % is used for %d type word
@@ -162,7 +162,7 @@ print("Welcome to %%Python %s" %'language')
 
 > Output: Welcome to %Python language
 
-> Example-2:
+#### Example-2:
 
 ```python3
 \n is used for Line Break.
@@ -180,7 +180,7 @@ print("Sunday\nMonday\nTuesday\nWednesday\nThursday\nFriday\nSaturday")
 > Friday
 > Saturday
 
-> Example-3:
+#### Example-3:
 
 Any word print multiple times.
 
@@ -190,7 +190,7 @@ print('-w3r'*5)
 
 > Output: -w3r-w3r-w3r-w3r-w3r
 
-> Example-4:
+#### Example-4:
 
 ```python3
 \t is used for tab.
@@ -202,10 +202,11 @@ Language:
 """)
 ```
 
-> Output: Language:
-      >  1 Python
-      >  2 Java
-      >  3 JavaScript
+> Output: 
+ > Language:
+ >  1 Python
+ >  2 Java
+ >  3 JavaScript
 
 ### Precision Width and Field Width
 
@@ -213,16 +214,15 @@ Field width is the width of the entire number and precision is the width towards
 
 The default Precision Width is set to 6.
 
-> Example-1:
+#### Example-1
 
 Notice upto 6 decimal points are returned. To specify the number of decimal points, '%(fieldwidth).(precisionwidth)f' is used.
 
 print("%f" % 5.1234567890)
 
-
 > Output: 5.123457
 
-> Example-2:
+#### Example-2
 
 Notice upto 5 decimal points are returned
 
@@ -232,7 +232,8 @@ print("%.5f" % 5.1234567890)
 
 > Output: 5.12346
 
-> Example-3:
+#### Example-3
+
 If the field width is set more than the necessary than the data right aligns itself to adjust to the specified values.
 
 ```python3
@@ -241,48 +242,48 @@ print("%9.5f" % 5.1234567890)
 
 > Output:  5.12346
 
-> Example-4:
+#### Example-4
 
 Zero padding is done by adding a 0 at the start of fieldwidth.
+
 ```python3
 print("%015.5f" % 5.1234567890)
 ```
 
 > Output: 000000005.12346
 
-> Example-5:
+#### Example-5
 
 For proper alignment, a space can be left blank in the field width so that when a negative number is used, proper alignment is maintained.
+
 ```python3
 print("% 9f" % 5.1234567890)
 print("% 9f" % -5.1234567890)
 ```
 
-> Output: 5.123457
-          -5.123457
+> Output:
+> 5.123457
+> -5.123457
 
-Example-6:
+#### Example-6
 
 '+' sign can be returned at the beginning of a positive number by adding a + sign at the beginning of the field width.
 
+```python3
 print("%+9f" % 5.1234567890)
 print("% 9f" % -5.1234567890)
+```
 
+>Output:
+> +5.123457
+> -5.123457
 
-
-Output:
-
-+5.123457
--5.123457
-
-Example-7:
+#### Example-7
 
 As mentioned above, the data right aligns itself when the field width mentioned is larger than the actually field width. But left alignment can be done by specifying a negative symbol in the field width.
 
+```python3
 print("%-9.4f" % 5.1234567890)
+```
 
-
-
-Output:
-
-5.1235   
+> Output: 5.1235   
