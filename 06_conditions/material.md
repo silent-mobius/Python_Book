@@ -103,26 +103,27 @@ Sometimes a situation arises when there are several conditions. To handle the si
 
 Syntax:
 
- 
+```python
 if expression1 :
          statement_1
          statement_2
-         ....   
-   
-     elif expression2 : 
-     statement_3 
+         ....
+   elif expression2 :
+     statement_3
      statement_4
-     ....     
-   elif expression3 : 
-     statement_5 
+     ....
+   elif expression3 :
+     statement_5
      statement_6
-     ....................    
-   else : 
-     statement_7 
+     ....................
+   else :
+     statement_7
      statement_8
+```
 
 In the above case Python evaluates each expression (i.e. the condition) one by one and if a true condition is found the statement(s) block under that expression will be executed. If no true condition is found the statement(s) block under else will be executed. In the following example, we have applied if, series of elif and else to get the type of a variable.
 
+```python
 var1 = 1+2j
 if (type(var1) == int):
     print("Type of the variable is Integer")
@@ -142,9 +143,49 @@ elif (type(var1) == list):
     print("Type of the variable is List")
 else:
     print("Type of the variable is Unknown")
-
-Copy
+```
 
 Output:
 
 Type of the variable is Complex
+
+Nested if .. else statement
+
+In general nested if-else statement is used when we want to check more than one conditions. Conditions are executed from top to bottom and check each condition whether it evaluates to true or not. If a true condition is found the statement(s) block associated with the condition executes otherwise it goes to next condition. Here is the syntax :
+
+Syntax:
+
+ 
+     if expression1 :
+         if expression2 :
+          statement_3
+          statement_4
+        ....
+      else :
+         statement_5
+         statement_6
+        ....
+     else :
+	   statement_7 
+       statement_8
+
+In the above syntax expression1 is checked first, if it evaluates to true then the program control goes to next if - else part otherwise it goes to the last else statement and executes statement_7, statement_8 etc.. Within the if - else if expression2 evaluates true then statement_3, statement_4 will execute otherwise statement_5, statement_6 will execute. See the following example.
+
+age = 38
+if (age >= 11):
+  print ("You are eligible to see the Football match.")
+  if (age <= 20 or age >= 60):
+      print("Ticket price is $12")
+  else:
+      print("Tic kit price is $20")
+else:
+    print ("You're not eligible to buy a ticket.")
+
+Copy
+
+Output :
+
+You are eligible to see the Football match.
+Tic kit price is $20
+
+In the above example age is set to 38, therefore the first expression (age >= 11) evaluates to True and the associated print statement prints the string "You are eligible to see the Football match". There after program control goes to next if statement and the condition ( 38 is outside <=20 or >=60) is matched and prints "Tic kit price is $12".
