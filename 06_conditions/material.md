@@ -70,7 +70,7 @@ if expression :
 
 In the above case, expression specifies the conditions which are based on Boolean expression. When a Boolean expression is evaluated it produces either a value of true or false. If the expression evaluates true the same amount of indented statement(s) following if will be executed. This group of the statement(s) is called a block
 
-if .. else statement
+### if .. else statement
 
 In Python if .. else statement, if has two blocks, one following the expression and other following the else clause. Here is the syntax.
 
@@ -97,7 +97,7 @@ else :
     print("Value of a is 10")
 ```
 
-if .. elif .. else statement
+### if .. elif .. else statement
 
 Sometimes a situation arises when there are several conditions. To handle the situation Python allows adding any number of elif clause after an if and before an else clause. Here is the syntax.
 
@@ -147,9 +147,9 @@ else:
 
 Output:
 
-Type of the variable is Complex
+> Type of the variable is Complex
 
-Nested if .. else statement
+### Nested if .. else statement
 
 In general nested if-else statement is used when we want to check more than one conditions. Conditions are executed from top to bottom and check each condition whether it evaluates to true or not. If a true condition is found the statement(s) block associated with the condition executes otherwise it goes to next condition. Here is the syntax :
 
@@ -181,11 +181,10 @@ if (age >= 11):
 else:
     print ("You're not eligible to buy a ticket.")
 
-Copy
-
 Output :
 
-You are eligible to see the Football match.
-Tic kit price is $20
+>You are eligible to see the Football match.
+>Tic kit price is $20
 
 In the above example age is set to 38, therefore the first expression (age >= 11) evaluates to True and the associated print statement prints the string "You are eligible to see the Football match". There after program control goes to next if statement and the condition ( 38 is outside <=20 or >=60) is matched and prints "Tic kit price is $12".
+
