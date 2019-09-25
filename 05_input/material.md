@@ -23,8 +23,8 @@ x = raw_input()
 print("Hello ", x)
 ```
 
-> Save this file as demo_string_input.py, and load it through the command line:
-C:\Users\Your Name>python demo_string_input.py
+> Save this file as demo_input.py, and load it through the command line/poweshell:
+C:\Users\Your Name>python demo_input.py
 
 Our program will prompt the user for a string:
 Enter your name:
