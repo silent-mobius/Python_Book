@@ -199,16 +199,17 @@ while (expression) :
     statement_2
     ....
 ```
+
 The while loop runs as long as the expression (condition) evaluates to True and execute the program block. The condition is checked every time at the beginning of the loop and the first time when the expression evaluates to False, the loop stops without executing any remaining statement(s). The following example prints the digits 0 to 4 as we set the condition x < 5.
 
+```python
 x = 0;
 while (x < 5):
      print(x)
      x += 1
+```
 
-
-
-Output:
+>Output:
 
 0
 1
@@ -217,18 +218,14 @@ Output:
 4
 
 One thing we should remember that a while loop tests its condition before the body of the loop (block of program statements) is executed. If the initial test returns false, the body is not executed at all. For example the following code never prints out anything since before executing the condition evaluates to false.
-
+```python
 x = 10;
 while (x < 5):
      print(x)
      x += 1
+```
 
-
-
-Flowchart:
-Python while loop
-
- 
+### Python while loop
 
 The following while loop is an infinite loop, using True as the condition:
 
@@ -237,11 +234,7 @@ while (True):
      print(x)
      x += 1
 
-
-
-Flowchart:
-Python while loop infinite
-
+**Python while loop is infinite _unless the condition is changed to boolean False_**
  
 Python: while and else statement
 
@@ -274,7 +267,7 @@ Output:
 
 The sum of first 9 integers:  45
 
-Flowchart:
+
 Python while else loop
 
  
