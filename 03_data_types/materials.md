@@ -1,6 +1,6 @@
 # Python Data Types
 
-###  Built-in Data Types
+## Built-in Data Types
 
 In programming, data type is an important concept.
 Variables can store data of different types, and different types can do different things.
@@ -8,13 +8,13 @@ Python has the following data types built-in by default, in these categories:
 
 Type | Value
 ------------ | -------------
-Text | 	str
-Numeric| 	int, float, complex
-Sequence| 	list, tuple, range
-Mapping | 	dict
-Set | 	set, frozenset
-Boolean | 	bool
-Binary| 	bytes,bytearray
+Text | str
+Numeric | int, float, complex
+Sequence | list, tuple, range
+Mapping | dict
+Set | set, frozenset
+Boolean | bool
+Binary | bytes,bytearray
 
 ### Getting the Data Type
 
@@ -93,7 +93,7 @@ print(type(y))
 print(type(z))
 ```
 
-#### Int
+### Int
 
 Int, or integer, is a whole number, positive or negative, without decimals, of unlimited length.
 
@@ -109,7 +109,7 @@ print(type(y))
 print(type(z))
 ```
 
-##### Float
+### Float
 
 Float, or "floating point number" is a number, positive or negative, containing one or more decimals.
 
@@ -138,6 +138,7 @@ print(type(x))
 print(type(y))
 print(type(z))
 ```
+
 <!--
 Complex
 
@@ -164,7 +165,7 @@ x = 1 # int
 y = 2.8 # float
 ```
 
-<! --z = 1j # complex -->
+<!-- z = 1j # complex -->
 
 > convert from int to float:
   > a = float(x)
