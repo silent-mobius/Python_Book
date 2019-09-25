@@ -97,3 +97,54 @@ else :
     print("Value of a is 10")
 ```
 
+if .. elif .. else statement
+
+Sometimes a situation arises when there are several conditions. To handle the situation Python allows adding any number of elif clause after an if and before an else clause. Here is the syntax.
+
+Syntax:
+
+ 
+if expression1 :
+         statement_1
+         statement_2
+         ....   
+   
+     elif expression2 : 
+     statement_3 
+     statement_4
+     ....     
+   elif expression3 : 
+     statement_5 
+     statement_6
+     ....................    
+   else : 
+     statement_7 
+     statement_8
+
+In the above case Python evaluates each expression (i.e. the condition) one by one and if a true condition is found the statement(s) block under that expression will be executed. If no true condition is found the statement(s) block under else will be executed. In the following example, we have applied if, series of elif and else to get the type of a variable.
+
+var1 = 1+2j
+if (type(var1) == int):
+    print("Type of the variable is Integer")
+elif (type(var1) == float):
+    print("Type of the variable is Float")
+elif (type(var1) == complex):
+    print("Type of the variable is Complex")
+elif (type(var1) == bool):
+    print("Type of the variable is Bool")
+elif (type(var1) == str):
+    print("Type of the variable is String")
+elif (type(var1) == tuple):
+    print("Type of the variable is Tuple")
+elif (type(var1) == dict):
+    print("Type of the variable is Dictionaries")
+elif (type(var1) == list):
+    print("Type of the variable is List")
+else:
+    print("Type of the variable is Unknown")
+
+Copy
+
+Output:
+
+Type of the variable is Complex
