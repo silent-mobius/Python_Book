@@ -1,10 +1,10 @@
 # Python Printout
 
-The printout in python3 can e done with a print() function, with keyword arguments to replace most of the special syntax of the old print statement.
+The printout in python can e done with a print() function, with keyword arguments to replace most of the special syntax of the old print statement.
 
 The print statement can be used in the following ways :
 
-```python3
+```python
     print("Good Morning")
     print("Good", <Variable Containing the String>)
     print("Good" + <Variable Containing the String>)
@@ -15,7 +15,7 @@ In Python, __single, double and triple__ quotes are used to denote a string. Mos
 
 ### Double Quotes Use
 
-```python3
+```python
 print("Python is very simple language")
 ```
 
@@ -24,7 +24,7 @@ print("Python is very simple language")
 
 ### Single Quotes Use
 
-```python3
+```python
 print('Hello')
 ```
 
@@ -33,7 +33,7 @@ print('Hello')
 
 ### Triple Quotes Use
 
-```python3
+```python
 print("""Python is very popular language.
 It is also friendly language.""")
 ```
@@ -46,14 +46,14 @@ It is also friendly language.
 
 Strings can be assigned to variable say string1 and string2 which can called when using the print statement.
 
-```python3
+```python
 str1 = 'Wel'
 print(str1,'come')
 ```
 
 > Output:Wel come
 
-```python3
+```python
 str1 = 'Welcome'
 str2 = 'Python'
 print(str1, str2)
@@ -65,7 +65,7 @@ print(str1, str2)
 
 String concatenation is the "addition" of two strings. Observe that while concatenating there will be no space between the strings.
 
-```python3
+```python
 str1 = 'Python'
 str2 = ':'
 print('Welcome' + str1 + str2)
@@ -77,7 +77,7 @@ print('Welcome' + str1 + str2)
 
 %s is used to refer to a variable which contains a string.
 
-```python3
+```python
 str1 = 'Python'
 print("Welcome %s" % str1)
 ```
@@ -98,7 +98,7 @@ This can be used for conversions inside the print statement itself.
 
 #### Using as Integer
 
-```python3
+```python
 print("Actual Number = %d" %15)
 ```
 
@@ -106,7 +106,7 @@ print("Actual Number = %d" %15)
 
 #### Using as Exponential
 
-```python3
+```python
 print("Exponential equivalent of the number = %e" %15)
 ```
 
@@ -114,7 +114,7 @@ print("Exponential equivalent of the number = %e" %15)
 
 #### Using as Float
 
-```python3
+```python
 print("Float of the number = %f" %15)
 ```
 
@@ -122,7 +122,7 @@ print("Float of the number = %f" %15)
 
 #### Using as Octal
 
-```python3
+```python
 print("Octal equivalent of the number = %o" %15)
 ```
 
@@ -130,7 +130,7 @@ print("Octal equivalent of the number = %o" %15)
 
 #### Using as Hexadecimal
 
-```python3
+```python
 print("Hexadecimal equivalent of the number = %x" %15)
 ```
 
@@ -140,7 +140,7 @@ print("Hexadecimal equivalent of the number = %x" %15)
 
 When referring to multiple variables parenthesis is used.
 
-```python3
+```python
 str1 = 'World'
 str2 = ':'
 print("Python %s %s" %(str1,str2))
@@ -154,7 +154,7 @@ The following are other different ways the print statement can be put to use.
 
 #### Example-1:
 
-```python3
+```python
 % is used for %d type word
 
 print("Welcome to %%Python %s" %'language')
@@ -164,7 +164,7 @@ print("Welcome to %%Python %s" %'language')
 
 #### Example-2:
 
-```python3
+```python
 \n is used for Line Break.
 
 print("Sunday\nMonday\nTuesday\nWednesday\nThursday\nFriday\nSaturday")
@@ -184,7 +184,7 @@ print("Sunday\nMonday\nTuesday\nWednesday\nThursday\nFriday\nSaturday")
 
 Any word print multiple times.
 
-```python3
+```python
 print('-w3r'*5)
 ```
 
@@ -192,7 +192,7 @@ print('-w3r'*5)
 
 #### Example-4:
 
-```python3
+```python
 \t is used for tab.
 
 print("""
@@ -218,7 +218,9 @@ The default Precision Width is set to 6.
 
 Notice upto 6 decimal points are returned. To specify the number of decimal points, '%(fieldwidth).(precisionwidth)f' is used.
 
+```python
 print("%f" % 5.1234567890)
+```
 
 > Output: 5.123457
 
@@ -226,7 +228,7 @@ print("%f" % 5.1234567890)
 
 Notice upto 5 decimal points are returned
 
-```python3
+```python
 print("%.5f" % 5.1234567890)
 ```
 
@@ -236,7 +238,7 @@ print("%.5f" % 5.1234567890)
 
 If the field width is set more than the necessary than the data right aligns itself to adjust to the specified values.
 
-```python3
+```python
 print("%9.5f" % 5.1234567890)
 ```
 
@@ -246,7 +248,7 @@ print("%9.5f" % 5.1234567890)
 
 Zero padding is done by adding a 0 at the start of fieldwidth.
 
-```python3
+```python
 print("%015.5f" % 5.1234567890)
 ```
 
@@ -256,7 +258,7 @@ print("%015.5f" % 5.1234567890)
 
 For proper alignment, a space can be left blank in the field width so that when a negative number is used, proper alignment is maintained.
 
-```python3
+```python
 print("% 9f" % 5.1234567890)
 print("% 9f" % -5.1234567890)
 ```
@@ -269,7 +271,7 @@ print("% 9f" % -5.1234567890)
 
 '+' sign can be returned at the beginning of a positive number by adding a + sign at the beginning of the field width.
 
-```python3
+```python
 print("%+9f" % 5.1234567890)
 print("% 9f" % -5.1234567890)
 ```
@@ -282,8 +284,8 @@ print("% 9f" % -5.1234567890)
 
 As mentioned above, the data right aligns itself when the field width mentioned is larger than the actually field width. But left alignment can be done by specifying a negative symbol in the field width.
 
-```python3
+```python
 print("%-9.4f" % 5.1234567890)
 ```
 
-> Output: 5.1235   
+> Output: 5.1235
