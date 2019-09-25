@@ -304,3 +304,83 @@ Output:
 The sum of  5  numbers is : 10
 
 In the above example the loop is terminated when x becomes 5. Here we use break statement to terminate the while loop without completing it, therefore program control goes to outside the while - else structure and execute the next print statement. 
+
+break statement
+
+The break statement is used to exit a for or a while loop. The purpose of this statement is to end the execution of the loop (for or while) immediately and the program control goes to the statement after the last statement of the loop. If there is an optional else statement in while or for loop it skips the optional clause also. Here is the syntax.
+
+Syntax:
+
+ 
+			  while (expression1) :
+     statement_1 
+     statement_2
+     ......
+     if expression2 :
+     break
+
+for variable_name in sequence :
+   statement_1 
+   statement_2
+   if expression3 :
+     break
+
+Example: break in for loop
+
+In the following example for loop breaks when the count value is 5. The print statement after the for loop displays the sum of first 5 elements of the tuple numbers.
+
+numbers = (1, 2, 3, 4, 5, 6, 7, 8, 9) # Declaring the tuple
+num_sum = 0
+count = 0
+for x in numbers:
+    num_sum = num_sum + x
+    count = count + 1 
+    if count == 5:
+        break
+print("Sum of first ",count,"integers is: ", num_sum)
+
+Copy
+
+Output:
+
+Sum of first  5 integers is:  15
+
+Example: break in while loop
+
+In the following example while loop breaks when the count value is 5. The print statement after the while loop displays the value of num_sum (i.e. 0+1+2+3+4).
+
+num_sum = 0
+count = 0
+while(count<10):
+    num_sum = num_sum + count
+    count = count + 1 
+    if count== 5:
+        break
+print("Sum of first ",count,"integers is: ", num_sum)
+
+Copy
+
+Output:
+
+Sum of first  5 integers is :  10
+
+continue statement
+
+The continue statement is used in a while or for loop to take the control to the top of the loop without executing the rest statements inside the loop. Here is a simple example.
+
+for x in range(7):
+    if (x == 3 or x==6):
+        continue
+    print(x)
+
+Copy
+
+Output:
+
+0
+1
+2
+4
+5
+
+In the above example, the for loop prints all the numbers from 0 to 6 except 3 and 6 as the continue statement returns the control of the loop to the top
