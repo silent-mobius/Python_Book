@@ -384,3 +384,4 @@ Output:
 5
 
 In the above example, the for loop prints all the numbers from 0 to 6 except 3 and 6 as the continue statement returns the control of the loop to the top
+
