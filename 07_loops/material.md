@@ -227,14 +227,14 @@ while (x < 5):
 
 ### Python while loop
 
-The following while loop is an infinite loop, using True as the condition:
+The following while loop is an infinite loop, using True as the check condition:
 
 x = 10;
 while (True):
      print(x)
      x += 1
 
-**Python while loop is infinite _unless the condition is changed to boolean False_**
+**Python while loop is infinite _unless the !!check condition!! is changed to boolean False_**
  
 Python: while and else statement
 
