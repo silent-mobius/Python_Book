@@ -9,60 +9,62 @@ In Python for loop is used to iterate over the items of any sequence including t
  The for loop is also used to access elements from a container (for example list, string, tuple) using built-in function range().
 
 Syntax:
-
+```
 for variable_name in sequence :
     statement_1
     statement_2
     ....
+```
+**Parameter:**
 
-Parameter:
-Name 	Description
-variable_name 	It indicates target variable which will set a new value for each iteration of the loop.
-sequence 	A sequence of values that will be assigned to the target variable variable_name. Values are provided using a list or a string or from the built-in function range().
-statement_1, statement_2 ..... 	Block of program statements.
+Name | Description
+----- | ------
+variable_name | It indicates target variable which will set a new value for each iteration of the loop.
+sequence | A sequence of values that will be assigned to the target variable variable_name. Values are provided using a list or a string or from the built-in function range().
+statement_1, | 
+statement_2 ... | Block of program statements.
 
-Example: Python for loop
-
->>> #The list has four elements, indices start at 0 and end at 3
->>> color_list = ["Red", "Blue", "Green", "Black"]
->>> for c in color_list:
+**Example: Python for loop** 
+```python
+ #The list has four elements, indices start at 0 and end at 3
+ color_list = ["Red", "Blue", "Green", "Black"]
+ for c in color_list:
         print(c)
 
-  Red
-  Blue
-  Green
-  Black
->>>
-
-Copy
+Red
+Blue
+Green
+Black
+```
 
 In the above example color_list is a sequence contains a list of various color names. When the for loop executed the first item (i.e. Red) is assigned to the variable c. After this, the print statement will execute and the process will continue until we reach the end of the list.
-Python for loop and range() function
+
+### Python for loop and range() function
 
 The range() function returns a list of consecutive integers. The function has one, two or three parameters where last two parameters are optional. It is widely used in for loops. Here is the syntax.
 
+range(a) : Generates a sequence of numbers from 0 to a, excluding a, incrementing by 1.
+
+```python
 range(a)
 range(a,b)
 range(a,b,c)
-
-range(a) : Generates a sequence of numbers from 0 to a, excluding a, incrementing by 1.
+```
 
 Syntax:
 
 for <variable> in range(<number>): 
 
 Example:
-
->>> for a in range(4):
+```python
+ for a in range(4):
   print(a)
  
   0
   1
   2
   3
->>>
-
-Copy
+```
 
 range(a,b): Generates a sequence of numbers from a to b excluding b, incrementing by 1.
 
@@ -71,8 +73,8 @@ Syntax:
 for "variable" in range("start_number", "end_number"):
 
 Example:
-
->>> for a in range(2,7):
+```python
+ for a in range(2,7):
  print(a)
 
   2
@@ -80,30 +82,27 @@ Example:
   4
   5
   6
->>>
-
-Copy
+```
 
 range(a,b,c): Generates a sequence of numbers from a to b excluding b, incrementing by c.
 
 Example:
-
->>> for a in range(2,19,5):
+```python
+ for a in range(2,19,5):
   print(a)
  
  2
  7
  12 
  17
->>>
+```
 
-Copy
-Python for loop: Iterating over tuple, list, dictionary
+### Python for loop: Iterating over tuple, list, dictionary
 
 Example: Iterating over tuple
 
 The following example counts the number of even and odd numbers from a series of numbers.
-
+```python
 numbers = (1, 2, 3, 4, 5, 6, 7, 8, 9) # Declaring the tuple
 count_odd = 0
 count_even = 0
@@ -114,10 +113,9 @@ for x in numbers:
     	     count_even+=1
 print("Number of even numbers :",count_even)
 print("Number of odd numbers :",count_odd)
+```
 
-Copy
-
-Output:
+>Output:
 
 Number of even numbers:4
 Number of odd numbers: 5
@@ -135,15 +133,14 @@ Finally, we print the number of even and odd numbers through print statements.
 Example: Iterating over list
 
 In the following example for loop iterates through the list "datalist" and prints each item and its corresponding Python type.
-
+```python
 datalist = [1452, 11.23, 1+2j, True, 'w3resource', (0, -1), [5, 12],
 {"class":'V', "section":'A'}]
 for item in datalist:
    print ("Type of ",item, " is ", type(item))
+```
 
-Copy
-
-Output:
+>Output:
 
 Type of  1452  is  <class 'int'>
 Type of  11.23  is  <class 'float'>
@@ -157,33 +154,29 @@ Type of  {'section': 'A', 'class': 'V'}  is  <class 'dict'>
 Example: Iterating over dictionary
 
 In the following example for loop iterates through the dictionary "color" through its keys and prints each key.
-
->>> color = {"c1": "Red", "c2": "Green", "c3": "Orange"}
->>> for key in color:
+```python
+ color = {"c1": "Red", "c2": "Green", "c3": "Orange"}
+ for key in color:
    print(key)
- 
+```
 c2
 c1
 c3
->>>
-
-Copy
 
 Following for loop iterates through its values :
 
->>> color = {"c1": "Red", "c2": "Green", "c3": "Orange"}
->>> for value in color.values():
+```python
+ color = {"c1": "Red", "c2": "Green", "c3": "Orange"}
+ for value in color.values():
    print(value)
+```
 
 Green
 Red
 Orange
->>>
-
-Copy
 
 You can attach an optional else clause with for statement, in this case, syntax will be -
-
+```python
 for variable_name in sequence :
     statement_1 
     statement_2
@@ -192,19 +185,20 @@ else :
     statement_3 
     statement_4
     ....
-
+```
 The else clause is only executed after completing the for loop. If a break statement executes in first program block and terminates the loop then the else clause does not execute. 
 
-While loop
+## While loop
 
-Loops are used to repeatedly execute a block of program statements. The basic loop structure in Python is while loop. Here is the syntax.
+While loops are used to repeatedly execute a block of program statements. Here is the syntax.
 
 Syntax:
+```python
 while (expression) :
     statement_1
     statement_2
     ....
-
+```
 The while loop runs as long as the expression (condition) evaluates to True and execute the program block. The condition is checked every time at the beginning of the loop and the first time when the expression evaluates to False, the loop stops without executing any remaining statement(s). The following example prints the digits 0 to 4 as we set the condition x < 5.
 
 x = 0;
@@ -212,7 +206,7 @@ while (x < 5):
      print(x)
      x += 1
 
-Copy
+
 
 Output:
 
@@ -229,7 +223,7 @@ while (x < 5):
      print(x)
      x += 1
 
-Copy
+
 
 Flowchart:
 Python while loop
@@ -243,7 +237,7 @@ while (True):
      print(x)
      x += 1
 
-Copy
+
 
 Flowchart:
 Python while loop infinite
@@ -274,7 +268,7 @@ while (x < 10):
 else :
      print('The sum of first 9 integers : ',s)    
 
-Copy
+
 
 Output:
 
@@ -297,7 +291,7 @@ else :
      print('The sum of first 9 integers : ',s)        
 print('The sum of ',x,' numbers is :',s) 
 
-Copy
+
 
 Output:
 
@@ -339,7 +333,7 @@ for x in numbers:
         break
 print("Sum of first ",count,"integers is: ", num_sum)
 
-Copy
+
 
 Output:
 
@@ -358,7 +352,7 @@ while(count<10):
         break
 print("Sum of first ",count,"integers is: ", num_sum)
 
-Copy
+
 
 Output:
 
@@ -373,7 +367,7 @@ for x in range(7):
         continue
     print(x)
 
-Copy
+
 
 Output:
 
