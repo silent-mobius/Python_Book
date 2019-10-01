@@ -10,3 +10,10 @@ Married False #ring was for bday
 
 
 print(name,lname,age,gpa, address,size_of_pi,size_of_byte, "Engaged: "+Engaged, :Married:" + Married, end=' ')
+################################################################################################
+print("####################################################################################################")
+print("\n\n\n")
+
+a=10
+b=a
+print(f'if a is {a} and b is a, what is the value in b ?')

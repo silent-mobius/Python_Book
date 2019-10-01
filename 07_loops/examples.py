@@ -1,3 +1,6 @@
+#!/usr/bin/env python3
+
+
 var = int(input("Please insert number: "))
 i =0 
 
