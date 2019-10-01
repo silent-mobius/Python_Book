@@ -7,6 +7,7 @@ User defined function
  > In Python, a user-defined function's declaration begins with the keyword def and followed by the function name. The function may take arguments(s) as input within the opening and closing parentheses, just after the function name followed by a colon.    After defining the function name and arguments(s) a block of program statement(s) start at the next line and these statement(s) must be indented.
 
 Here is the syntax of a user defined function.
+
 ```python
 Syntax:
 
@@ -47,20 +48,22 @@ avg_number(3, 4)
 
 The following function has no arguments.
 
+```py
 def function_name() :
     statement_1
     statement_2
     ....
+```
 
 Example:
 
+```py
 def printt():
     print("This is Python 3.2 Tutorial")
     print("This is Python 3.2 Tutorial")
     print("This is Python 3.2 Tutorial")
 printt()
-
-Copy
+```
 
 Output:
 
@@ -79,6 +82,7 @@ The Return statement in function
 
 In Python the return statement (the word return followed by an expression.) is used to return a value from a function, return statement without an expression argument returns none. See the syntax.
 
+```py
 def function_name(argument1, argument2, ...) :
     statement_1
     statement_2
@@ -86,17 +90,19 @@ def function_name(argument1, argument2, ...) :
     return expression
 
 function_name(arg1, arg2)
+```
 
 Example:
 
 The following function returns the square of the sum of two numbers.
 
+```py
 def nsquare(x, y):
     return (x*x + 2*x*y + y*y)
 print("The square of the sum of 2 and 3 is : ", nsquare(2, 3))
- 
+``` 
 
-Copy
+
 
 Output:
 
@@ -138,12 +144,11 @@ For first print statement [ Line no 3]
 4. Line 2 : Calculate and return the value of (x + y)2
 
 For second print statement [ Line no 4]
-
 1. Line 3 : Call the function with all arguments, within a print statement.
 2. Line 1 : Pass the parameters x = 2, y = 4.
 3. Line 2 : Calculate and return the value of (x + y)2
 
-Keyword Arguments:
+## Keyword Arguments:
 
 We have already learned how to use default arguments values, functions can also be called using keyword arguments. Arguments which are preceded with a variable name followed by a '=' sign (e.g. var_name=") are called keyword arguments.
 
