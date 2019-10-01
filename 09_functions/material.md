@@ -43,7 +43,6 @@ avg_number(3, 4)
 3. Line 1 : Pass parameters : x = 3, y = 4
 4. Line 2 : Print the value of two parameters as well as their average value.
 
-
 ## Function without arguments:
 
 The following function has no arguments.
