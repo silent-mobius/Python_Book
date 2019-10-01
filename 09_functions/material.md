@@ -31,12 +31,10 @@ def avg_number(x, y):
     print("Average of ",x," and ",y, " is ",(x+y)/2)
 avg_number(3, 4)
 ```
+> Output:
+>>Average of  3  and  4  is  3.5
 
-Output:
-
-Average of  3  and  4  is  3.5
-
-Explanation:
+### Explanation:
 
 1. Lines 1-2 : Details (definition) of the function.
 2. Line 3 : Call the function.
