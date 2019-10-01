@@ -19,18 +19,20 @@ Syntax:
 ## Call a function
 
 Calling a function in Python is similar to other programming languages, using the function name, parenthesis (opening and closing) and parameter(s). See the syntax, followed by an example.
-```python
 Syntax:
 
+```python
 function_name(arg1, arg2)
 ```
 
 Example:
+
 ```python
 def avg_number(x, y):
     print("Average of ",x," and ",y, " is ",(x+y)/2)
 avg_number(3, 4)
 ```
+
 > Output:
 >>Average of  3  and  4  is  3.5
 
@@ -41,7 +43,8 @@ avg_number(3, 4)
 3. Line 1 : Pass parameters : x = 3, y = 4
 4. Line 2 : Print the value of two parameters as well as their average value.
 
-Function without arguments:
+
+## Function without arguments:
 
 The following function has no arguments.
 
