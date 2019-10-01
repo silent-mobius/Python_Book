@@ -137,16 +137,14 @@ The square of the sum of 2 and 4 is :  36
 #### Explanation:
 
 1. Lines 1-2 : Details (definition) of the function.
-
 For first print statement [ Line no 3]
 2. Line 3 : Call the function without a second argument, within a print statement.
 3. Line 1 : Pass the parameters x = 2, default value.
 4. Line 2 : Calculate and return the value of (x + y)2
-
 For second print statement [ Line no 4]
-1. Line 3 : Call the function with all arguments, within a print statement.
-2. Line 1 : Pass the parameters x = 2, y = 4.
-3. Line 2 : Calculate and return the value of (x + y)2
+5. Line 3 : Call the function with all arguments, within a print statement.
+6. Line 1 : Pass the parameters x = 2, y = 4.
+7. Line 2 : Calculate and return the value of (x + y)^2
 
 ## Keyword Arguments:
 
