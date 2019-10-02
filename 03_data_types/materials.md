@@ -90,8 +90,10 @@ To verify the type of any object in Python, use the type() function:
 ```py
 print(type(x))
 print(type(y))
-print(type(z))
 ```
+
+<! -- print(type(z)) -->
+
 
 ### Int
 
