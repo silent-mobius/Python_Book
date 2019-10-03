@@ -269,6 +269,7 @@ This program is same as the above example except the break statement has been re
 We continue with the loop, if the string is "i", not executing the rest of the block. Hence, we see in our output that all the letters except "i" gets printed.
 
 ---
+
 # Python pass statement
 
 ## What is pass statement in Python?
@@ -285,6 +286,16 @@ pass
 We generally use it as a placeholder.
 
 Suppose we have a loop or a function that is not implemented yet, but we want to implement it in the future. They cannot have an empty body. The interpreter would complain. So, we use the pass statement to construct a body that does nothing.
+
+```py
+# pass is just a placeholder for
+# functionality to be added later.
+sequence = {'p', 'a', 's', 's'}
+for val in sequence:
+    pass
+```
+
+
 
 ---
 
