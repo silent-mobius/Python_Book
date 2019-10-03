@@ -321,7 +321,7 @@ If you create arrays using the array module, all elements of the array must be o
 
 ```py
 import array as arr
-a = arr.array('d', [1, 3.5, "Hello"])   // Error	
+a = arr.array('d', [1, 3.5, "Hello"])   // Error
 ```
 
 ### How to create arrays?
