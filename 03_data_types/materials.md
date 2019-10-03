@@ -392,13 +392,130 @@ print('He said, "What\'s there?"')
 # escaping double quotes
 print("He said, \"What's there?\"")
 ```
+
+Here is a list of all the escape sequence supported by Python.
+
+#### Escape Sequence in Python
+
+Escape Sequence | Description
+-------------- | -------------------
+\newline | Backslash and newline ignored
+\\ | Backslash
+\' | Single quote
+\" | Double quote
+\a | ASCII Bell
+\b | ASCII Backspace
+\f | ASCII Formfeed
+\n | ASCII Linefeed
+\r | ASCII Carriage Return
+\t |ASCII Horizontal Tab
+\v | ASCII Vertical Tab
+\ooo | Character with octal value ooo
+\xHH | Character with hexadecimal value HH
+
+Here are some examples
+```py
+    >>> print("\\")
+    \
+    >>> print("This is printed\nin two lines")
+    This is printed
+    in two lines
+    >>> print("This is \x48\x45\x58 representation")
+    This is HEX representation
+```
+
+### Raw String to ignore escape sequence
+
+Sometimes we may wish to ignore the escape sequences inside a string. To do this we can place r or R in front of the string. This will imply that it is a raw string and any escape sequence inside it will be ignored.
+
+```py
+    >>> print("This is \x61 \ngood example")
+    This is a
+    good example
+    >>> print(r"This is \x61 \ngood example")
+    This is \x61 \ngood example
+```
+
+### The format() Method for Formatting Strings
+
+The format() method that is available with the string object is very versatile and powerful in formatting strings. Format strings contains curly braces {} as placeholders or replacement fields which gets replaced.
+
+We can use positional arguments or keyword arguments to specify the order.
+
+```py
+# default(implicit) order
+default_order = "{}, {} and {}".format('John','Bill','Sean')
+print('\n--- Default Order ---')
+print(default_order)
+
+# order using positional argument
+positional_order = "{1}, {0} and {2}".format('John','Bill','Sean')
+print('\n--- Positional Order ---')
+print(positional_order)
+
+# order using keyword argument
+keyword_order = "{s}, {b} and {j}".format(j='John',b='Bill',s='Sean')
+print('\n--- Keyword Order ---')
+print(keyword_order)
+```
+
+The format() method can have optional format specifications. They are separated from field name using colon. For example, we can left-justify <, right-justify > or center ^ a string in the given space. We can also format integers as binary, hexadecimal etc. and floats can be rounded or displayed in the exponent format. There are a ton of formatting you can use. Visit here for all the string formatting available with the format() method.
+
+```py
+    >>> # formatting integers
+    >>> "Binary representation of {0} is {0:b}".format(12)
+    'Binary representation of 12 is 1100'
+    >>> # formatting floats
+    >>> "Exponent representation: {0:e}".format(1566.345)
+    'Exponent representation: 1.566345e+03'
+    >>> # round off
+    >>> "One third is: {0:.3f}".format(1/3)
+    'One third is: 0.333'
+    >>> # string alignment
+    >>> "|{:<10}|{:^10}|{:>10}|".format('butter','bread','ham')
+    '|butter    |  bread   |       ham|'
+```
+### Old style formatting
+
+We can even format strings like the old sprintf() style used in C programming language. We use the % operator to accomplish this.
+```py
+    >>> x = 12.3456789
+    >>> print('The value of x is %3.2f' %x)
+    The value of x is 12.35
+    >>> print('The value of x is %3.4f' %x)
+    The value of x is 12.3457
+```
+
+### Common Python String Methods
+
+There are numerous methods available with the string object. The format() method that we mentioned above is one of them. Some of the commonly used methods are lower(), upper(), join(), split(), find(), replace() etc. Here is a complete list of all the built-in methods to work with strings in Python.
+
+```py
+    >>> "PrOgRaMiZ".lower()
+    'programiz'
+    >>> "PrOgRaMiZ".upper()
+    'PROGRAMIZ'
+    >>> "This will split all words into a list".split()
+    ['This', 'will', 'split', 'all', 'words', 'into', 'a', 'list']
+    >>> ' '.join(['This', 'will', 'join', 'all', 'words', 'into', 'a', 'string'])
+    'This will join all words into a string'
+    >>> 'Happy New Year'.find('ew')
+    7
+    >>> 'Happy New Year'.replace('Happy','Brilliant')
+    'Brilliant New Year'
+```
+
 ---
-## Python List
+
+# Python List
+
 Python offers a range of compound datatypes often referred to as sequences. List is one of the most frequently used and very versatile datatype used in Python.
 
-### How to create a list?
+## How to create a list?
+
 In Python programming, a list is created by placing all the items (elements) inside a square bracket [ ], separated by commas.
 It can have any number of items and they may be of different types (integer, float, string etc.).
+
 ```py
     # empty list
     my_list = []
@@ -415,11 +532,11 @@ Also, a list can even have another list as an item. This is called nested list.
 my_list = ["mouse", [8, 4, 6], ['a']]
 ```
 
-### How to access elements from a list?
+## How to access elements from a list?
 
 There are various ways in which we can access the elements of a list.
 
-### List Index
+## List Index
 
 We can use the index operator [] to access an item in a list. Index starts from 0. So, a list having 5 elements will have index from 0 to 4.
 Trying to access an element other that this will raise an IndexError. The index must be an integer. We can't use float or other types, this will result into TypeError.
@@ -444,9 +561,10 @@ Nested list are accessed using nested indexing.
     print(n_list[1][3])
 ```
 
-### Negative indexing
+## Negative indexing
 
 Python allows negative indexing for its sequences. The index of -1 refers to the last item, -2 to the second last item and so on.
+
 ```py
     my_list = ['p','r','o','b','e']
     # Output: e
@@ -455,7 +573,7 @@ Python allows negative indexing for its sequences. The index of -1 refers to the
     print(my_list[-5])
 ```
 
-### How to slice lists in Python?
+## How to slice lists in Python?
 
 We can access a range of items in a list by using the slicing operator (colon).
 
@@ -473,7 +591,7 @@ We can access a range of items in a list by using the slicing operator (colon).
 
 Slicing can be best visualized by considering the index to be between the elements as shown below. So if we want to access a range, we need two indices that will slice that portion from the list.
 
-### How to change or add elements to a list?
+## How to change or add elements to a list?
 
 List are mutable, meaning, their elements can be changed unlike string or tuple.
 
@@ -492,6 +610,7 @@ We can use assignment operator (=) to change an item or a range of items.
     # Output: [1, 3, 5, 7]
     print(odd)
 ```
+
 We can add one item to a list using append() method or add several items using extend() method.
 
 ```py
@@ -526,21 +645,23 @@ Furthermore, we can insert one item at a desired location by using the method in
     # Output: [1, 3, 5, 7, 9]
     print(odd)
 ```
+
 ## How to delete or remove elements from a list?
 
 We can delete one or more items from a list using the keyword del. It can even delete the list entirely.
+
 ```py
     my_list = ['p','r','o','b','l','e','m']
     # delete one item
     del my_list[2]
-    # Output: ['p', 'r', 'b', 'l', 'e', 'm']     
+    # Output: ['p', 'r', 'b', 'l', 'e', 'm']
     print(my_list)
     # delete multiple items
     del my_list[1:5]  
     # Output: ['p', 'm']
     print(my_list)
     # delete entire list
-    del my_list       
+    del my_list
     # Error: List not defined
     print(my_list)
 ```
@@ -579,7 +700,7 @@ Finally, we can also delete items in a list by assigning an empty list to a slic
     ['p', 'r', 'm']
 ```
 
-##  List Comprehension: Elegant way to create new List
+## List Comprehension: Elegant way to create new List
 
 List comprehension is an elegant and concise way to create new list from an existing list in Python.
 List comprehension consists of an expression followed by for statement inside square brackets.
@@ -592,6 +713,7 @@ Here is an example to make a list with each item being increasing power of 2.
 ```
 
 This code is equivalent to
+
 ```py
     pow2 = []
     for x in range(10):
@@ -611,12 +733,12 @@ A list comprehension can optionally contain more for or if statements. An option
     ['Python Language', 'Python Programming', 'C Language', 'C Programming']
 ```
 
-
 # Other List Operations in Python
 
 ## List Membership Test
 
 We can test if an item exists in a list or not, using the keyword in.
+
 ```py
     my_list = ['p','r','o','b','l','e','m']
     # Output: True
@@ -630,9 +752,210 @@ We can test if an item exists in a list or not, using the keyword in.
 ## Iterating Through a List
 
 Using a for loop we can iterate though each item in a list.
+
 ```py
     for fruit in ['apple','banana','mango']:
         print("I like",fruit)
 ```
 
 ---
+
+# Python Tuple
+
+A tuple in Python is similar to a list. The difference between the two is that we cannot change the elements of a tuple once it is assigned whereas, in a list, elements can be changed.
+
+## Creating a Tuple
+
+A tuple is created by placing all the items (elements) inside parentheses (), separated by commas. The parentheses are optional, however, it is a good practice to use them.
+
+A tuple can have any number of items and they may be of different types (integer, float, list, string, etc.).
+
+```py
+    # Empty tuple
+    my_tuple = ()
+    print(my_tuple)  # Output: ()
+
+    # Tuple having integers
+    my_tuple = (1, 2, 3)
+    print(my_tuple)  # Output: (1, 2, 3) 
+
+    # tuple with mixed datatypes
+    my_tuple = (1, "Hello", 3.4)
+    print(my_tuple)  # Output: (1, "Hello", 3.4)  
+
+    # nested tuple
+    my_tuple = ("mouse", [8, 4, 6], (1, 2, 3))
+
+    # Output: ("mouse", [8, 4, 6], (1, 2, 3)) 
+    print(my_tuple)
+```
+
+A tuple can also be created without using parentheses. This is known as tuple packing.
+
+```py
+    my_tuple = 3, 4.6, "dog"
+    print(my_tuple)   # Output: 3, 4.6, "dog" 
+
+    # tuple unpacking is also possible
+    a, b, c = my_tuple
+
+    print(a)      # 3
+    print(b)      # 4.6 
+    print(c)      # dog 
+```
+Creating a tuple with one element is a bit tricky.
+
+Having one element within parentheses is not enough. We will need a trailing comma to indicate that it is, in fact, a tuple.
+
+```py
+    my_tuple = ("hello")
+    print(type(my_tuple))  # <class 'str'>
+
+    # Creating a tuple having one element
+    my_tuple = ("hello",)  
+    print(type(my_tuple))  # <class 'tuple'> 
+
+    # Parentheses is optional
+    my_tuple = "hello",
+    print(type(my_tuple))  # <class 'tuple'> 
+```
+
+## Access Tuple Elements
+
+There are various ways in which we can access the elements of a tuple.
+### 1. Indexing
+
+We can use the index operator [] to access an item in a tuple where the index starts from 0.
+
+So, a tuple having 6 elements will have indices from 0 to 5. Trying to access an element outside of tuple (for example, 6, 7,...) will raise an IndexError.
+
+The index must be an integer; so we cannot use float or other types. This will result in TypeError.
+
+Likewise, nested tuples are accessed using nested indexing, as shown in the example below.
+
+```py
+    my_tuple = ('p','e','r','m','i','t')
+
+    print(my_tuple[0])   # 'p' 
+    print(my_tuple[5])   # 't'
+
+    # IndexError: list index out of range
+    # print(my_tuple[6])
+
+    # Index must be an integer
+    # TypeError: list indices must be integers, not float
+    # my_tuple[2.0]
+
+    # nested tuple
+    n_tuple = ("mouse", [8, 4, 6], (1, 2, 3))
+
+    # nested index
+    print(n_tuple[0][3])       # 's'
+    print(n_tuple[1][1])       # 4
+```
+
+### 2. Negative Indexing
+
+Python allows negative indexing for its sequences.
+
+The index of -1 refers to the last item, -2 to the second last item and so on.
+
+```py
+    my_tuple = ('p','e','r','m','i','t')
+
+    # Output: 't'
+    print(my_tuple[-1])
+
+    # Output: 'p'
+    print(my_tuple[-6])
+```
+
+### 3. Slicing
+
+We can access a range of items in a tuple by using the slicing operator - colon ":".
+
+```py
+    my_tuple = ('p','y','t','h','o','n',' ','c','o','u','r','s','e')
+
+    # elements 2nd to 4th
+    # Output: ('r', 'o', 'g')
+    print(my_tuple[1:4])
+
+    # elements beginning to 2nd
+    # Output: ('p', 'r')
+    print(my_tuple[:-7])
+
+    # elements 8th to end
+    # Output: ('i', 'z')
+    print(my_tuple[7:])
+
+    # elements beginning to end
+    # Output: ('p','y','t','h','o','n',' ','c','o','u','r','s','e')
+    print(my_tuple[:])
+```
+
+Slicing can be best visualized by considering the index to be between the elements as shown below. So if we want to access a range, we need the index that will slice the portion from the tuple.
+
+
+## Changing a Tuple
+
+Unlike lists, tuples are immutable.
+
+This means that elements of a tuple cannot be changed once it has been assigned. But, if the element is itself a mutable datatype like list, its nested items can be changed.
+
+We can also assign a tuple to different values (reassignment).
+
+```py
+my_tuple = (4, 2, 3, [6, 5])
+
+
+# TypeError: 'tuple' object does not support item assignment
+# my_tuple[1] = 9
+
+# However, item of mutable element can be changed
+my_tuple[3][0] = 9    # Output: (4, 2, 3, [9, 5])
+print(my_tuple)
+
+# Tuples can be reassigned
+my_tuple = ('p','y','t','h','o','n',' ','c','o','u','r','s','e')
+
+# Output: ('p','y','t','h','o','n',' ','c','o','u','r','s','e')
+print(my_tuple)
+```
+
+We can use + operator to combine two tuples. This is also called concatenation.
+
+We can also repeat the elements in a tuple for a given number of times using the * operator.
+
+Both + and * operations result in a new tuple.
+
+```py
+# Concatenation
+# Output: (1, 2, 3, 4, 5, 6)
+print((1, 2, 3) + (4, 5, 6))
+
+# Repeat
+# Output: ('Repeat', 'Repeat', 'Repeat')
+print(("Repeat",) * 3)
+```
+
+### Deleting a Tuple
+
+As discussed above, we cannot change the elements in a tuple. That also means we cannot delete or remove items from a tuple.
+
+But deleting a tuple entirely is possible using the keyword del.
+
+```py
+my_tuple = ('p','y','t','h','o','n',' ','c','o','u','r','s','e')
+
+# can't delete items
+# TypeError: 'tuple' object doesn't support item deletion
+# del my_tuple[3]
+
+# Can delete an entire tuple
+del my_tuple
+
+# NameError: name 'my_tuple' is not defined
+print(my_tuple)
+```
+
