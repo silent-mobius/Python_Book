@@ -959,3 +959,65 @@ del my_tuple
 print(my_tuple)
 ```
 
+## Tuple Methods
+
+Methods that add items or remove items are not available with tuple. Only the following two methods are available.
+
+### Python Tuple Method
+
+Method | Description
+------ | -----------
+count(x) | Returns the number of items x
+index(x) | Returns the index of the first item that is equal to x
+
+Some examples of Python tuple methods:
+
+```py
+my_tuple = ('a','p','p','l','e',)
+
+print(my_tuple.count('p'))  # Output: 2
+print(my_tuple.index('l'))  # Output: 3
+```
+
+## Other Tuple Operations
+
+### 1. Tuple Membership Test
+
+We can test if an item exists in a tuple or not, using the keyword in.
+```py
+my_tuple = ('a','p','p','l','e',)
+
+# In operation
+# Output: True
+print('a' in my_tuple)
+
+# Output: False
+print('b' in my_tuple)
+
+# Not in operation
+# Output: True
+print('g' not in my_tuple)
+```
+
+### 2. Iterating Through a Tuple
+
+Using a for loop we can iterate through each item in a tuple.
+
+```py
+# Output: 
+# Hello John
+# Hello Kate
+for name in ('John','Kate'):
+     print("Hello",name)
+```
+
+## Advantages of Tuple over List
+
+Since tuples are quite similar to lists, both of them are used in similar situations as well.
+
+However, there are certain advantages of implementing a tuple over a list. Below listed are some of the main advantages:
+
+* We generally use tuple for heterogeneous (different) datatypes and list for homogeneous (similar) datatypes.
+* Since tuples are immutable, iterating through tuple is faster than with list. So there is a slight performance boost.
+* Tuples that contain immutable elements can be used as a key for a dictionary. With lists, this is not possible.
+* If you have data that doesn't change, implementing it as tuple will guarantee that it remains write-protected.
