@@ -58,9 +58,41 @@ print(list(range(2, 20, 3)))
 
 We can use the range() function in for loops to iterate through a sequence of numbers. It can be combined with the len() function to iterate though a sequence using indexing. Here is an example.
 
+```py
+# Program to iterate through a list using indexing
+
+genre = ['pop', 'rock', 'jazz']
+
+# iterate over the list using index
+for i in range(len(genre)):
+	print("I like", genre[i])
+```
+
+When you run the program, the output will be:
+
+```txt
+I like pop
+I like rock
+​I like jazz
+```
+
+## for loop with else
+
+A for loop can have an optional else block as well. The else part is executed if the items in the sequence used in for loop exhausts.
+**break** statement can be used to stop a for loop. In such case, the else part is ignored.
+Hence, a for loop's else part runs if no break occurs.
+Here is an example to illustrate this.
 
 
+```py
+digits = [0, 1, 5]
 
+for i in digits:
+    print(i)
+else:
+    print("No items left.")
+
+```
 
 
 
