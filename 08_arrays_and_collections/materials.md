@@ -1,9 +1,115 @@
-# Collections
+<center> Collections </center>
+===
 
+# Python Strings
+
+## What is String in Python?
+
+A string is a sequence of characters.
+A character is simply a symbol. For example, the English language has 26 characters.
+Computers do not deal with characters, they deal with numbers (binary). Even though you may see characters on your screen, internally it is stored and manipulated as a combination of 0's and 1's.
+This conversion of character to a number is called encoding, and the reverse process is decoding. ASCII and Unicode are some of the popular encoding used.
+In Python, string is a sequence of Unicode character. Unicode was introduced to include every character in all languages and bring uniformity in encoding. You can learn more about Unicode from here.
+
+## How to create a string in Python?
+Strings can be created by enclosing characters inside a single quote or double quotes. Even triple quotes can be used in Python but generally used to represent multiline strings and docstrings.
+```py
+# all of the following are equivalent
+my_string = 'Hello'
+print(my_string)
+
+my_string = "Hello"
+print(my_string)
+
+my_string = '''Hello'''
+print(my_string)
+
+# triple quotes string can extend multiple lines
+my_string = """Hello, welcome to
+           the world of Python"""
+print(my_string)
+```
+
+When you run the program, the output will be:
+
+```txt
+Hello
+Hello
+Hello
+Hello, welcome to
+           the world of Python
+```
+
+## How to access characters in a string?
+
+We can access individual characters using indexing and a range of characters using slicing. Index starts from 0. Trying to access a character out of index range will raise an IndexError. The index must be an integer. We can't use float or other types, this will result into **TypeError**.
+Python allows negative indexing for its sequences.
+The index of -1 refers to the last item, -2 to the second last item and so on. We can access a range of items in a string by using the slicing operator (colon).
+```py
+str = 'programiz'
+print('str = ', str)
+
+#first character
+print('str[0] = ', str[0])
+
+#last character
+print('str[-1] = ', str[-1])
+
+#slicing 2nd to 5th character
+print('str[1:5] = ', str[1:5])
+
+#slicing 6th to 2nd last character
+print('str[5:-2] = ', str[5:-2])
+```
+
+If we try to access index out of the range or use decimal number, we will get errors.
+
+```py
+    # index must be in range
+    >>> my_string[15]  
+    ...
+    IndexError: string index out of range
+    # index must be an integer
+    >>> my_string[1.5] 
+    ...
+    TypeError: string indices must be integers
+```
+
+Slicing can be best visualized by considering the index to be between the elements as shown below.
+If we want to access a range, we need the index that will slice the portion from the string.
+
+## How to change or delete a string?
+
+Strings are immutable. This means that elements of a string cannot be changed once it has been assigned. We can simply reassign different strings to the same name.
+
+```py
+    >>> del my_string[1]
+    ...
+    TypeError: 'str' object doesn't support item deletion
+    >>> del my_string
+    >>> my_string
+    ...
+    NameError: name 'my_string' is not defined
+```
+
+## Python String Operations
+
+There are many operations that can be performed with string which makes it one of the most used datatypes in Python.
+
+### Concatenation of Two or More Strings
+
+Joining of two or more strings into a single one is called concatenation.
+
+The **+** operator does this in Python. Simply writing two string literals together also concatenates them.
+
+The __*__ operator can be used to repeat the string for a given number of times.
+
+
+---
 ## Python List
 Python offers a range of compound datatypes often referred to as sequences. List is one of the most frequently used and very versatile datatype used in Python.
 
-## How to create a list?
+### How to create a list?
 In Python programming, a list is created by placing all the items (elements) inside a square bracket [ ], separated by commas.
 It can have any number of items and they may be of different types (integer, float, string etc.).
 ```py
@@ -133,6 +239,117 @@ Furthermore, we can insert one item at a desired location by using the method in
     # Output: [1, 3, 5, 7, 9]
     print(odd)
 ```
+## How to delete or remove elements from a list?
+
+We can delete one or more items from a list using the keyword del. It can even delete the list entirely.
+```py
+    my_list = ['p','r','o','b','l','e','m']
+    # delete one item
+    del my_list[2]
+    # Output: ['p', 'r', 'b', 'l', 'e', 'm']     
+    print(my_list)
+    # delete multiple items
+    del my_list[1:5]  
+    # Output: ['p', 'm']
+    print(my_list)
+    # delete entire list
+    del my_list       
+    # Error: List not defined
+    print(my_list)
+```
+
+We can use remove() method to remove the given item or pop() method to remove an item at the given index.
+The pop() method removes and returns the last item if index is not provided. This helps us implement lists as stacks (first in, last out data structure).
+We can also use the clear() method to empty a list.
+
+```py
+    my_list = ['p','r','o','b','l','e','m']
+    my_list.remove('p')
+    # Output: ['r', 'o', 'b', 'l', 'e', 'm']
+    print(my_list)
+    # Output: 'o'
+    print(my_list.pop(1))
+    # Output: ['r', 'b', 'l', 'e', 'm']
+    print(my_list)
+    # Output: 'm'
+    print(my_list.pop())
+    # Output: ['r', 'b', 'l', 'e']
+    print(my_list)
+    my_list.clear()
+    # Output: []
+    print(my_list)
+```
+
+Finally, we can also delete items in a list by assigning an empty list to a slice of elements.
+
+```py
+    >>> my_list = ['p','r','o','b','l','e','m']
+    >>> my_list[2:3] = []
+    >>> my_list
+    ['p', 'r', 'b', 'l', 'e', 'm']
+    >>> my_list[2:5] = []
+    >>> my_list
+    ['p', 'r', 'm']
+```
+
+##  List Comprehension: Elegant way to create new List
+
+List comprehension is an elegant and concise way to create new list from an existing list in Python.
+List comprehension consists of an expression followed by for statement inside square brackets.
+Here is an example to make a list with each item being increasing power of 2.
+
+```py
+    pow2 = [2 ** x for x in range(10)]
+    # Output: [1, 2, 4, 8, 16, 32, 64, 128, 256, 512]
+    print(pow2)
+```
+
+This code is equivalent to
+```py
+    pow2 = []
+    for x in range(10):
+       pow2.append(2 ** x)
+```
+
+A list comprehension can optionally contain more for or if statements. An optional if statement can filter out items for the new list. Here are some examples.
+
+```py
+    >>> pow2 = [2 ** x for x in range(10) if x > 5]
+    >>> pow2
+    [64, 128, 256, 512]
+    >>> odd = [x for x in range(20) if x % 2 == 1]
+    >>> odd
+    [1, 3, 5, 7, 9, 11, 13, 15, 17, 19]
+    >>> [x+y for x in ['Python ','C '] for y in ['Language','Programming']]
+    ['Python Language', 'Python Programming', 'C Language', 'C Programming']
+```
+
+
+# Other List Operations in Python
+
+## List Membership Test
+
+We can test if an item exists in a list or not, using the keyword in.
+```py
+    my_list = ['p','r','o','b','l','e','m']
+    # Output: True
+    print('p' in my_list)
+    # Output: False
+    print('a' in my_list)
+    # Output: True
+    print('c' not in my_list)
+```
+
+## Iterating Through a List
+
+Using a for loop we can iterate though each item in a list.
+```py
+    for fruit in ['apple','banana','mango']:
+        print("I like",fruit)
+```
+
+---
+
 
 ---
 # Python Loops
