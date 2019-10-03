@@ -1,5 +1,139 @@
 # Collections
 
+## Python List
+Python offers a range of compound datatypes often referred to as sequences. List is one of the most frequently used and very versatile datatype used in Python.
+
+## How to create a list?
+In Python programming, a list is created by placing all the items (elements) inside a square bracket [ ], separated by commas.
+It can have any number of items and they may be of different types (integer, float, string etc.).
+```py
+    # empty list
+    my_list = []
+    # list of integers
+    my_list = [1, 2, 3]
+    # list with mixed datatypes
+    my_list = [1, "Hello", 3.4]
+```
+
+Also, a list can even have another list as an item. This is called nested list.
+
+```py
+# nested list
+my_list = ["mouse", [8, 4, 6], ['a']]
+```
+
+### How to access elements from a list?
+
+There are various ways in which we can access the elements of a list.
+
+### List Index
+
+We can use the index operator [] to access an item in a list. Index starts from 0. So, a list having 5 elements will have index from 0 to 4.
+Trying to access an element other that this will raise an IndexError. The index must be an integer. We can't use float or other types, this will result into TypeError.
+Nested list are accessed using nested indexing.
+
+```py
+    my_list = ['p','r','o','b','e']
+    # Output: p
+    print(my_list[0])
+    # Output: o
+    print(my_list[2])
+    # Output: e
+    print(my_list[4])
+    # Error! Only integer can be used for indexing
+    # my_list[4.0]
+    # Nested List
+    n_list = ["Happy", [2,0,1,5]]
+    # Nested indexing
+    # Output: a
+    print(n_list[0][1])    
+    # Output: 5
+    print(n_list[1][3])
+```
+
+### Negative indexing
+
+Python allows negative indexing for its sequences. The index of -1 refers to the last item, -2 to the second last item and so on.
+```py
+    my_list = ['p','r','o','b','e']
+    # Output: e
+    print(my_list[-1])
+    # Output: p
+    print(my_list[-5])
+```
+
+### How to slice lists in Python?
+
+We can access a range of items in a list by using the slicing operator (colon).
+
+```py
+    my_list = ['p','y','t','h','o','n',' ','c','o','u','r','s','e']
+    # elements 3rd to 5th
+    print(my_list[2:5])
+    # elements beginning to 4th
+    print(my_list[:-5])
+    # elements 6th to end
+    print(my_list[5:])
+    # elements beginning to end
+    print(my_list[:])
+```
+
+Slicing can be best visualized by considering the index to be between the elements as shown below. So if we want to access a range, we need two indices that will slice that portion from the list.
+
+### How to change or add elements to a list?
+
+List are mutable, meaning, their elements can be changed unlike string or tuple.
+
+We can use assignment operator (=) to change an item or a range of items.
+
+```py
+
+    # mistake values
+    odd = [2, 4, 6, 8]
+    # change the 1st item
+    odd[0] = 1
+    # Output: [1, 4, 6, 8]
+    print(odd)
+    # change 2nd to 4th items
+    odd[1:4] = [3, 5, 7]  
+    # Output: [1, 3, 5, 7]
+    print(odd)
+```
+We can add one item to a list using append() method or add several items using extend() method.
+
+```py
+    odd = [1, 3, 5]
+    odd.append(7)
+    # Output: [1, 3, 5, 7]
+    print(odd)
+    odd.extend([9, 11, 13])
+    # Output: [1, 3, 5, 7, 9, 11, 13]
+    print(odd)
+```
+
+We can also use + operator to combine two lists. This is also called concatenation.
+The * operator repeats a list for the given number of times.
+
+```py
+    odd = [1, 3, 5]
+    # Output: [1, 3, 5, 9, 7, 5]
+    print(odd + [9, 7, 5])
+    #Output: ["re", "re", "re"]
+    print(["re"] * 3)
+```
+
+Furthermore, we can insert one item at a desired location by using the method insert() or insert multiple items by squeezing it into an empty slice of a list.
+
+```py
+    odd = [1, 9]
+    odd.insert(1,3)
+    # Output: [1, 3, 9] 
+    print(odd)
+    odd[2:2] = [5, 7]
+    # Output: [1, 3, 5, 7, 9]
+    print(odd)
+```
+
 ---
 # Python Loops
 
@@ -18,8 +152,8 @@ for val in sequence:
 Here, val is the variable that takes the value of the item inside the sequence on each iteration.
 Loop continues until we reach the last item in the sequence. The body of for loop is separated from the rest of the code using indentation.
 
-
 #### Example: Python for Loop
+
 ```py
 # Program to find the sum of all numbers stored in a list
 
