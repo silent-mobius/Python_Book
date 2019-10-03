@@ -94,6 +94,60 @@ else:
 
 ```
 
+When you run the program, the output will be:
+
+```txt
+0
+1
+5
+No items left.
+```
+
+Here, the for loop prints items of the list until the loop exhausts. When the for loop exhausts, it executes the block of code in the else and prints
+```txt
+No items left.
+```
+
+
+---
+
+# Python while Loop
+
+## What is while loop in Python?
+
+The while loop in Python is used to iterate over a block of code as long as the test expression (condition) is true.
+We generally use this loop when we don't know beforehand, the number of times to iterate.
+
+Syntax of while Loop in Python:
+
+```py
+while test_expression:
+    Body of while
+```
+
+In while loop, test expression is checked first. The body of the loop is entered only if the test_expression evaluates to True. After one iteration, the test expression is checked again. This process continues until the test_expression evaluates to False.
+
+In Python, the body of the while loop is determined through indentation.
+Body starts with indentation and the first unindented line marks the end.
+Python interprets any non-zero value as True. None and 0 are interpreted as False
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
