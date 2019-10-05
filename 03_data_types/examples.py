@@ -114,6 +114,7 @@ print('str1 * 3 =', str1 * 3)
 >>> s
 'Hello World'
 
+
 count = 0
 for letter in 'Hello World':
     if(letter == 'l'):
