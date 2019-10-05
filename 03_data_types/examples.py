@@ -295,3 +295,80 @@ odd.extend([9, 11, 13])
 print(odd)
 
 
+odd = [1, 3, 5]
+# Output: [1, 3, 5, 9, 7, 5]
+print(odd + [9, 7, 5])
+#Output: ["re", "re", "re"]
+print(["re"] * 3)
+
+
+odd = [1, 9]
+odd.insert(1,3)
+# Output: [1, 3, 9] 
+print(odd)
+odd[2:2] = [5, 7]
+# Output: [1, 3, 5, 7, 9]
+print(odd)
+
+
+my_list = ['p','r','o','b','l','e','m']
+# delete one item
+del my_list[2]
+# Output: ['p', 'r', 'b', 'l', 'e', 'm']
+print(my_list)
+# delete multiple items
+del my_list[1:5]  
+# Output: ['p', 'm']
+print(my_list)
+# delete entire list
+del my_list
+# Error: List not defined
+print(my_list)
+
+
+
+my_list = ['p','r','o','b','l','e','m']
+my_list.remove('p')
+# Output: ['r', 'o', 'b', 'l', 'e', 'm']
+print(my_list)
+# Output: 'o'
+print(my_list.pop(1))
+# Output: ['r', 'b', 'l', 'e', 'm']
+print(my_list)
+# Output: 'm'
+print(my_list.pop())
+# Output: ['r', 'b', 'l', 'e']
+print(my_list)
+my_list.clear()
+# Output: []
+print(my_list)
+
+
+>>> my_list = ['p','r','o','b','l','e','m']
+>>> my_list[2:3] = []
+>>> my_list
+['p', 'r', 'b', 'l', 'e', 'm']
+>>> my_list[2:5] = []
+>>> my_list
+['p', 'r', 'm']
+
+
+pow2 = [2 ** x for x in range(10)]
+# Output: [1, 2, 4, 8, 16, 32, 64, 128, 256, 512]
+print(pow2)
+
+
+pow2 = []
+for x in range(10):
+    pow2.append(2 ** x)
+
+
+>>> pow2 = [2 ** x for x in range(10) if x > 5]
+>>> pow2
+[64, 128, 256, 512]
+>>> odd = [x for x in range(20) if x % 2 == 1]
+>>> odd
+[1, 3, 5, 7, 9, 11, 13, 15, 17, 19]
+>>> [x+y for x in ['Python ','C '] for y in ['Language','Programming']]
+['Python Language', 'Python Programming', 'C Language', 'C Programming']
+
