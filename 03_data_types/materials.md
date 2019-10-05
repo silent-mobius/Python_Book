@@ -1447,3 +1447,74 @@ for item in marks.items():
 list(sorted(marks.keys()))
 ```
 
+## Python Dictionary Comprehension
+
+Dictionary comprehension is an elegant and concise way to create new dictionary from an iterable in Python.
+Dictionary comprehension consists of an expression pair (key: value) followed by for statement inside curly braces {}.
+Here is an example to make a dictionary with each item being a pair of a number and its square.
+
+```py
+squares = {x: x*x for x in range(6)}
+
+# Output: {0: 0, 1: 1, 2: 4, 3: 9, 4: 16, 5: 25}
+print(squares)
+```
+
+A dictionary comprehension can optionally contain more for or if statements.
+An optional if statement can filter out items to form the new dictionary.
+Here are some examples to make dictionary with only odd items.
+
+
+# Other Dictionary Operations
+
+## Dictionary Membership Test
+
+We can test if a key is in a dictionary or not using the keyword in. Notice that membership test is for keys only, not for values.
+
+```py
+squares = {1: 1, 3: 9, 5: 25, 7: 49, 9: 81}
+
+# Output: True
+print(1 in squares)
+
+# Output: True
+print(2 not in squares)
+
+# membership tests for key only not value
+# Output: False
+print(49 in squares)
+```
+
+## Iterating Through a Dictionary
+
+Using a for loop we can iterate though each key in a dictionary.
+```py
+squares = {1: 1, 3: 9, 5: 25, 7: 49, 9: 81}
+for i in squares:
+    print(squares[i])
+```
+
+
+## Built-in Functions with Dictionary
+
+Built-in functions like all(), any(), len(), cmp(), sorted() etc. are commonly used with dictionary to perform different tasks.
+Built-in Functions with Dictionary
+Function |	Description
+------- |   ----------
+all() |	Return True if all keys of the dictionary are true (or if the dictionary is empty).
+any() |	Return True if any key of the dictionary is true. If the dictionary is empty, return False.
+len() |	Return the length (the number of items) in the dictionary.
+cmp() |	Compares items of two dictionaries.
+sorted() |	Return a new sorted list of keys in the dictionary.
+
+Here are some examples that uses built-in functions to work with dictionary.
+
+```py
+squares = {1: 1, 3: 9, 5: 25, 7: 49, 9: 81}
+
+# Output: 5
+print(len(squares))
+
+# Output: [1, 3, 5, 7, 9]
+print(sorted(squares))
+```
