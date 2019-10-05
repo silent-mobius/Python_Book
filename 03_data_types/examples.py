@@ -127,3 +127,79 @@ True
 >>> 'at' not in 'battle'
 False
 
+
+
+
+str = 'cold'
+
+# enumerate()
+list_enumerate = list(enumerate(str))
+print('list(enumerate(str) = ', list_enumerate)
+
+#character count
+print('len(str) = ', len(str))
+
+
+>>> print("He said, "What's there?"")
+...SyntaxError: invalid syntax
+>>> print('He said, "What's there?"')
+...SyntaxError: invalid syntax
+
+
+
+# using triple quotes
+print('''He said, "What's there?"''')
+
+# escaping single quotes
+print('He said, "What\'s there?"')
+
+# escaping double quotes
+print("He said, \"What's there?\"")
+
+
+>>> print("\\")
+\
+>>> print("This is printed\nin two lines")
+This is printed
+in two lines
+>>> print("This is \x48\x45\x58 representation")
+This is HEX representation
+
+
+>>> print("This is \x41 \ngood example")
+This is A
+good example
+>>> print(r"This is \x41 \ngood example")
+This is \x41 \ngood example
+
+
+# default(implicit) order
+default_order = "{}, {} and {}".format('John','Bill','Sean')
+print('\n--- Default Order ---')
+print(default_order)
+
+# order using positional argument
+positional_order = "{1}, {0} and {2}".format('John','Bill','Sean')
+print('\n--- Positional Order ---')
+print(positional_order)
+
+# order using keyword argument
+keyword_order = "{s}, {b} and {j}".format(j='John',b='Bill',s='Sean')
+print('\n--- Keyword Order ---')
+print(keyword_order)
+
+
+
+>>> # formatting integers
+>>> "Binary representation of {0} is {0:b}".format(12)
+'Binary representation of 12 is 1100'
+>>> # formatting floats
+>>> "Exponent representation: {0:e}".format(1566.345)
+'Exponent representation: 1.566345e+03'
+>>> # round off
+>>> "One third is: {0:.3f}".format(1/3)
+'One third is: 0.333'
+>>> # string alignment
+>>> "|{:<10}|{:^10}|{:>10}|".format('butter','bread','ham')
+'|butter    |  bread   |       ham|'
+
