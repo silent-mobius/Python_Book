@@ -206,7 +206,9 @@ This conversion of character to a number is called encoding, and the reverse pro
 In Python, string is a sequence of Unicode character. Unicode was introduced to include every character in all languages and bring uniformity in encoding. You can learn more about Unicode from here.
 
 ## How to create a string in Python?
+
 Strings can be created by enclosing characters inside a single quote or double quotes. Even triple quotes can be used in Python but generally used to represent multiline strings and docstrings.
+
 ```py
 # all of the following are equivalent
 my_string = 'Hello'
@@ -239,6 +241,7 @@ Hello, welcome to
 We can access individual characters using indexing and a range of characters using slicing. Index starts from 0. Trying to access a character out of index range will raise an IndexError. The index must be an integer. We can't use float or other types, this will result into **TypeError**.
 Python allows negative indexing for its sequences.
 The index of -1 refers to the last item, -2 to the second last item and so on. We can access a range of items in a string by using the slicing operator (colon).
+
 ```py
 str = 'programiz'
 print('str = ', str)
@@ -308,6 +311,7 @@ print('str1 + str2 = ', str1 + str2)
 # using *
 print('str1 * 3 =', str1 * 3)
 ```
+
 Writing two string literals together also concatenates them like + operator.
 
 If we want to concatenate strings in different lines, we can use parentheses.
@@ -324,6 +328,7 @@ If we want to concatenate strings in different lines, we can use parentheses.
 ```
 
 ## Iterating Through String
+
 Using for loop we can iterate through a string. Here is an example to count the number of 'l' in a string.
 
 ```py
@@ -984,6 +989,7 @@ print(my_tuple.index('l'))  # Output: 3
 ### 1. Tuple Membership Test
 
 We can test if an item exists in a tuple or not, using the keyword in.
+
 ```py
 my_tuple = ('a','p','p','l','e',)
 
