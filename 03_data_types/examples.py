@@ -203,3 +203,95 @@ print(keyword_order)
 >>> "|{:<10}|{:^10}|{:>10}|".format('butter','bread','ham')
 '|butter    |  bread   |       ham|'
 
+
+
+>>> x = 12.3456789
+>>> print('The value of x is %3.2f' %x)
+The value of x is 12.35
+>>> print('The value of x is %3.4f' %x)
+The value of x is 12.3457
+
+
+>>> "PrOgRaMiZ".lower()
+'programiz'
+>>> "PrOgRaMiZ".upper()
+'PROGRAMIZ'
+>>> "This will split all words into a list".split()
+['This', 'will', 'split', 'all', 'words', 'into', 'a', 'list']
+>>> ' '.join(['This', 'will', 'join', 'all', 'words', 'into', 'a', 'string'])
+'This will join all words into a string'
+>>> 'Happy New Year'.find('ew')
+7
+>>> 'Happy New Year'.replace('Happy','Brilliant')
+'Brilliant New Year'
+
+
+# empty list
+my_list = []
+# list of integers
+my_list = [1, 2, 3]
+# list with mixed datatypes
+my_list = [1, "Hello", 3.4]
+
+
+# nested list
+my_list = ["mouse", [8, 4, 6], ['a']]
+
+
+my_list = ['p','r','o','b','e']
+# Output: p
+print(my_list[0])
+# Output: o
+print(my_list[2])
+# Output: e
+print(my_list[4])
+# Error! Only integer can be used for indexing
+# my_list[4.0]
+# Nested List
+n_list = ["Happy", [2,0,1,5]]
+# Nested indexing
+# Output: a
+print(n_list[0][1])    
+# Output: 5
+print(n_list[1][3])
+
+
+my_list = ['p','r','o','b','e']
+# Output: e
+print(my_list[-1])
+# Output: p
+print(my_list[-5])
+
+
+
+my_list = ['p','y','t','h','o','n',' ','c','o','u','r','s','e']
+# elements 3rd to 5th
+print(my_list[2:5])
+# elements beginning to 4th
+print(my_list[:-5])
+# elements 6th to end
+print(my_list[5:])
+# elements beginning to end
+print(my_list[:])
+
+
+# mistake values
+odd = [2, 4, 6, 8]
+# change the 1st item
+odd[0] = 1
+# Output: [1, 4, 6, 8]
+print(odd)
+# change 2nd to 4th items
+odd[1:4] = [3, 5, 7]  
+# Output: [1, 3, 5, 7]
+print(odd)
+
+odd = [1, 3, 5]
+odd.append(7)
+# Output: [1, 3, 5, 7]
+print(odd)
+odd.extend([9, 11, 13])
+# Output: [1, 3, 5, 7, 9, 11, 13]
+print(odd)
+
+
