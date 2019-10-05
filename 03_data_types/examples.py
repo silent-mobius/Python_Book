@@ -106,12 +106,23 @@ print('str1 + str2 = ', str1 + str2)
 print('str1 * 3 =', str1 * 3)
 
 
-    >>> 'Hello ''World!'
-    'Hello World!'
-    >>> # using parentheses
-    >>> s = ('Hello '
-    ...      'World')
-    >>> s
-    'Hello World'
+>>> 'Hello ''World!'
+'Hello World!'
+>>> # using parentheses
+>>> s = ('Hello '
+...      'World')
+>>> s
+'Hello World'
 
-    
+count = 0
+for letter in 'Hello World':
+    if(letter == 'l'):
+        count += 1
+print(count,'letters found')
+
+
+>>> 'a' in 'program'
+True
+>>> 'at' not in 'battle'
+False
+
