@@ -434,11 +434,11 @@ Here are some examples
 Sometimes we may wish to ignore the escape sequences inside a string. To do this we can place r or R in front of the string. This will imply that it is a raw string and any escape sequence inside it will be ignored.
 
 ```py
-    >>> print("This is \x61 \ngood example")
-    This is a
+   >>> print("This is \x41 \ngood example")
+    This is A
     good example
-    >>> print(r"This is \x61 \ngood example")
-    This is \x61 \ngood example
+   >>> print(r"This is \x41 \ngood example")
+    This is \x41 \ngood example
 ```
 
 ### The format() Method for Formatting Strings
