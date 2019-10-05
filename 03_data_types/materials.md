@@ -1494,7 +1494,6 @@ for i in squares:
     print(squares[i])
 ```
 
-
 ## Built-in Functions with Dictionary
 
 Built-in functions like all(), any(), len(), cmp(), sorted() etc. are commonly used with dictionary to perform different tasks.
