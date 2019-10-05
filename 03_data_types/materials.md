@@ -1217,15 +1217,233 @@ discard() |	Removes an element from the set if it is a member. (Do nothing if th
 intersection() |	Returns the intersection of two sets as a new set
 intersection_update() |	Updates the set with the intersection of itself and another
 isdisjoint() |	Returns True if two sets have a null intersection
-issubset() 	Returns True if another set contains this set
-issuperset() 	Returns True if this set contains another set
-pop() 	Removes and returns an arbitary set element. Raise KeyError if the set is empty
-remove() 	Removes an element from the set. If the element is not a member, raise a KeyError
-symmetric_difference() 	Returns the symmetric difference of two sets as a new set
-symmetric_difference_update() 	Updates a set with the symmetric difference of itself and another
-union() 	Returns the union of sets in a new set
-update() 	Updates the set with the union of itself and others
-Other Set Operations
-Set Membership Test
+issubset() |	Returns True if another set contains this set
+issuperset() |	Returns True if this set contains another set
+pop() |	Removes and returns an arbitary set element. Raise KeyError if the set is empty
+remove() |	Removes an element from the set. If the element is not a member, raise a KeyError
+symmetric_difference() |	Returns the symmetric difference of two sets as a new set
+symmetric_difference_update() |	Updates a set with the symmetric difference of itself and another
+union() |	Returns the union of sets in a new set
+update() |	Updates the set with the union of itself and others
+
+## Other Set Operations
+
+### Set Membership Test
 
 We can test if an item exists in a set or not, using the keyword in.
+
+```py
+# initialize my_set
+my_set = set("apple")
+
+# check if 'a' is present
+# Output: True
+print('a' in my_set)
+
+# check if 'p' is present
+# Output: False
+print('p' not in my_set)
+```
+
+## Iterating Through a Set
+
+Using a for loop, we can iterate though each item in a set.
+
+```py
+    >>> for letter in set("apple"):
+    ...     print(letter)
+    ...    
+    a
+    p
+    e
+    l
+```
+
+## Built-in Functions with Set
+
+Built-in functions like all(), any(), enumerate(), len(), max(), min(), sorted(), sum() etc. are commonly used with set to perform different tasks.
+Built-in Functions with Set
+Function |	Description
+-------- |  ------------
+all() |	Return True if all elements of the set are true (or if the set is empty).
+any() |	Return True if any element of the set is true. If the set is empty, return False.
+enumerate() |	Return an enumerate object. It contains the index and value of all the items of set as a pair.
+len() |	Return the length (the number of items) in the set.
+max() |	Return the largest item in the set.
+min() |	Return the smallest item in the set.
+sorted() |	Return a new sorted list from elements in the set(does not sort the set itself).
+sum() |	Retrun the sum of all elements in the set.
+
+---
+
+# Python Frozenset
+
+Frozenset is a new class that has the characteristics of a set, but its elements cannot be changed once assigned. While tuples are immutable lists, frozensets are immutable sets.
+Sets being mutable are unhashable, so they can't be used as dictionary keys. On the other hand, frozensets are hashable and can be used as keys to a dictionary.
+
+Frozensets can be created using the function frozenset().
+
+This datatype supports methods like copy(), difference(), intersection(), isdisjoint(), issubset(), issuperset(), symmetric_difference() and union(). Being immutable it does not have method that add or remove elements.
+
+```py
+A = frozenset([1, 2, 3, 4])
+B = frozenset([3, 4, 5, 6])
+```
+
+Try these examples on Python shell.
+
+```py
+    >>> A.isdisjoint(B)
+    False
+    >>> A.difference(B)
+    frozenset({1, 2})
+    >>> A | B
+    frozenset({1, 2, 3, 4, 5, 6})
+    >>> A.add(3)
+    ...
+    AttributeError: 'frozenset' object has no attribute 'add'
+```
+
+---
+
+# Python Dictionary
+
+Python dictionary is an unordered collection of items. While other compound data types have only value as an element, a dictionary has a **key: value** pair.
+
+Dictionaries are optimized to retrieve values when the key is known.
+## How to create a dictionary?
+
+Creating a dictionary is as simple as placing items inside curly braces {} separated by comma.
+An item has a key and the corresponding value expressed as a pair, **key: value**.
+While values can be of any data type and can repeat, keys must be of immutable type (string, number or tuple with immutable elements) and must be unique.
+
+```py
+# empty dictionary
+my_dict = {}
+# dictionary with integer keys
+my_dict = {1: 'apple', 2: 'ball'}
+# dictionary with mixed keys
+my_dict = {'name': 'John', 1: [2, 4, 3]}
+# using dict()
+my_dict = dict({1:'apple', 2:'ball'})
+# from sequence having each item as a pair
+my_dict = dict([(1,'apple'), (2,'ball')])
+```
+
+As you can see above, we can also create a dictionary using the built-in function dict().
+
+## How to access elements from a dictionary?
+
+While indexing is used with other container types to access values, dictionary uses keys. Key can be used either inside square brackets or with the get() method.
+The difference while using get() is that it returns None instead of KeyError, if the key is not found.
+```py
+my_dict = {'name':'Jack', 'age': 26}
+
+# Output: Jack
+print(my_dict['name'])
+
+# Output: 26
+print(my_dict.get('age'))
+
+# Trying to access keys which doesn't exist throws error
+# my_dict.get('address')
+# my_dict['address']
+```
+
+## How to change or add elements in a dictionary?
+
+Dictionary are mutable. We can add new items or change the value of existing items using assignment operator.
+If the key is already present, value gets updated, else a new key: value pair is added to the dictionary.
+
+```py
+my_dict = {'name':'Jack', 'age': 26}
+
+# update value
+my_dict['age'] = 27
+
+#Output: {'age': 27, 'name': 'Jack'}
+print(my_dict)
+
+# add item
+my_dict['address'] = 'Downtown'  
+
+# Output: {'address': 'Downtown', 'age': 27, 'name': 'Jack'}
+print(my_dict)
+```
+
+## How to delete or remove elements from a dictionary?
+
+We can remove a particular item in a dictionary by using the method pop(). This method removes as item with the provided key and returns the value.
+The method, popitem() can be used to remove and return an arbitrary item (key, value) form the dictionary. All the items can be removed at once using the clear() method.
+We can also use the del keyword to remove individual items or the entire dictionary itself.
+
+```py
+# create a dictionary
+squares = {1:1, 2:4, 3:9, 4:16, 5:25}  
+
+# remove a particular item
+# Output: 16
+print(squares.pop(4))  
+
+# Output: {1: 1, 2: 4, 3: 9, 5: 25}
+print(squares)
+
+# remove an arbitrary item
+# Output: (1, 1)
+print(squares.popitem())
+
+# Output: {2: 4, 3: 9, 5: 25}
+print(squares)
+
+# delete a particular item
+del squares[5]  
+
+# Output: {2: 4, 3: 9}
+print(squares)
+
+# remove all items
+squares.clear()
+
+# Output: {}
+print(squares)
+
+# delete the dictionary itself
+del squares
+
+# Throws Error
+# print(squares)
+```
+
+## Python Dictionary Methods
+
+Methods that are available with dictionary are tabulated below. Some of them have already been used in the above examples.
+Python Dictionary Methods 
+Method |	Description
+------ |    ----------
+clear() |	Remove all items form the dictionary.
+copy() |	Return a shallow copy of the dictionary.
+fromkeys(seq[, v]) |	Return a new dictionary with keys from seq and value equal to v (defaults to None).
+get(key[,d]) |	Return the value of key. If key doesnot exit, return d (defaults to None).
+items() |	Return a new view of the dictionary's items (key, value).
+keys() |	Return a new view of the dictionary's keys.
+pop(key[,d]) |	Remove the item with key and return its value or d if key is not found. If d is not provided and key is not found, raises KeyError.
+popitem() |	Remove and return an arbitary item (key, value). Raises KeyError if the dictionary is empty.
+setdefault(key[,d]) |	If key is in the dictionary, return its value. If not, insert key with a value of d and return d (defaults to None).
+update([other]) |	Update the dictionary with the key/value pairs from other, overwriting existing keys.
+values() |	Return a new view of the dictionary's values
+
+Here are a few example use of these methods.
+
+```py
+marks = {}.fromkeys(['Math','English','Science'], 0)
+
+# Output: {'English': 0, 'Math': 0, 'Science': 0}
+print(marks)
+
+for item in marks.items():
+    print(item)
+
+# Output: ['English', 'Math', 'Science']
+list(sorted(marks.keys()))
+```
+
