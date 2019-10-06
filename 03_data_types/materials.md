@@ -1498,6 +1498,7 @@ for i in squares:
 
 Built-in functions like all(), any(), len(), cmp(), sorted() etc. are commonly used with dictionary to perform different tasks.
 Built-in Functions with Dictionary
+
 Function |	Description
 ------- |   ----------
 all() |	Return True if all keys of the dictionary are true (or if the dictionary is empty).
