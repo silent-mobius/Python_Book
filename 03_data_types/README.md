@@ -199,11 +199,14 @@ print(type(c))
 
 ## What is String in Python?
 
-A string is a sequence of characters.
+A string is a **sequence of characters**.
 A character is simply a symbol. For example, the English language has 26 characters.
-Computers do not deal with characters, they deal with numbers (binary). Even though you may see characters on your screen, internally it is stored and manipulated as a combination of 0's and 1's.
-This conversion of character to a number is called encoding, and the reverse process is decoding. ASCII and Unicode are some of the popular encoding used.
-In Python, string is a sequence of Unicode character. Unicode was introduced to include every character in all languages and bring uniformity in encoding. You can learn more about Unicode from here.
+Computers do not deal with characters, they deal with numbers (binary). 
+Even though you may see characters on your screen, internally it is stored and manipulated as a combination of 0's and 1's.
+This conversion of character to a number is called encoding, and the reverse process is decoding. 
+ASCII and Unicode are some of the popular encoding used.
+In Python, string is a sequence of Unicode character. Unicode was introduced to include every character in all languages and bring uniformity in encoding. 
+You can learn more about Unicode from [here](https://en.wikipedia.org/wiki/Unicode).
 
 ## How to create a string in Python?
 
