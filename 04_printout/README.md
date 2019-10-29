@@ -170,8 +170,7 @@ print("Welcome to %%Python %s" %'language')
 print("Sunday\nMonday\nTuesday\nWednesday\nThursday\nFriday\nSaturday")
 ```
 
-
-> Output:
+Output:
 > Sunday
 > Monday
 > Tuesday
