@@ -107,3 +107,42 @@ print('x or y is',x or y)
 # Output: not x is False
 print('not x is',not x)
 ```
+
+
+The truth table for and is given below:
+### Truth table for and 
+
+A |	B |	A and B
+-- | -- | --- 
+True |	True |	True
+True |	False |	False
+False |	True |	False
+False |	False |	False
+
+###  The truth table for or is given below:
+
+Truth table for or
+A |	B |	A or B
+-- | -- | ---
+True | True | True
+True | False | True
+False | True | True
+False | False | False
+
+### The truth table for not is given below:
+
+Truth tabel for not 
+A |	not A
+-- | --
+True |	False
+False |	True
+
+some example of their usage are given below
+```py
+>>> True and False
+False
+>>> True or False
+True
+>>> not False
+True
+```
