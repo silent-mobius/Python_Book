@@ -12,7 +12,9 @@ Married False #ring was for bday
 print(name,lname,age,gpa, address,size_of_pi,size_of_byte, "Engaged: "+Engaged, :Married:" + Married, end=' ')
 ################################################################################################
 print("####################################################################################################")
-print("\n\n\n")
+print("\n\n\n") #printing 3 new lines
+print("\t\t\t") #printing 3 tabs
+
 
 a=10
 b=a
