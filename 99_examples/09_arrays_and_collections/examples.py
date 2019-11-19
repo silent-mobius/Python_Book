@@ -1,103 +1,39 @@
 #!/usr/bin/env python3
 
-# Program to find the sum of all numbers stored in a list
+def avg_number(x, y):
+    print("Average of ",x," and ",y, " is ",(x+y)/2)
 
-# List of numbers
-numbers = [6, 5, 3, 8, 4, 2, 5, 4, 11]
-
-# variable to store the sum
-sum = 0
-
-# iterate over the list
-for val in numbers:
-	sum = sum+val
-
-# Output: The sum is 48
-print("The sum is", sum)
+avg_number(3, 4)
 
 
-#-----
-# Output: range(0, 10)
-print(range(10))
+def printt():
+    print("This is Python 3.2 Tutorial")
+    print("This is Python 3.2 Tutorial")
+    print("This is Python 3.2 Tutorial")
 
-# Output: [0, 1, 2, 3, 4, 5, 6, 7, 8, 9]
-print(list(range(10)))
-
-# Output: [2, 3, 4, 5, 6, 7]
-print(list(range(2, 8)))
-
-# Output: [2, 5, 8, 11, 14, 17]
-print(list(range(2, 20, 3)))
+printt()
 
 
-# Program to iterate through a list using indexing
+def nsquare(x, y):
+    return (x*x + 2*x*y + y*y)
 
-genre = ['pop', 'rock', 'jazz']
-
-# iterate over the list using index
-for i in range(len(genre)):
-	print("I like", genre[i])
+print("The square of the sum of 2 and 3 is : ", nsquare(2, 3))
+ 
 
 
-digits = [0, 1, 5]
+def marks(english, math = 85, science = 80):
+    print('Marks in : English is - ', english,', Math - ',math, ', Science - ',science)
 
-for i in digits:
-    print(i)
-else:
-    print("No items left.")
-
-
-# Program to add natural
-# numbers upto 
-# sum = 1+2+3+...+n
-
-# To take input from the user,
-# n = int(input("Enter n: "))
-
-n = 10
-
-# initialize sum and counter
-sum = 0
-i = 1
-
-while i <= n:
-    sum = sum + i
-    i = i+1    # update counter
-
-# print the sum
-print("The sum is", sum)
+marks(71, 77)
+marks(65, science = 74)
+marks(science = 70, math = 90, english = 75)
 
 
-# Example to illustrate
-# the use of else statement
-# with the while loop
+def average(x, y):
+    return (x + y)/2
 
-counter = 0
-
-while counter < 3:
-    print("Inside loop")
-    counter = counter + 1
-else:
-    print("Inside else")
+print(average(4, 3))
 
 
-for val in "string":
-    if val == "i":
-        break
-    print(val)
 
-print("The end")
-
-
-for val in "string":
-    if val == "i":
-        continue
-    print(val)
-
-print("The end")
-
-
-sequence = {'p', 'a', 's', 's'}
-for val in sequence:
-    pass
-
+print()
