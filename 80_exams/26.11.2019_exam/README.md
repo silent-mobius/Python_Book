@@ -2,43 +2,83 @@
 <h1>Python Exam</h1>
 </center>
 
-0. In given code wha:
+0. In given code, what seems to be an error:
 ```py
 
 ```
+* a.
+* b.
+* c.
+* d. 
 
-1.
+1. 
 ```py
 ```
+* a.
+* b.
+* c.
+* d. 
 
 2. 
 ```py
 ```
+* a.
+* b.
+* c.
+* d. 
 
-3.
+3. 
 ```py
 ```
+* a.
+* b.
+* c.
+* d. 
 
-4.
+4. 
 ```py
 ```
+* a.
+* b.
+* c.
+* d. 
 
-5.
+5. 
 ```py
 ```
+* a.
+* b.
+* c.
+* d. 
 
-6.
+6. 
 ```py
 ```
+* a.
+* b.
+* c.
+* d. 
 
-7.
+7. 
 ```py
 ```
+* a.
+* b.
+* c.
+* d. 
 
-8.
+8. 
 ```py
 ```
+* a.
+* b.
+* c.
+* d. 
 
-9.
+9. 
 ```py
 ```
+* a.
+* b.
+* c.
+* d. 
