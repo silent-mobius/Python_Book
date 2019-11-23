@@ -91,23 +91,28 @@ while i < 6:
 ```
 * d. כל התשובות נכונות
 
-4. בקוד נתון, מהי שגיאה:
+4. כיצד לקרוא (לבצע) פונקציה בשם my_function.:
 ```py
-
+def my_function():
+  print("Hello from a function")
 ```
-* a.
-* b.
-* c.
-* d. 
+* a. פשוט תקראו לשמו: my function()
+* b.אוקיי, אולי אם תשתמש בשמו: my_function (), זה יעבוד
+* c.אינך יכול להשתמש בפונקציה מכיוון שהיא לא מוגדרת כראוי
+* d. כל התשובות נכונות
 
-5. בקוד נתון, מהי שגיאה:
+5. בקוד נתון, מה יהיה הפלט:
 ```py
+myTuple = ("John", "Peter", "Vicky")
 
+x = ",".join(myTuple)
+
+print(x) 
 ```
-* a.
-* b.
-* c.
-* d. 
+* a.הפלט יהיה John#Peter#Vicky
+* b.הפלט יהיה John/Peter/Vicky
+* c.הפלט יהיה John Peter Vicky
+* d. הפלט יהיה John,Peter,Vicky
 
 6. בקוד נתון, מהי שגיאה:
 ```py
