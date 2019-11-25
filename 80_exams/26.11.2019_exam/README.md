@@ -160,10 +160,10 @@ while True:
 ```py
 def printLine(text):
   print(text, 'is awesome.')
-  
+
 printLine('Python')
 ```
-* a.
-* b.
-* c.
-* d. 
+* a.Python
+* b.Python is awesome.
+* c.text is awesome.
+* d.is awesome.
