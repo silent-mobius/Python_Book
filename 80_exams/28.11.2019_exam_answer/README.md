@@ -1,5 +1,20 @@
 # Python Exam
 
+0.What does the following code do?
+```py
+    try:
+      # code that can raise error
+       pass
+      
+    except (TypeError, ZeroDivisionError):
+      print("Two")
+```
+Choose one
+* a.Prints Two if exception occurs (doesn’t matter which exception).
+* b.Prints Two if exception doesn’t occur.
+* c.Prints Two if TypeError or ZeroDivisionError exception occurs.
+* d .Prints Two only if both TypeError and ZeroDivisionError exception occurs.
+
 1.Which of the following statements is true?
 Choose one
 * a.Python is a high level programming language.
