@@ -79,10 +79,20 @@ Choose one
     finally:
         f.close()
 ```
-
 * c.None of the above
-	
-
 * d.Both of the above
 
+8.For the following code,
+```py
+    f = open('test.txt', 'r', encoding = 'utf-8')
+    f.read()
+```
+Which of the following statement is true?
+Choose one
+* a.This program reads the content of test.txt file.
+* b.If test.txt contains newline, read() will return newline a ‘\n’.
+* c.You can pass an integer to the read() method.
+* d.All of the above.
 
+
+9.
