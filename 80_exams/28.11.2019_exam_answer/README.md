@@ -64,4 +64,23 @@ Choose one
 * d.Opens test.txt file in god mode
 
 
-7.
+7.Which of the following codes closes file automatically if exception occurs?
+Choose one
+* a.
+```py
+    with open("test.txt", encoding = 'utf-8') as f:
+        # perform file operation
+```
+* b.
+```py
+    try:
+         f = open("test.txt",encoding = 'utf-8')
+         # perform file operations
+    finally:
+        f.close()
+```
+
+* c.None of the above
+	
+
+* d.Both of the above
