@@ -95,4 +95,17 @@ Choose one
 * d.All of the above.
 
 
-9.
+9. What is the output of the following code?
+```py
+    number = 5.0
+    try:
+        r = 10/number
+        print(r)
+    except:
+        print("Oops! Error occurred.")
+```
+Choose one
+* a.Oops! Error occurred.
+* b.2.0
+* c.2.0 Oops! Error occurred.
+* d.None object
