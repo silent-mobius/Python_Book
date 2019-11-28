@@ -12,6 +12,6 @@ ID | Grade| Notice
 323830059 | 30 | Please talk to me ASAP !!!
 324208529 | 100| Great work --> now lets get into depth.   
 337842223 | 70 | Practice, Practice, Practice and little bit more of Practice.
-212173611 | 60 | 
-גיא תובל	212050083       |  
-דניאל סטצנקו	323919605   |
+212173611 | 60 | You need go over basics - Please schedule with me.
+212050083 | 90 | I am impressed, but this proves that you can do better.  
+323919605 | 00 | What can i say...
