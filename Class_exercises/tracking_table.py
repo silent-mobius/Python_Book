@@ -33,20 +33,3 @@ for i in range(len(X)):
 for r in result:
     print(r)
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
