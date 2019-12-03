@@ -4,16 +4,16 @@ detail_id = input("Please insert id")
 detail_address = input("Please insert address")
 
 if detail_name == '' or detail_name == None:
-    detail_name = input("Please insert name")
+    detail_name = input("Please insert name: ")
 
 if detail_lname == '' or detail_lname == None:
-    detail_lname = input("Please insert last name")
+    detail_lname = input("Please insert last name: ")
 
 if detail_id == '' or detail_id == None:
-    detail_id = input("Please insert id")
+    detail_id = input("Please insert id: ")
 
 if detail_address == '' or detail_address == None:
-    detail_address = input("Please insert name")
+    detail_address = input("Please insert address: ")
 
 character_list = []
 
