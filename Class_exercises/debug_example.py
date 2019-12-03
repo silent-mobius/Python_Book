@@ -1,7 +1,7 @@
-detail_name = input("Please insert name")
-detail_lname = input("Please insert last name")
-detail_id = input("Please insert id")
-detail_address = input("Please insert address")
+detail_name = input("Please insert name: ")
+detail_lname = input("Please insert last name: ")
+detail_id = input("Please insert id: ")
+detail_address = input("Please insert address: ")
 
 if detail_name == '' or detail_name == None:
     detail_name = input("Please insert name: ")
