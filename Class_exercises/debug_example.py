@@ -31,5 +31,4 @@ for letter in detail_address:
 
 uniq_character_set = set(character_list)
 
-
 print("The unique chatacters in your details: ", uniq_character_set,"amount of characters is :", len(uniq_character_set))
