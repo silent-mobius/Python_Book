@@ -2,8 +2,6 @@
 with open('story.txt', 'r') as file_data:
     data = file_data.readlines()
 
-#print(type(data))
-#words = data.split(' ')
 
 word_to_print=[]
 
