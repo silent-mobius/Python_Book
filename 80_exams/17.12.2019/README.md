@@ -94,3 +94,103 @@ no:| element  | lst
 3 |    |
 4 |    |
 5 |    |
+
+
+4. מה תהיה תוצאה של הקוד הבא
+   -  .ראה מטה
+```py
+
+def second_largest(numbers):
+  if (len(numbers)<2):
+    return 
+  if ((len(numbers)==2)  and (numbers[0] == numbers[1]) ):
+    return
+  dup_items = set()
+  uniq_items = []
+  for x in numbers:
+    if x not in dup_items:
+      uniq_items.append(x)
+      dup_items.add(x)
+  uniq_items.sort()
+  return  uniq_items[-2]  
+
+print(second_largest([1, 1, 1, 0, 0, 0, 2, -2, -2]))
+
+
+```
+
+   - הסבר ופרט בעזרת טבלת מעקב הבאה
+
+no: |  numbers | dup_items | uniq_items | x
+--- | -------- | --------- | ---------- | --
+1| | | |
+2| | | |
+3| | | |
+4| | | |
+5| | | |
+6| | | |
+7| | | |
+8| | | |
+9| | | |
+
+
+---
+
+## שאלות בנוסח אמקריקאי
+
+5. מה התוצאה של הקטע קוד הבא:
+
+```py
+tab = {1: 'python', 2: 'dev', 3 : 'week' , 4: 'is' , 5:'coming' } 
+print(' {0[1]:s} {0[2]:s} {0[3]:s} {0[4]:s} {0[5]:s}'.format(tab)) 
+```
+
+- a.1 2 3 4
+- b. 4 3 2 1
+- c.python dev week is coming
+- d.coming is week dev python
+
+6. מה התוצאה של הקטע קוד הבא :
+
+```py
+def printinfo( name='Bruce', age=54 ):
+   "This prints a passed info into this function"
+   print("Name: ", name, "Age: ", age)
+   return;
+
+printinfo( age=5, name="Lily" )
+
+```
+
+- a. Bruce, 54
+- b. 54, bruce
+- c. 5, lily
+- d. Lily, 5
+
+
+7. מה התוצאה של הקטע קוד הבא:
+
+```py
+with open("test.txt",'w') as f:
+    f.write("my first file\n")
+    f.write("This file\n\n")
+    f.write("contains three lines\n")
+```
+
+- a. יש תוצאה, כי תוכן נכתב לקובץ בשם test.txt
+- b. יש תוצאה, כי תוכן מצורף לקובץ בשם test.txt 
+- c. אין תוצאה, כי תוכן לא מצורף לקובץ בשם test.txt
+- d. אין תוצאה, כי יש טעות בקוד
+
+8. מה התוצאה של הקטע קוד הבא :
+
+```py
+my_list = ["mouse", [8, 4, 6], ['a']]
+
+mylist[1][2]
+```
+
+- a. 1, 2
+- b. 4
+- c.[8,4,6]
+- d. a
