@@ -65,7 +65,7 @@ def print_ascii_value_of_element(list):
 if len(data) == 0:
     data = get_data_from_user()
 else:
-    value = def print_ascii_value_of_element(data)
+    value = print_ascii_value_of_element(data)
 
 print(value)
 
