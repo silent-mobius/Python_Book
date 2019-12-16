@@ -72,16 +72,25 @@ print(value)
 ```
 
 3.מה תהיה תוצאה של הקוד הבא:
-    1.ראה מטה
+  - .ראה מטה
 
 ```py
 def printValues():
-    l = list()
-    for i in range(1,21):
-        l.append(i**2)
-    print(l)
+    lst = list()
+    for element in range(1,6):
+        lst.append(element**2)
+    print(lst)
 
 
 printValues()
 ```
-    1. הסבר ופרט ביזרת טבלת מעקב
+  - הסבר ופרט בעזרת טבלת מעקב הבאה
+
+
+no:| element  | lst
+--| -- | --
+1 |    |
+2 |    |
+3 |    |
+4 |    |
+5 |    |
