@@ -197,7 +197,7 @@ with open("test.txt",'w') as f:
 ```py
 my_list = ["mouse", [8, 4, 6], ['a']]
 
-mylist[1][2]
+my_list[1][2]
 ```
 
 - a. 1, 2
