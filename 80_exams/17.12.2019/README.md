@@ -46,28 +46,38 @@ get_taple_middle_element_from_list[dat]
 
 ```py
 data = []
+v = ' '
 
 def get_data_from_user():
     lst = []
     line = ' '
-    print("To exit input loop type EOL")
-    while line != 'EOL':
-        d = str(input("Please insert integers >> "))
-        lst.append(d)
+    print("To exit input loop type 999")
+    while line != '999':
+        line = input("Please insert integer >> ")
+        if line == '999':
+            break
+        elif len(line) > 1:
+            continue
+        else: 
+            lst.append(line)
     return lst
 
-def print_ascii_value_of_element(list):
+
+def print_ascii_value_of_element(lst):
     tmp = []
-    for element in list:
-        tmp.append(ord(element))
+    for i in lst:
+        if  str.isalpha(i):
+            pass
+        else:
+            tmp.append(ord(i))
     return tmp
 
 if len(data) == 0:
     data = get_data_from_user()
-else:
-    value = print_ascii_value_of_element(data)
 
-print(value)
+v = print_ascii_value_of_element(data) 
+
+print(v)
 
 ```
 
