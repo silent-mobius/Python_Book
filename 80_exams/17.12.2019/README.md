@@ -164,7 +164,7 @@ print(' {0[1]:s} {0[2]:s} {0[3]:s} {0[4]:s} {0[5]:s}'.format(tab))
 
 ```py
 def printinfo( name='Bruce', age=54 ):
-   "This prints a passed info into this function"
+   '''This prints a passed info into this function'''
    print("Name: ", name, "Age: ", age)
    return;
 
