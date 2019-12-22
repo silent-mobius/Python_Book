@@ -7,7 +7,6 @@ data3=(5,5,'a','b','c','a','c',5,'5','z','g','x')
 def shortest_list_in_collections(lst):
     short = len(lst)
     short_list =  []
-    new_list = []
 
     for i in lst:
         if type(i) == type(list()):
