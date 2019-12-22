@@ -10,17 +10,19 @@ def shortest_list_in_collections(lst):
     new_list = []
 
     for i in lst:
-        try:
-            if type(i) == type(list()):
-                for j in i:
-                    if type(j) == type(list()):
-                        if len(j) < short:
-                            short_list.append(j)
-        except:
-            print('error happened')
+        if type(i) == type(list()):
+            for j in i:
+                if type(j) == type(list()):
+                    if len(j) < short:
+                        short_list.append(j)
+        
+    return short_list
 
-        for i in short_list:
-            new_list = new_list + i
+
+def insert_to_new_list(lst):
+    new_list = []
+    for k in lst:
+        new_list = new_list + k
 
     return new_list
 
@@ -31,22 +33,24 @@ def print_collection(lst):
 
 
 tmp_data = shortest_list_in_collections(data1)
-
-print(tmp_data)
+new_tmp_data = insert_to_new_list(tmp_data)
+print(new_tmp_data)
 
 
 
 #2.1 #2.2
-new_tuple= []
-for i in data3:
-    if i not in new_tuple:
-        new_tuple.append(i)
+def get_duplicates_from_tuple(lst):
+    new_tuple= []
+    for i in data3:
+        if i not in new_tuple:
+            new_tuple.append(i)
 
-new_tuple = tuple(new_tuple)
+    new_tuple = tuple(new_tuple)
+    return new_tuple
 
-for i in new_tuple:
-    print(i,end=' ')
+tmp_tuple = get_duplicates_from_tuple(data3)
 
+print(tmp_tuple)
 # 3
 dict_element = data2[2]
 print()
