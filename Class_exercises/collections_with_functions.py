@@ -51,17 +51,21 @@ def get_duplicates_from_tuple(lst):
 tmp_tuple = get_duplicates_from_tuple(data3)
 
 print(tmp_tuple)
+
+
 # 3
-dict_element = data2[2]
-print()
 
-for k in dict_element:
+def get_element_from_dict(lst,position):
+    dict_element = lst[position]
+    for k in dict_element:
+        tmp = ord(str(k))
+        tmp = tmp + 1
+        lock = dict_element.index(k)
+        tmp = chr(tmp)
+        dict_element.insert(lock,tmp)
+        dict_element.pop(lock+1 )
+        
+    return(dict_element)
 
-    tmp = ord(str(k))
-    tmp = tmp + 1
-    lock = dict_element.index(k)
-    tmp = chr(tmp)
-    dict_element.insert(lock,tmp)
-    dict_element.pop(lock+1 )
-
-print(dict_element)
+tmp_data = get_element_from_dict(data2,2)
+print(tmp_data)
