@@ -4,13 +4,19 @@ data3=(5,5,'a','b','c','a','c',5,'5','z','g','x')
 
 #1.1 # 1.2
 short=len(data1)
+
 short_list=[]
+
 new_list=[]
+
 for i in data1:
     try:
         if type(i) == type(list()):
-            if len(i) < short:
-                short_list.append(i)
+            for j in i:
+                if type(j) == type(list()):
+                    if len(j) < short:
+                        short_list.append(j)
+
     
     except:
         print('error happened')
@@ -41,5 +47,4 @@ for k in dict_element:
     tmp = ord(str(k))
     tmp = tmp + 1
     tmp = chr(tmp)
-    print(tmp,end=' ')
-    
+
