@@ -2,7 +2,6 @@
 def shortest_list_in_collections(lst):
     short = len(lst)
     short_list =  []
-    new_list = []
 
     for i in lst:
         if type(i) == type(list()):
