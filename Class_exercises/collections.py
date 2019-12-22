@@ -46,5 +46,9 @@ for k in dict_element:
 
     tmp = ord(str(k))
     tmp = tmp + 1
+    lock = dict_element.index(k)
     tmp = chr(tmp)
+    dict_element.insert(lock,tmp)
+    dict_element.pop(lock+1)
 
+print(dict_element)
