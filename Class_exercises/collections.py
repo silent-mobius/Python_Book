@@ -29,5 +29,17 @@ for i in data3:
 
 new_tuple = tuple(new_tuple)
 
-print(new_tuple)
+for i in new_tuple:
+    print(i,end=' ')
 
+# 3
+dict_element = data2[2]
+print()
+
+for k in dict_element:
+
+    tmp = ord(str(k))
+    tmp = tmp + 1
+    tmp = chr(tmp)
+    print(tmp,end=' ')
+    
