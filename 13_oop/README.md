@@ -3,10 +3,10 @@
 
 ## OOP topics:
 
-- 
-- composition
-- inheritance
-- 
+- creating classes.
+- composition.
+- inheritance.
+- polymorphism.
 
 
 
