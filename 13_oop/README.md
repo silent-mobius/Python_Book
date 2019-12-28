@@ -1,5 +1,15 @@
 # Object Oriented Programming
 
+
+## OOP topics:
+
+- 
+- composition
+- inheritance
+- 
+
+
+
 ```py
 class Car:
     '''
@@ -21,9 +31,3 @@ class Car:
 - `__init__` :
 - `self`:
 
-
-OOP topics:
-- 
-- composition
-- inheritance
-- 
