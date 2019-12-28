@@ -14,9 +14,16 @@ class Car:
 
 ```
 
-- `object`:
+- `object`: model of data that can be used for building "alive" data type, besides
 - `class`: blue pring of object.
 - `docstring`:
 - `method` :
 - `__init__` :
+- `self`:
 
+
+OOP topics:
+- 
+- composition
+- inheritance
+- 
