@@ -24,9 +24,9 @@ class Car:
 
 ```
 
-- `object`: model of data that can be used for building "alive" data type, besides
+- `object`: model of data that can be used for building "alive" data type, besides premitive types.
 - `class`: blue pring of object.
-- `docstring`:
+- `docstring`: documentation line that shows
 - `method` :
 - `__init__` :
 - `self`:
