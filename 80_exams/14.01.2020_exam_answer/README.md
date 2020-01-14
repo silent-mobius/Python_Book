@@ -33,8 +33,11 @@ users=[]
 users.append('Karen')
 users.append('Michael')
 users.append('Jordan')
-users.pop() #
-
+users.pop() #users.remove(2)
+users.reverse()
+users.insert(1,'Alex')
+users = users + ['me', 'myself', 'Irene']
+new_users = users[0:2]
 ```
 
 ## Conditions and loops  תנאים ולולאות
@@ -52,9 +55,25 @@ else:
 print(value)
 ```
  - יש תקלות בקוד - אנא תתקנו אותם
+```py
+value = int(input("Enter an integer value: "))
+if value % 5 == 0 and value % 3 == 0:
+    print("FizzBuzz")
+elif value % 3 == 0:
+    print("Fizz")
+elif value % 5 == 0:
+    print("Buzz")
+else:
+    print(value)
+```
  - מה יקרה אם יכניסו ערך 6 לקוד ? 
+ ```py
+#Fizz
+ ```
  - מה יקרה עם יכניסו ערך 15 לקוד ?
-
+ ```py
+#FizzBuzz
+ ```
 
 ## Functions  פונקציות
 4.
