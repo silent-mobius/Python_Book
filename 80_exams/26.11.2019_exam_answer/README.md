@@ -2,6 +2,8 @@
 <h1>Python Exam</h1>
 </center>
 
+<!--
+
 0. בקוד נתון, מהי שגיאה:
 ```py
 1name = input ("Please insert your name")
@@ -167,3 +169,6 @@ printLine('Python')
 > * b.Python is awesome.
 * c.text is awesome.
 * d.is awesome.
+
+
+-->

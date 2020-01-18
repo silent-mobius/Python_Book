@@ -1,5 +1,5 @@
 # Full Python Exam
-
+<!--
 ## Variables and slicing  משתנים וחיתוך משתנים
 1.
 - נתונים משתמנים
@@ -48,3 +48,4 @@ print(value)
 
 
 
+-->

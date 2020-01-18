@@ -1,5 +1,7 @@
 # Python Exam
 
+<!--
+
 0.What does the following code do?
 ```py
     try:
@@ -124,3 +126,6 @@ Choose one
 * b.2.0
 * c.2.0 Oops! Error occurred.
 * d.None object
+
+
+-->
