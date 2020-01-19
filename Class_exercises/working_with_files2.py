@@ -1,5 +1,5 @@
 
-
+# working with files
 var = open('file.txt')
 
 for i in var.read():
