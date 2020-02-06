@@ -1,8 +1,10 @@
 # Python Essentials
-___
 
-<center>Python 101</center>
-
+<h2 style='background-color:lightgreen'>
+    <center style='color:black'>
+        Python 101
+    </center>
+</h2>
 
 What is a programming language?
 Set of conventions for authoring computer programs
@@ -15,7 +17,7 @@ A set of instructions for how a computer should react to various inputs and outp
 ---
 *   Assembly language:
     *   Processor specific --> not portable
-    *   inary correspondence
+    *   Binary correspondence
     *   Easier to read than punch cards or binary
     *   more info [here](https://en.wikipedia.org/wiki/Assembly_language)
 ---
@@ -30,7 +32,7 @@ A set of instructions for how a computer should react to various inputs and outp
      *    JS, Python, Ruby, Groovy, Bash:
      *    more info [here](https://en.wikipedia.org/wiki/Scripting_language)
 
-###   Types of languages
+###   `Types of languages`
 
 *  Compiled Languages:
   -  C, C++, C#, Objective-C
@@ -67,7 +69,7 @@ Object-oriented programming (OOP) is a programming paradigm based on the concept
 
 ### REPL: Python Interpreter 
 <!-- needs to have explanation-->
-As mention in [previous chapter](../00_intro/README.md) python is interpreted language. The interpretation for this kind of projects is done in a manner of REPL.
+As mentioned [before](#types-of-languages) python is interpreted language. The interpretation for this kind of projects is done in a manner of REPL.
 
 Read–eval–print loop (REPL), also termed an interactive toplevel or language shell, is a simple, interactive computer programming environment that takes single user inputs (i.e., single expressions), evaluates (executes) them, and returns the result to the user.
 
