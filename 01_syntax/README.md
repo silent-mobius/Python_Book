@@ -22,6 +22,14 @@ The `print` function takes the result provided (yielded) by eval, and prints it 
 
 The development environment then returns to the read state, creating a `loop`, which terminates when the program is closed. 
 
+REPL's are interactive, by which i mean that they interact with the user by success, the command provided to REPL with work or by error, the command will `NOT` work. REPL usually looks same as command line, for example: 
+
+- Open cmd/terminal of your OS
+- Type in it `python3` command and you are in
+- It should look like this:
+  - ![](../.img/repl.png)
+- In case you see  `python 2.7` instead of what you have in picture, then it means that you need to upgrade your current version of python to `python 3.6` or higher.
+
 ### Saving the code
 
 Although running in REPL is fun and all, one must always run the list of commands from somewhere, mostly because it misses point of programming if you'll run all the commands manually. 
