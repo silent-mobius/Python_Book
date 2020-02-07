@@ -1,3 +1,111 @@
+# Python Essentials
+
+<h2 style='background-color:lightgreen'>
+    <center style='color:black'>
+        Python 101
+    </center>
+</h2>
+
+What is a programming language?
+Set of conventions for authoring computer programs
+What's a program?
+A set of instructions for how a computer should react to various inputs and outputs
+
+
+### History Lesson:
+*   Punch cards - [read it for history sake](https://en.wikipedia.org/wiki/Punched_card)
+---
+*   Assembly language:
+    *   Processor specific --> not portable
+    *   Binary correspondence
+    *   Easier to read than punch cards or binary
+    *   more info [here](https://en.wikipedia.org/wiki/Assembly_language)
+---
+*   "Higher level" languages
+      *   Fortran, Cobol, C, C++, C#:
+      *   Easier to read and write
+      *   Slightly more portable
+      *   more infor [here](https://en.wikipedia.org/wiki/High-level_programming_language)
+  
+---
+*    Scripting languages:
+     *    JS, Python, Ruby, Groovy, Bash:
+     *    more info [here](https://en.wikipedia.org/wiki/Scripting_language)
+
+###   `Types of languages`
+
+*  Compiled Languages:
+  -  C, C++, C#, Objective-C
+  -  [read about compiler](https://en.wikipedia.org/wiki/Compiler)
+*  Scripting languages:
+  - Python, Ruby, Javascript, Lua
+  - [read about run time environment](https://en.wikipedia.org/wiki/Runtime_system)
+
+
+### Programming Language Styles
+
+*   Procedural
+*   Object Oriented
+
+
+### Procedural Languages
+
+Procedural programming is a programming paradigm, derived from structured programming,based on the concept of the procedure call. Procedures, also known as routines, subroutines, or functions, simply contain a series of computational steps to be carried out. Any given procedure might be called at any point during a program's execution, including by other procedures or itself.
+
+*   Procedures/Routines/Subroutines/Functions that include series of functions
+*   [link](https://en.wikipedia.org/wiki/Procedural_programming)
+
+
+
+### Object Oriented Languages
+Object-oriented programming (OOP) is a programming paradigm based on the concept of "objects", which can contain data, in the form of fields (often known as attributes or properties), and code, in the form of procedures (often known as methods). A feature of objects is an object's procedures that can access and often modify the data fields of the object with which they are associated (objects have a notion of "this" or "self").
+
+*   Represent objects
+*   Define their properties
+*   Define ways to manipulate them
+*   Object inheritance
+*   [link](https://en.wikipedia.org/wiki/Object-oriented_programming)
+
+
+### REPL: Python Interpreter 
+<!-- needs to have explanation-->
+As mentioned [before](#types-of-languages) python is interpreted language. The interpretation for this kind of projects is done in a manner of REPL.
+
+Read–eval–print loop (REPL), also termed an interactive toplevel or language shell, is a simple, interactive computer programming environment that takes single user inputs (i.e., single expressions), evaluates (executes) them, and returns the result to the user.
+
+In a REPL, the user enters one or more expressions (rather than an entire compilation unit) and the REPL evaluates them and displays the results. The name read–eval–print loop comes from the names of the Lisp primitive functions which implement this functionality:
+
+The `read` function accepts an expression from the user, and parses it into a data structure in memory. For instance, the user may enter the s-expression (+ 1 2 3), which is parsed into a linked list containing four data elements.
+
+The `eval` function takes this internal data structure and evaluates it. In Lisp, evaluating an s-expression beginning with the name of a function means calling that function on the arguments that make up the rest of the expression. So the function + is called on the arguments 1 2 3, providing (yielding) the result 6.
+
+The `print` function takes the result provided (yielded) by eval, and prints it out to the user. If it is a complex expression, it may be pretty-printed to make it easier to understand.
+
+The development environment then returns to the read state, creating a `loop`, which terminates when the program is closed. 
+
+REPL's are interactive, by which i mean that they interact with the user by success, the command provided to REPL with work or by error, the command will `NOT` work. REPL usually looks same as command line, for example: 
+
+- Open cmd/terminal of your OS
+- Type in it `python3` command and you are in
+- It should look like this:
+  - ![](../.img/repl.png)
+- In case you see  `python 2.7` instead of what you have in picture, then it means that you need to upgrade your current version of python to `python 3.6` or higher.
+
+### Saving the code
+
+Although running in REPL is fun and all, one must always run the list of commands from somewhere, mostly because it misses point of programming if you'll run all the commands manually. 
+
+list of python (or any other high level language) commands that are saved in to the file is usually called as `code`.
+
+To write code, we use a type of `text editor` to write and run it. There are many text editor on www, here is short list of ones that i'd suggest for this course:
+
+- GEANY --> a lightweight IDE for general purpose of development.
+  - ![GEANY](../.img/geany.png) 
+- ATOM --> a extencible text editor with bunch tools that can be added.
+  - ![ATOM](../.img/atom.png) 
+- VSCODIUM --> a clone project of atom and vscode with more native OpenSource licensing and agenda.
+  - ![VSCODIUM](../.img/vscode.png) 
+
 # Python Syntax
 ---
 
@@ -6,10 +114,6 @@ Python syntax can be executed by writing directly in the Command Line: [img]
 
 Or by creating a python file on the server, using the .py file extension, and running it in the Command Line: [img]
 
-### Python Interpreter
-<!-- needs to have explanation-->
-
-> *_Note_* Expression: piece of code/calculation that produces end value
 
 ### Python Indentation
 
@@ -50,15 +154,18 @@ Comments can be used to prevent execution when testing code.
 Creating a Comment
 
 Comments starts with a #, and Python will ignore them:
+
 ```py
 #This is a comment
 print("Hello, World!")
 ```
 Comments can be placed at the end of a line, and Python will ignore the rest of the line:
+
 ```py
 print("Hello, World!") #This is a comment
 ```
 Comments does not have to be text to explain the code, it can also be used to prevent Python from executing code:
+
 ```py
 #print("Hello, World!")
 print("Cheers, Mate!")
@@ -68,12 +175,15 @@ print("Cheers, Mate!")
 Python does not really have a syntax for multi line comments.
 
 To add a multiline comment you could insert a # for each line:
+
 ```py
 #This is a comment
 #written in
 #more than just one line
 print("Hello, World!")
+
 ```
+
 Or, not quite as intended, you can use a multiline string.
 Since Python will ignore string literals that are not assigned to a variable, you can add a multiline string (triple quotes) in your code, and place your comment inside it:
 ```py
@@ -86,177 +196,6 @@ print("Hello, World!")
 ```
 As long as the string is not assigned to a variable, Python will read the code, but then ignore it, and you have made a multiline comment.
 
-
-# Python Variables
-
-### Creating Variables
-Variables are containers for storing data values.
-Unlike other programming languages, Python has no command for declaring a variable.
-A variable is created the moment you first assign a value to it.
-
-```py
-x = 7
-y = "Alex "
-print(x)
-print(y)
-```
-
-Variables do not need to be declared with any particular type and can even change type after they have been set.
-
-```py
-x = 4 # x is of type int
-x = "rhcp" # x is now of type str
-print(x)
-```
-
-String variables can be declared either by using single or double quotes:
-
-```py
-x = "John"
-# is the same as
-x = 'John'
-```
-
-### Variable Names
-
-A variable can have a short name (like x and y) or a more descriptive name (age, carname, total_volume). Rules for Python variables:
-
-*   A variable name must start with a letter or the underscore character
-*   A variable name cannot start with a number
-*   A variable name can only contain alpha-numeric characters and underscores (A-z, 0-9, and _ )
-*   Variable names are case-sensitive (age, Age and AGE are three different variables)
-
-> **Remember that variable names are case-sensitive**
-
-### Assign Value to Multiple Variables
-
-Python allows you to assign values to multiple variables in one line:
-
-```py
-x, y, z = "Orange", "Banana", "Cherry"
-print(x)
-print(y)
-print(z)
-```
-
-And you can assign the same value to multiple variables in one line:
-
-```py
-x = y = z = "Orange"
-print(x)
-print(y)
-print(z)
-```
-
-### Output Variables
-
-The Python print statement is often used to output variables.
-To combine both text and a variable, Python uses the + character:
-
-```py
-x = "awesome"
-print("Python is " + x)
-```
-
-You can also use the + character to add a variable to another variable:
-
-```py
-x = "Python is "
-y = "awesome"
-z =  x + y
-print(z)
-```
-
-For numbers, the + character works as a mathematical operator:
-```py
-x = 5
-y = 10
-print(x + y)
-```
-
-If you try to combine a string and a number, Python will give you an error:
-
-```py
-x = 5
-y = "John"
-print(x + y)
-```
----
----
-
-### Somewhat Advanced
-### Random Number
-
-Python does not have a random() function to make a random number, but Python has a built-in module called random that can be used to make random numbers:
-
-Import the random module, and display a random number between 1 and 9:
-import random
-
-print(random.randrange(1,10))
-In our Random Module Reference you will learn more about the Random module.
-
----
-
-## Some What Advanced
-### Global Variables
-
-Variables that are created outside of a function (as in all of the s above) are known as global variables.
-Global variables can be used by everyone, both inside of functions and outside.
-
-Create a variable outside of a function, and use it inside the function
-
-```py
-x = "awesome"
-
-def myfunc():
-  print("Python is " + x)
-
-myfunc()
-```
-
-If you create a variable with the same name inside a function, this variable will be local, and can only be used inside the function. The global variable with the same name will remain as it was, global and with the original value.
-Create a variable inside a function, with the same name as the global variable
-
-```py
-x = "awesome"
-
-def myfunc():
-  x = "fantastic"
-  print("Python is " + x)
-
-myfunc()
-
-print("Python is " + x)
-```
-
-### The global Keyword
-
-Normally, when you create a variable inside a function, that variable is local, and can only be used inside that function.
-To create a global variable inside a function, you can use the global keyword.
-If you use the global keyword, the variable belongs to the global scope:
-
-```py
-def myfunc():
-  global x
-  x = "fantastic"
-
-myfunc()
-
-print("Python is " + x)
-```
-Also, use the global keyword if you want to change a global variable inside a function.
-To change the value of a global variable inside a function, refer to the variable by using the global keyword:
-
-```py
-x = "awesome"
-def myfunc():
-  global x
-  x = "fantastic"
-
-myfunc()
-
-print("Python is " + x)
-```
 
 
 # Python Data Types
@@ -293,19 +232,19 @@ print(type(x))
 In Python, the data type is set when you assign a value to a variable:
 
 ```py
-x = "Hello World"                       #	str 	
-x = 20 	                                #   int 	
-x = 20.5 	                            #   float 	 	
-x = ["apple", "banana", "cherry"] 	    #   list 	
-x = ("apple", "banana", "cherry") 	    #   tuple 	
-x = range(6) 	                        #   range 	
-x = {"name" : "John", "age" : 36} 	    #   dict 	
-x = {"apple", "banana", "cherry"}   	#   set 	
-x = frozenset({"apple", "banana", "cherry"}) 	#   frozenset 	
-x = True 	                            #   bool 	
-x = b"Hello" 	                        #   bytes 	
-x = bytearray(5) 	                    #   bytearray 	
-x = memoryview(bytes(5)) 	            #   memoryview 	
+x = "Hello World" #	str 	
+x = 20 	#int 	
+x = 20.5 	#float 	 	
+x = ["apple", "banana", "cherry"] 	#list 	
+x = ("apple", "banana", "cherry") 	#tuple 	
+x = range(6) 	#range 	
+x = {"name" : "John", "age" : 36} 	#dict 	
+x = {"apple", "banana", "cherry"} 	#set 	
+x = frozenset({"apple", "banana", "cherry"}) 	#frozenset 	
+x = True 	#bool 	
+x = b"Hello" 	#bytes 	
+x = bytearray(5) 	#bytearray 	
+x = memoryview(bytes(5)) 	#memoryview 	
 ```
 
 ### Setting the Specific Data Type
@@ -313,20 +252,20 @@ x = memoryview(bytes(5)) 	            #   memoryview
 If you want to specify the data type, you can use the following constructor functions:
 
 ```py
-x = str("Hello World")                      #	str 	
-x = int(20) 	                            #   int 	
-x = float(20.5)                         	#   float 	
-x = complex(1j) 	                        #   complex 	
-x = list(("apple", "banana", "cherry")) 	#   list 	
-x = tuple(("apple", "banana", "cherry")) 	#   tuple 	
-x = range(6) 	                            #   range 	
-x = dict(name="John", age=36)           	#   dict 	
-x = set(("apple", "banana", "cherry")) 	    #   set 	
+x = str("Hello World") #	str 	
+x = int(20) 	#int 	
+x = float(20.5) 	#float 	
+x = complex(1j) 	#complex 	
+x = list(("apple", "banana", "cherry")) 	#list 	
+x = tuple(("apple", "banana", "cherry")) 	#tuple 	
+x = range(6) 	#range 	
+x = dict(name="John", age=36) 	#dict 	
+x = set(("apple", "banana", "cherry")) 	#set 	
 x = frozenset(("apple", "banana", "cherry")) 	#frozenset 	
-x = bool(5) 	                            #   bool 	
-x = bytes(5) 	                            #   bytes 	
-x = bytearray(5) 	                        #   bytearray 	
-x = memoryview(bytes(5))                	#   memoryview 	
+x = bool(5) 	#bool 	
+x = bytes(5) 	#bytes 	
+x = bytearray(5) 	#bytearray 	
+x = memoryview(bytes(5)) 	#memoryview 	
 ```
 
 ---
@@ -822,11 +761,11 @@ Nested list are accessed using nested indexing.
     # Error! Only integer can be used for indexing
     # my_list[4.0]
     # Nested List
-    n_list = ["Happy", [2,0,2,0]]
+    n_list = ["Happy", [2,0,1,5]]
     # Nested indexing
     # Output: a
     print(n_list[0][1])    
-    # Output: 0
+    # Output: 5
     print(n_list[1][3])
 ```
 
@@ -1146,16 +1085,16 @@ We can access a range of items in a tuple by using the slicing operator - colon 
 ```py
     my_tuple = ('p','y','t','h','o','n',' ','c','o','u','r','s','e')
 
-    # elements 1st to 4th
-    # Output: ('y', 't', 'h')
+    # elements 2nd to 4th
+    # Output: ('r', 'o', 'g')
     print(my_tuple[1:4])
 
     # elements beginning to 2nd
-    # Output: (''p', 'y', 't', 'h', 'o', 'n')
+    # Output: ('p', 'r')
     print(my_tuple[:-7])
 
     # elements 8th to end
-    # Output: (('c', 'o', 'u', 'r', 's', 'e'))
+    # Output: ('i', 'z')
     print(my_tuple[7:])
 
     # elements beginning to end
@@ -1783,7 +1722,6 @@ print(len(squares))
 print(sorted(squares))
 ```
 
-
 # Python Operators
 
 ## What are operators in python?
@@ -2042,7 +1980,6 @@ print(1 in y)
 print('a' in y)
 ```
 Here, 'H' is in x but 'hello' is not present in x (remember, Python is case sensitive). Similary, 1 is key and 'a' is the value in dictionary y. Hence, 'a' in y returns False.
-
 
 # Python Printout
 
@@ -2335,6 +2272,44 @@ print("%-9.4f" % 5.1234567890)
 
 > Output: 5.1235
 
+# Python Command Line Input
+
+Python allows for command line input.
+That means we are able to ask the user for input.
+The method is a bit different in Python 3.6 than Python 2.7.
+
+* Python 3.6 uses the input() method.
+* Python 2.7 uses the raw_input() method.
+
+The following example asks for the user's name, and when you entered the name, the name gets printed to the screen:
+
+> Python 3.6
+```python
+print("Enter your name:")
+x = input()
+print("Hello ", x)
+```
+
+```python
+Python 2.7
+print("Enter your name:")
+x = raw_input()
+print("Hello ", x)
+```
+
+> Save this file as demo_input.py, and load it through the command line/poweshell:
+C:\Users\Your Name>python demo_input.py
+
+Our program will prompt the user for a string:
+Enter your name:
+
+The user now enters a name:
+Alex
+
+Then, the program prints it to screen with a little message:
+> Hello Alex
+
+
 # Python Operators, Conditions and If statements
 
 ## Python Arithmetic, Comparison and Logical Operators
@@ -2523,8 +2498,7 @@ Output :
 >You are eligible to see the Football match.
 >Tic kit price is $20
 
-In the above example age is set to 38, therefore the first expression (age >= 11) evaluates to True and the associated print statement prints the string "You are eligible to see the Football match". There after program control goes to next if statement and the condition ( 38 is outside <=20 or >=60) is matched and prints "Tic kit price is $12".
-
+In the above example age is set to 38, therefore the first expression (age >= 11) evaluates to True and the associated print statement prints the string "You are eligible to see the Football match". There after program control goes to next if statement and the condition ( 38 is outside <=20 or >=60) is matched and prints "Tic ket price is $12".
 
 
 # Python Loops
@@ -2907,7 +2881,6 @@ for x in range(7):
 5
 
 In the above example, the for loop prints all the numbers from 0 to 6 except 3 and 6 as the continue statement returns the control of the loop to the top
-
 
 <center> Collections </center>
 ===
@@ -3651,725 +3624,3 @@ f.close()
 ```
 This type of statement makes sure that the file is closed whether an exception occurs or not.
 
-
-
-
-
-# Standard Libarary
-
-## Modules and how to use them
-
-## Batteries included
-
-### os
-
-### sys
-
-### platform
-
-### ipaddress
-
-### ssh
-
-### request
-
-### sqlite
-
-
-
-
-# Class Exercises
-
-```py
-
-# working with files
-var = open('file.txt')
-
-for i in var.read():
-    print(i,end='')
-
-var.close()
-
-
-with open('file.txt') as var:
-    for i in var.readlines():
-        print(i)
-```
-
-```py
-# working with files 2
-
-
-f = open('file.txt','r')
-var = -1
-#print(f.read(10))
-#print(f.readlines())
-for line in f.read():
-    #print(line,end=' ')
-    if line == '\n':
-        var = var + 1
-    
-    if var == 1:
-        print(line,end=' ')
-
-
-
-f.close()
-```
-
-
-```py
-# Tracking table example code
-
-# Program to multiply two matrices using nested loops
-# 3x3 matrix
-X = [[12,7,3],
-    [4 ,5,6],
-    [7 ,8,9]]
-# 3x4 matrix
-Y = [[5,8,1,2],
-    [6,7,3,0],
-    [4,5,9,1]]
-# result is 3x4
-result = [[0,0,0,0],
-            [0,0,0,0],
-            [0,0,0,0]]
-# iterate through rows of X
-for i in range(len(X)):
-    # iterate through columns of Y
-    for j in range(len(Y[0])):
-        # iterate through rows of Y
-        for k in range(len(Y)):
-            result[i][j] += X[i][k] * Y[k][j]
-for r in result:
-    print(r)
-
-```
-
-```py
-# functions and collections
-data2={1:['a','b','c',5,6,7],2:[5,6,7,'c','b','a'],3:(1,2),4:(3,4)}
-
-
-def get_element_from_dict(par1,par2):
-    tmp_data = par1[par2]
-    for d in tmp_data:
-        tmp = ord(str(d))
-        tmp = tmp+1
-        tmp = chr(tmp)
-        lock = tmp_data.index(d)
-        tmp_data.insert(lock,tmp)
-        tmp_data.pop(lock+1)
-    
-    return tmp_data 
-
-
-print(get_element_from_dict(data2,2))
-
-```
-
-```py
-#Slicing strings
-var = "Daniel Kuraev"
-
-def splitname(var):
-    tmp = var.split(" ")
-    return tmp[0]
-
-print(splitname(var))
-```
-
-```py
-# reverse string 
-
-def r_func(string):
-    return string[::-1]
-
-var = r_func('Ali Baba')
-
-print(var)
-```
-
-```py
-# multiple  reverse functions
-
-def reverse_nameing(name,lname):
-    return lname+" "+name
-
-def reverse_lettering(var):
-    return var[::-1]
-
-
-name = input("Please enter name ")
-lname = input("Please enter last name ")
-
-print(reverse_nameing(name,lname))
-print(reverse_lettering(name),reverse_lettering(lname))
-
-```
-
-```py
-# recursion
-def sum(list):
-    sum = 0
-
-    # Add every number in the list.
-    for i in range(0, len(list)):
-        sum = sum + list[i]
-        
-    # Return the sum.
-    return sum
-
-
-def r_sum(list):
-    if len(list) <= 1:
-        return list[0]
-    else:
-        return list[0] + r_sum(list[1:])
-
-
-print(sum([5,7,3,8,10]))
-
-print(r_sum([5,7,3,8,10]))
-```
-
-```py
-#input output type print
-print("Please enter 2 numbers: ")
-num1=input()
-num2=input()
-sentance=input("Please insert long string: ")
-print(type(num1),type(num2))
-
-```
-
-
-```py
-# Conditions and Operators
-
-num1=int(input("Please enter num1: "))
-num2=int(input("Please enter num2: "))
-
-print(type(num1),type(num2))
-
-if num1 > num2:
-print("Yes")
-
-if num1 > num2:
-    print("Yes")
-elif num1 < num2:
-    print("No")
-
-if num1 > num2:
-    print("Yes")
-elif num1 < num2:
-    print("No")
-elif num1 >= num2:
-    print("Yes")
-elif num1 <= num2:
-    print("No")
-else:
-    print("Error")
-
-if (num1>=num2) and (num1<=num2):
-    print("Both")
-else:
-    print("what ever")
-
-if (num1>=num2) or (num1<=num2):
-    print("Both")
-else:
-    print("what ever")
-
-if (num1>=num2) and not  (num1<=num2):
-    print("Both")
-else:
-    print("what ever")
-
-```
-
-```py
-#conditions and operators
-if 'l' in 'Alex':
-    print("includes")
-```
-
-```py
-# Loops and operators
-num1 = -5
-num2 = 5
-while num1 < num2:
-    print(f'{num1} is smaller then {num2}')
-    num1 = num1 + 1
-    num2 = num2 - 1
-```
-
-```py
-#Loops and operators
-
-for index in "Portugese Malanga":
-    print(index,end=' ')
-    if (index == "a") or (index == "A"):
-        print("Found", index)
-        break
-```
-
-```py
-# Loops and Operators
-var="Alex Schapelle"
-for i in range(len(var)):
-    print(i)
-```
-
-```py
-# reading files
-with open('story.txt', 'r') as file_data:
-    data = file_data.readlines()
-
-
-word_to_print = []
-
-for word in range(len(data)):
-    if word % 4 == 0:
-        word_to_print.append(data[word])   
-
-word_to_print = set(word_to_print)
-
-print(word_to_print, end='')
-
-```
-
-```py
-# functions and operators
-
-def calc_radius(num):
-    pi = 3.14
-    return pi * num ** 2
-
-var =float( input("Please enter radius"))
-
-print(calc_radius(var))
-```
-
-```py
-# functions and strings
-def r_func(string):
-    tmp = []
-    for i in string:
-        tmp.append(i)
-    
-    return tmp
-
-
-var = r_func('ali baba')
-
-print(var)
-```
-
-```py
-# lists and loops
-long_list=[]
-
-num = 0
-target = 'a'
-
-while len(long_list) < 10:
-    data = input("Please inset some data: ")
-    if data == target :
-        num = num + 1
-    long_list.append(data)
-    
-
-print(long_list, num)
-
-```
-
-```py
-#lists and loops
-fruits = []
-
-while len(fruits) < 7:
-    fruit = input("Please enter fruit: ")
-    if fruit in fruits:
-        print(fruit, " is already in list, please try again")
-        continue
-    else:
-        fruits.append(fruit)
-
-print(len(fruits), fruits)
-```
-```py
-# loops and lists
-lst = [1,2,3,'a','b','c',[3,2,1],[4,3,2],(2,4,6),{9,8,7}, {1:0,2:1,3:2,4:3}]
-
-for i in lst:
-    print(i,end=' ')
-
-print()
-x = 0
-
-while x < len(lst):
-    print(lst[x],end=' ')
-    x = x + 1 # x += 1
-###########################################
-print()
-
-lst.append('Alex')
-print(lst, end=' ')
-lst.pop(1)
-print(lst, end=' ')
-lst.insert(4,'ninja')
-print(lst, end=' ')
-lst.remove('a')
-print(lst, end=' ')
-lst.reverse()
-print(lst, end=' ')
-#lst.sort()
-#print(lst, end=' ')
-lst.index('ninja')
-print(lst, end=' ')
-lst.clear()
-print(lst, end=' ')
-
-print()
-lst = [1,2,3,'a','b','c',[3,2,1],[4,3,2],(2,4,6),{9,8,7}, {1:0,2:1,3:2,4:3}]
-
-def type_print(lst):
-
-    for i in lst:
-        print(i,type(i))
-
-new_list=(type_print(lst))
-
-print(new_list)
-```
-
-```py
-# functions and ints
-
-nterms = int(input("How many terms? "))
-
-n1, n2 = 0, 1
-count = 0
-if nterms <= 0:
-   print("Please enter a positive integer")
-elif nterms == 1:
-   print("Fibonacci sequence upto",nterms,":")
-   print(n1)
-else:
-   print("Fibonacci sequence:")
-   while count < nterms:
-       print(n1)
-       nth = n1 + n2
-       n1 = n2
-       n2 = nth
-       count += 1
-```
-
-```py
-
-# functions and strings
-def f_length(string,string2):
-    if len(string) == len(string2):
-        return 0
-    else:
-        return 1
-
-var = f_length('kaka', 'baba')
-
-print(var)
-
-
-var = f_length('kuro shitake', 'ahoi akuma')
-
-print(var)
-```
-
-```py
-# conditions and booleans
-boy=input("Does Boy Loves Girl: ")
-girl=input("Does Girl Loves Boy: ")
-love=True
-
-if boy == girl:
-    print(love)
-else:
-    love=False
-    print(love)
-
-```
-
-```py
-#operators
-
-alfa=float(input("Please enter Alfa: "))
-beta=float(input("Please enter Beta: "))
-gamma=float(input("Please enter Gamma: "))
-delta=float(input("Please enter Delta: "))
-
-
-print(alfa+delta)
-print(alfa-delta)
-print(alfa/delta)
-print(alfa*delta)
-print(alfa**delta)
-print(alfa//delta)
-print(alfa%delta)
-
-print(beta<gamma)
-print(beta>gamma)
-print(beta<=gamma)
-print(beta>=gamma)
-print(beta==gamma)
-print(beta!=gamma)
-
-```
-
-
-```py
-# input output
-name=input("Please enter your name: ")
-lname=input("Please enter your last name:")
-_id=input("Please enter your id: ")
-address=input("Please enter your address: ")
-age=input("Please enter your age: ")
-
-print("the provided details were: ",name,lname,_id,address,age)
-```
-
-
-```py
-#while loop
-i=0
-while i < 10:
-    print(i)
-    i = i + 1
-    # i += 1 shortcut to i = i + 1
-
-x = 0
-
-while x<100:
-    if x%2==0:
-        print(x)
-    x = x+1
-
-#break
-#continue
-
-i=0
-
-while i < 6:
-    print(i)
-    if i==3:
-        break
-    i += 1
-
-i=0
-
-while i < 6:
-    i += 1
-    print(i)
-    if i==3:
-        continue
-
-
-
-i = 1
-while i < 6:
-    print(i)
-    i += 1
-else:
-    print("Iisnolonger smaller then 6")
-
-```
-
-```py
-#for loop and collections
-detail_name = input("Please insert name: ")
-detail_lname = input("Please insert last name: ")
-detail_id = input("Please insert id: ")
-detail_address = input("Please insert address: ")
-
-if detail_name == '' or detail_name == None:
-    detail_name = input("Please insert name: ")
-
-if detail_lname == '' or detail_lname == None:
-    detail_lname = input("Please insert last name: ")
-
-if detail_id == '' or detail_id == None:
-    detail_id = input("Please insert id: ")
-
-if detail_address == '' or detail_address == None:
-    detail_address = input("Please insert address: ")
-
-character_list = []
-
-for letter in detail_name:
-    character_list.append(letter)
-
-for letter in detail_lname:
-    character_list.append(letter)
-
-for letter in detail_id:
-    character_list.append(letter)
-
-for letter in detail_address:
-    character_list.append(letter)
-
-uniq_character_set = set(character_list)
-
-print("The unique chatacters in your details: ", uniq_character_set,"amount of characters is :", len(uniq_character_set))
-```
-
-```py
-# functions and conversions
-def convert_to_list(data):
-    tmp = str(data).split(',')
-    return list(tmp)
-
-def convert_to_tuple(data):
-    tmp = str(data).split(',')
-    return tuple(tmp)
-
-data = input("Please enter comma seperated values: ")
-
-print(convert_to_list(data), convert_to_tuple(data))
-
-```
-
-
-```py
-#code flow
-## library imports
-
-## variable definition:
-
-date_a=input("Please enter date A: ")
-date_b=input("Please enter date B: ")
-
-year_a = int(date_a.split('.')[2])
-month_a = int(date_a.split('.')[1])
-day_a = int(date_a.split('.')[0])
-
-year_b = int(date_b.split('.')[2])
-month_b = int(date_b.split('.')[1]) 
-day_b = int(date_b.split('.')[0])
-
-## function deifinition:
-
-
-def year_calc(year_a, year_b):
-    return ((year_a - year_b)*365)
-
-
-def month_calc(month_a, month_b):
-    if month_a == 2 or month_b == 2:
-        return ((month_a-month_b)*28)
-    else:
-        return ((month_a-month_b)*30)
-
-
-def day_calc(day_a, day_b):
-    return(day_a - day_b)
-
-
-def deco(var):
-    print("###################################")
-    print("#", var)
-    print("###################################")
-
-#####
-#Main -_-
-#####
-year = year_calc(year_a,year_b)
-month = month_calc(month_a,month_b)
-day = day_calc(day_a,day_b)
-
-var =year+month+day
-
-deco(var)
-
-deco(year_calc(year_a,year_b)+month_calc(month_a,month_b)+day_calc(day_a,day_b))
-```
-
-
-```py
-
-# functions, collections and flow
-
-#function declarations
-def shortest_list_in_collections(lst):
-    short = len(lst)
-    short_list =  []
-
-    for i in lst:
-        if type(i) == type(list()):
-            for j in i:
-                if type(j) == type(list()):
-                    if len(j) < short:
-                        short_list.append(j)
-        
-    return short_list
-
-
-def insert_to_new_list(lst):
-    new_list = []
-    for k in lst:
-        new_list = new_list + k
-
-    return new_list
-
-    
-def print_collection(lst):
-    for i in lst:
-        print(i)
-
-def get_duplicates_from_tuple(lst):
-    new_tuple= []
-    for i in data3:
-        if i not in new_tuple:
-            new_tuple.append(i)
-
-    new_tuple = tuple(new_tuple)
-    return new_tuple
-
-
-def get_element_from_dict(lst,position):
-    dict_element = lst[position]
-    for k in dict_element:
-        tmp = ord(str(k))
-        tmp = tmp + 1
-        lock = dict_element.index(k)
-        tmp = chr(tmp)
-        dict_element.insert(lock,tmp)
-        dict_element.pop(lock+1 )
-        
-    return(dict_element)
-
-#######################################################################
-### Main Funtion
-#######################################################################
-
-if __name__ == "__main__" :
-
-    data1=[1,2,3,[1,2,3,4,5,6],[[1,2],[3,4],[5,6]],((1,2),(3,4))]
-    data2={1:['a','b','c',5,6,7],2:[5,6,7,'c','b','a'],3:(1,2),4:(3,4)}
-    data3=(5,5,'a','b','c','a','c',5,'5','z','g','x')
-
-    #1.1 # 1.2
-    tmp_data = shortest_list_in_collections(data1)
-    new_tmp_data = insert_to_new_list(tmp_data)
-    print(new_tmp_data)
-
-    #2.1 #2.2
-    tmp_tuple = get_duplicates_from_tuple(data3)
-    print(tmp_tuple)
-
-    # 3
-    tmp_data = get_element_from_dict(data2,2)
-    print(tmp_data)
-
-```
-
----
-#####  **_This Material is developed by Alex M. Schapelle and [VAIOLabs inc](https://vaiolabs.com) and is distributed under [GPLv3](../Linux-Labs/LICENSE)_** 
