@@ -86,9 +86,9 @@ print('x >= y is',x>=y)
 print('x <= y is',x<=y)
 ```
 
-Logical operators
+### Logical operators
 
-Logical operators are the and, or, not operators.
+Logical operators are the `and`, `or`, `not` operators.
 
 Operator | Meaning | Example
 ------- | -------- | ----------
@@ -110,7 +110,8 @@ print('not x is',not x)
 
 
 The truth table for and is given below:
-#### Truth table for *_and_*
+
+#### The truth table for *_and_* operator
 
 A |	B |	A and B
 -- \| -- | --- 
@@ -119,7 +120,7 @@ True |	False |	False
 False |	True |	False
 False |	False |	False
 
-####  The truth table for *_or_* is given below:
+####  The truth table for *_or_* operator is given below:
 
 Truth table for or
 A |	B |	A or B
