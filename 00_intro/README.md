@@ -13,6 +13,7 @@ A set of instructions for how a computer should react to various inputs and outp
 
 
 ### History Lesson:
+
 *   Punch cards - [read it for history sake](https://en.wikipedia.org/wiki/Punched_card)
 ---
 *   Assembly language:
@@ -32,11 +33,12 @@ A set of instructions for how a computer should react to various inputs and outp
      *    JS, Python, Ruby, Groovy, Bash:
      *    more info go [here](https://en.wikipedia.org/wiki/Scripting_language)
 
-###   `Types of languages`
+### `Types of languages`
 
 *  Compiled Languages:
   -  C, C++, C#, Objective-C
   -  [read about compiler](https://en.wikipedia.org/wiki/Compiler)
+  
 *  Scripting languages:
   - Python, Ruby, Javascript, Lua
   - [read about run time environment](https://en.wikipedia.org/wiki/Runtime_system)
@@ -50,7 +52,7 @@ A set of instructions for how a computer should react to various inputs and outp
 
 ### Procedural Languages
 
-Procedural programming is a programming paradigm, derived from structured programming,based on the concept of the procedure call. Procedures, also known as routines, subroutines, or functions, simply contain a series of computational steps to be carried out. Any given procedure might be called at any point during a program's execution, including by other procedures or itself.
+Procedural programming is a programming paradigm, derived from structured programming, based on the concept of the procedure call. Procedures, also known as routines, subroutines, or functions, simply contain a series of computational steps to be carried out. Any given procedure might be called at any point during a program's execution, including by other procedures or itself.
 
 *   Procedures/Routines/Subroutines/Functions that include series of functions
 *   [link](https://en.wikipedia.org/wiki/Procedural_programming)
@@ -95,13 +97,13 @@ REPL's are interactive, by which i mean that they interact with the user by succ
 
 Although running in REPL is fun and all, one must always run the list of commands from somewhere, mostly because it misses point of programming if you'll run all the commands manually. 
 
-list of python (or any other high level language) commands that are saved in to the file is usually called as `code`.
+list of python (or any other high level language) commands that are saved into the file is usually called as `code`.
 
 To write code, we use a type of `text editor` to write and run it. There are many text editor on www, here is short list of ones that i'd suggest for this course:
 
 - GEANY --> a lightweight IDE for general purpose of development.
   - ![GEANY](../.img/geany.png) 
-- ATOM --> a extencible text editor with bunch tools that can be added.
+- ATOM --> a extencible text editor with bunch of tools that can be added.
   - ![ATOM](../.img/atom.png) 
 - VSCODIUM --> a clone project of atom and vscode with more native OpenSource licensing and agenda.
   - ![VSCODIUM](../.img/vscode.png) 
