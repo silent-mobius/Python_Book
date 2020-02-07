@@ -19,18 +19,18 @@ A set of instructions for how a computer should react to various inputs and outp
     *   Processor specific --> not portable
     *   Binary correspondence
     *   Easier to read than punch cards or binary
-    *   more info [here](https://en.wikipedia.org/wiki/Assembly_language)
+    *   more info go [here](https://en.wikipedia.org/wiki/Assembly_language)
 ---
 *   "Higher level" languages
       *   Fortran, Cobol, C, C++, C#:
       *   Easier to read and write
       *   Slightly more portable
-      *   more infor [here](https://en.wikipedia.org/wiki/High-level_programming_language)
+      *   more info go  [here](https://en.wikipedia.org/wiki/High-level_programming_language)
   
 ---
 *    Scripting languages:
      *    JS, Python, Ruby, Groovy, Bash:
-     *    more info [here](https://en.wikipedia.org/wiki/Scripting_language)
+     *    more info go [here](https://en.wikipedia.org/wiki/Scripting_language)
 
 ###   `Types of languages`
 
