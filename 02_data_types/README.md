@@ -72,7 +72,7 @@ x = memoryview(bytes(5)) 	#memoryview
 
 ### Python Numbers
 
-There are three numeric types in Python:
+There are two <!--three--> numeric types in Python:
 
 * int
 * float
@@ -190,8 +190,11 @@ print(type(a))
 print(type(b))
 print(type(c))
 ```
-
+<!--
 > **Note: You cannot convert complex numbers into another number type.**
+-->
+> **Note: In Previous versions of python, there were additional data types such as `long`, which is very big `int`.**
+> **Note: There is additional type that we didn't touch at all, called `complex` and you are welcome to read about it [here](https://docs.python.org/2/library/stdtypes.html#numeric-types-int-float-long-complex), [here](https://stackoverflow.com/questions/24812444/why-are-complex-numbers-in-python-denoted-with-j-instead-of-i) and [here](https://docs.python.org/3/c-api/complex.html)**
 
 ---
 
@@ -206,6 +209,7 @@ Even though you may see characters on your screen, internally it is stored and m
 This conversion of character to a number is called encoding, and the reverse process is decoding. 
 ASCII and Unicode are some of the popular encoding used.
 In Python, string is a sequence of Unicode character. Unicode was introduced to include every character in all languages and bring uniformity in encoding. 
+
 You can learn more about Unicode from [here](https://en.wikipedia.org/wiki/Unicode).
 
 ## How to create a string in Python?
@@ -238,6 +242,7 @@ Hello
 Hello, welcome to
            the world of Python
 ```
+> Note: there is an indent with output text, because triple quotes preserve the strings as they are stored.
 
 ## How to access characters in a string?
 
@@ -265,14 +270,14 @@ print('str[5:-2] = ', str[5:-2])
 If we try to access index out of the range or use decimal number, we will get errors.
 
 ```py
-    # index must be in range
-    >>> my_string[15]  
-    ...
-    IndexError: string index out of range
-    # index must be an integer
-    >>> my_string[1.5] 
-    ...
-    TypeError: string indices must be integers
+# index must be in range
+>>> my_string[15]  
+...
+IndexError: string index out of range
+# index must be an integer
+>>> my_string[1.5] 
+...
+TypeError: string indices must be integers
 ```
 
 Slicing can be best visualized by considering the index to be between the elements as shown below.
@@ -283,13 +288,13 @@ If we want to access a range, we need the index that will slice the portion from
 Strings are `immutable`. This means that elements of a string cannot be changed once it has been assigned. We can simply reassign different strings to the same name.
 
 ```py
-    >>> del my_string[1]  #deleting second character in my_string, which is impossible (don't imagine 9gag memes)
-    ...
-    TypeError: 'str' object doesn't support item deletion
-    >>> del my_string #deleting whole string
-    >>> my_string
-    ...
-    NameError: name 'my_string' is not defined
+>>> del my_string[1]  #deleting second character in my_string, which is impossible (don't imagine 9gag memes)
+...
+TypeError: 'str' object doesn't support item deletion
+>>> del my_string #deleting whole string
+>>> my_string
+...
+NameError: name 'my_string' is not defined
 ```
 
 ## Python String Operations
@@ -320,14 +325,14 @@ Writing two string literals together also concatenates them like + operator.
 If we want to concatenate strings in different lines, we can use parentheses.
 
 ```py
-    >>> # two string literals together
-    >>> 'Hello ''World!'
-    'Hello World!'
-    >>> # using parentheses
-    >>> s = ('Hello '
-    ...      'World')
-    >>> s
-    'Hello World'
+>>> # two string literals together
+>>> 'Hello ''World!'
+'Hello World!'
+>>> # using parentheses
+>>> s = ('Hello '
+...      'World')
+>>> s
+'Hello World'
 ```
 
 ## Iterating Through String
@@ -347,10 +352,10 @@ print(count,'letters found')
 We can test if a sub string exists within a string or not, using the keyword in.
 
 ```py
-    >>> 'a' in 'program'
-    True
-    >>> 'at' not in 'battle'
-    False
+>>> 'a' in 'program'
+True
+>>> 'at' not in 'battle'
+False
 ```
 
 ## Built-in functions to Work with Python
@@ -379,12 +384,12 @@ print('len(str) = ', len(str))
 If we want to print a text like -He said, "What's there?"- we can neither use single quote or double quotes. This will result into SyntaxError as the text itself contains both single and double quotes.
 
 ```py
-    >>> print("He said, "What's there?"")
-    ...
-    SyntaxError: invalid syntax
-    >>> print('He said, "What's there?"')
-    ...
-    SyntaxError: invalid syntax
+>>> print("He said, "What's there?"")
+...
+SyntaxError: invalid syntax
+>>> print('He said, "What's there?"')
+...
+SyntaxError: invalid syntax
 ```
 One way to get around this problem is to use triple quotes. Alternatively, we can use escape sequences.
 
@@ -423,13 +428,13 @@ Escape Sequence | Description
 
 Here are some examples
 ```py
-    >>> print("\\")
-    \
-    >>> print("This is printed\nin two lines")
-    This is printed
-    in two lines
-    >>> print("This is \x48\x45\x58 representation")
-    This is HEX representation
+>>> print("\\")
+\
+>>> print("This is printed\nin two lines")
+This is printed
+in two lines
+>>> print("This is \x48\x45\x58 representation")
+This is HEX representation
 ```
 
 ### Raw String to ignore escape sequence
@@ -437,11 +442,11 @@ Here are some examples
 Sometimes we may wish to ignore the escape sequences inside a string. To do this we can place r or R in front of the string. This will imply that it is a raw string and any escape sequence inside it will be ignored.
 
 ```py
-   >>> print("This is \x41 \ngood example")
-    This is A
-    good example
-   >>> print(r"This is \x41 \ngood example")
-    This is \x41 \ngood example
+>>> print("This is \x41 \ngood example")
+This is A
+good example
+>>> print(r"This is \x41 \ngood example")
+This is \x41 \ngood example
 ```
 
 ### The format() Method for Formatting Strings
@@ -470,28 +475,28 @@ print(keyword_order)
 The format() method can have optional format specifications. They are separated from field name using colon. For example, we can left-justify <, right-justify > or center ^ a string in the given space. We can also format integers as binary, hexadecimal etc. and floats can be rounded or displayed in the exponent format. There are a ton of formatting you can use. Visit here for all the string formatting available with the format() method.
 
 ```py
-    >>> # formatting integers
-    >>> "Binary representation of {0} is {0:b}".format(12)
-    'Binary representation of 12 is 1100'
-    >>> # formatting floats
-    >>> "Exponent representation: {0:e}".format(1566.345)
-    'Exponent representation: 1.566345e+03'
-    >>> # round off
-    >>> "One third is: {0:.3f}".format(1/3)
-    'One third is: 0.333'
-    >>> # string alignment
-    >>> "|{:<10}|{:^10}|{:>10}|".format('butter','bread','ham')
-    '|butter    |  bread   |       ham|'
+>>> # formatting integers
+>>> "Binary representation of {0} is {0:b}".format(12)
+'Binary representation of 12 is 1100'
+>>> # formatting floats
+>>> "Exponent representation: {0:e}".format(1566.345)
+'Exponent representation: 1.566345e+03'
+>>> # round off
+>>> "One third is: {0:.3f}".format(1/3)
+'One third is: 0.333'
+>>> # string alignment
+>>> "|{:<10}|{:^10}|{:>10}|".format('butter','bread','ham')
+'|butter    |  bread   |       ham|'
 ```
 ### Old style formatting
 
 We can even format strings like the old sprintf() style used in C programming language. We use the % operator to accomplish this.
 ```py
-    >>> x = 12.3456789
-    >>> print('The value of x is %3.2f' %x)
-    The value of x is 12.35
-    >>> print('The value of x is %3.4f' %x)
-    The value of x is 12.3457
+>>> x = 12.3456789
+>>> print('The value of x is %3.2f' %x)
+The value of x is 12.35
+>>> print('The value of x is %3.4f' %x)
+The value of x is 12.3457
 ```
 
 ### Common Python String Methods
@@ -499,18 +504,18 @@ We can even format strings like the old sprintf() style used in C programming la
 There are numerous methods available with the string object. The format() method that we mentioned above is one of them. Some of the commonly used methods are lower(), upper(), join(), split(), find(), replace() etc. Here is a complete list of all the built-in methods to work with strings in Python.
 
 ```py
-    >>> "PyCLass".lower()
-    'pyclass'
-    >>> "PyCLass".upper()
-    'pyclass'
-    >>> "This will split all words into a list".split()
-    ['This', 'will', 'split', 'all', 'words', 'into', 'a', 'list']
-    >>> ' '.join(['This', 'will', 'join', 'all', 'words', 'into', 'a', 'string'])
-    'This will join all words into a string'
-    >>> 'Happy New Year'.find('ew')
-    7
-    >>> 'Happy New Year'.replace('Happy','Brilliant')
-    'Brilliant New Year'
+>>> "PyCLass".lower()
+'pyclass'
+>>> "PyCLass".upper()
+'pyclass'
+>>> "This will split all words into a list".split()
+['This', 'will', 'split', 'all', 'words', 'into', 'a', 'list']
+>>> ' '.join(['This', 'will', 'join', 'all', 'words', 'into', 'a', 'string'])
+'This will join all words into a string'
+>>> 'Happy New Year'.find('ew')
+7
+>>> 'Happy New Year'.replace('Happy','Brilliant')
+'Brilliant New Year'
 ```
 
 ---
@@ -525,12 +530,12 @@ In Python programming, a list is created by placing all the items (elements) ins
 It can have any number of items and they may be of different types (integer, float, string etc.).
 
 ```py
-    # empty list
-    my_list = []
-    # list of integers
-    my_list = [1, 2, 3]
-    # list with mixed datatypes
-    my_list = [1, "Hello", 3.4]
+# empty list
+my_list = []
+# list of integers
+my_list = [1, 2, 3]
+# list with mixed datatypes
+my_list = [1, "Hello", 3.4]
 ```
 
 Also, a list can even have another list as an item. This is called nested list.
@@ -551,22 +556,22 @@ Trying to access an element other that this will raise an IndexError. The index 
 Nested list are accessed using nested indexing.
 
 ```py
-    my_list = ['p','r','o','b','e']
-    # Output: p
-    print(my_list[0])
-    # Output: o
-    print(my_list[2])
-    # Output: e
-    print(my_list[4])
-    # Error! Only integer can be used for indexing
-    # my_list[4.0]
-    # Nested List
-    n_list = ["Happy", [2,0,1,5]]
-    # Nested indexing
-    # Output: a
-    print(n_list[0][1])    
-    # Output: 5
-    print(n_list[1][3])
+my_list = ['p','r','o','b','e']
+# Output: p
+print(my_list[0])
+# Output: o
+print(my_list[2])
+# Output: e
+print(my_list[4])
+# Error! Only integer can be used for indexing
+# my_list[4.0]
+# Nested List
+n_list = ["Happy", [2,0,1,5]]
+# Nested indexing
+# Output: a
+print(n_list[0][1])    
+# Output: 5
+print(n_list[1][3])
 ```
 
 ## Negative indexing
@@ -574,30 +579,31 @@ Nested list are accessed using nested indexing.
 Python allows negative indexing for its sequences. The index of -1 refers to the last item, -2 to the second last item and so on.
 
 ```py
-    my_list = ['p','r','o','b','e']
-    # Output: e
-    print(my_list[-1])
-    # Output: p
-    print(my_list[-5])
+my_list = ['p','r','o','b','e']
+# Output: e
+print(my_list[-1])
+# Output: p
+print(my_list[-5])
 ```
 
 ## How to slice lists in Python?
 
 We can access a range of items in a list by using the slicing operator (colon).
+Slicing can be best visualized by considering the index to be between the elements as shown below. So if we want to access a range, we need two indices that will slice that portion from the list.
 
 ```py
-    my_list = ['p','y','t','h','o','n',' ','c','o','u','r','s','e']
-    # elements 3rd to 5th
-    print(my_list[2:5])
-    # elements beginning to 4th
-    print(my_list[:-5])
-    # elements 6th to end
-    print(my_list[5:])
-    # elements beginning to end
-    print(my_list[:])
+my_list = ['p','y','t','h','o','n',' ','c','o','u','r','s','e']
+# elements 3rd to 5th
+print(my_list[2:5])
+# elements beginning to 4th
+print(my_list[:-5])
+# elements 6th to end
+print(my_list[5:])
+# elements beginning to end
+print(my_list[:])
 ```
 
-Slicing can be best visualized by considering the index to be between the elements as shown below. So if we want to access a range, we need two indices that will slice that portion from the list.
+
 
 ## How to change or add elements to a list?
 
@@ -606,52 +612,51 @@ List are mutable, meaning, their elements can be changed unlike string or tuple.
 We can use assignment operator (=) to change an item or a range of items.
 
 ```py
-
-    # mistake values
-    odd = [2, 4, 6, 8]
-    # change the 1st item
-    odd[0] = 1
-    # Output: [1, 4, 6, 8]
-    print(odd)
-    # change 2nd to 4th items
-    odd[1:4] = [3, 5, 7]  
-    # Output: [1, 3, 5, 7]
-    print(odd)
+# mistake values
+odd = [2, 4, 6, 8]
+# change the 1st item
+odd[0] = 1
+# Output: [1, 4, 6, 8]
+print(odd)
+# change 2nd to 4th items
+odd[1:4] = [3, 5, 7]  
+# Output: [1, 3, 5, 7]
+print(odd)
 ```
 
 We can add one item to a list using append() method or add several items using extend() method.
 
 ```py
-    odd = [1, 3, 5]
-    odd.append(7)
-    # Output: [1, 3, 5, 7]
-    print(odd)
-    odd.extend([9, 11, 13])
-    # Output: [1, 3, 5, 7, 9, 11, 13]
-    print(odd)
+odd = [1, 3, 5]
+odd.append(7)
+# Output: [1, 3, 5, 7]
+print(odd)
+odd.extend([9, 11, 13])
+# Output: [1, 3, 5, 7, 9, 11, 13]
+print(odd)
 ```
 
 We can also use + operator to combine two lists. This is also called concatenation.
 The * operator repeats a list for the given number of times.
 
 ```py
-    odd = [1, 3, 5]
-    # Output: [1, 3, 5, 9, 7, 5]
-    print(odd + [9, 7, 5])
-    #Output: ["re", "re", "re"]
-    print(["re"] * 3)
+odd = [1, 3, 5]
+# Output: [1, 3, 5, 9, 7, 5]
+print(odd + [9, 7, 5])
+#Output: ["re", "re", "re"]
+print(["re"] * 3)
 ```
 
 Furthermore, we can insert one item at a desired location by using the method insert() or insert multiple items by squeezing it into an empty slice of a list.
 
 ```py
-    odd = [1, 9]
-    odd.insert(1,3)
-    # Output: [1, 3, 9] 
-    print(odd)
-    odd[2:2] = [5, 7]
-    # Output: [1, 3, 5, 7, 9]
-    print(odd)
+odd = [1, 9]
+odd.insert(1,3)
+# Output: [1, 3, 9] 
+print(odd)
+odd[2:2] = [5, 7]
+# Output: [1, 3, 5, 7, 9]
+print(odd)
 ```
 
 ## How to delete or remove elements from a list?
@@ -659,19 +664,19 @@ Furthermore, we can insert one item at a desired location by using the method in
 We can delete one or more items from a list using the keyword del. It can even delete the list entirely.
 
 ```py
-    my_list = ['p','r','o','b','l','e','m']
-    # delete one item
-    del my_list[2]
-    # Output: ['p', 'r', 'b', 'l', 'e', 'm']
-    print(my_list)
-    # delete multiple items
-    del my_list[1:5]  
-    # Output: ['p', 'm']
-    print(my_list)
-    # delete entire list
-    del my_list
-    # Error: List not defined
-    print(my_list)
+my_list = ['p','r','o','b','l','e','m']
+# delete one item
+del my_list[2]
+# Output: ['p', 'r', 'b', 'l', 'e', 'm']
+print(my_list)
+# delete multiple items
+del my_list[1:5]  
+# Output: ['p', 'm']
+print(my_list)
+# delete entire list
+del my_list
+# Error: List not defined
+print(my_list)
 ```
 
 We can use remove() method to remove the given item or pop() method to remove an item at the given index.
@@ -679,33 +684,33 @@ The pop() method removes and returns the last item if index is not provided. Thi
 We can also use the clear() method to empty a list.
 
 ```py
-    my_list = ['p','r','o','b','l','e','m']
-    my_list.remove('p')
-    # Output: ['r', 'o', 'b', 'l', 'e', 'm']
-    print(my_list)
-    # Output: 'o'
-    print(my_list.pop(1))
-    # Output: ['r', 'b', 'l', 'e', 'm']
-    print(my_list)
-    # Output: 'm'
-    print(my_list.pop())
-    # Output: ['r', 'b', 'l', 'e']
-    print(my_list)
-    my_list.clear()
-    # Output: []
-    print(my_list)
+my_list = ['p','r','o','b','l','e','m']
+my_list.remove('p')
+# Output: ['r', 'o', 'b', 'l', 'e', 'm']
+print(my_list)
+# Output: 'o'
+print(my_list.pop(1))
+# Output: ['r', 'b', 'l', 'e', 'm']
+print(my_list)
+# Output: 'm'
+print(my_list.pop())
+# Output: ['r', 'b', 'l', 'e']
+print(my_list)
+my_list.clear()
+# Output: []
+print(my_list)
 ```
 
 Finally, we can also delete items in a list by assigning an empty list to a slice of elements.
 
 ```py
-    >>> my_list = ['p','r','o','b','l','e','m']
-    >>> my_list[2:3] = []
-    >>> my_list
-    ['p', 'r', 'b', 'l', 'e', 'm']
-    >>> my_list[2:5] = []
-    >>> my_list
-    ['p', 'r', 'm']
+>>> my_list = ['p','r','o','b','l','e','m']
+>>> my_list[2:3] = []
+>>> my_list
+['p', 'r', 'b', 'l', 'e', 'm']
+>>> my_list[2:5] = []
+>>> my_list
+['p', 'r', 'm']
 ```
 
 ## List Comprehension: Elegant way to create new List
@@ -715,30 +720,30 @@ List comprehension consists of an expression followed by for statement inside sq
 Here is an example to make a list with each item being increasing power of 2.
 
 ```py
-    pow2 = [2 ** x for x in range(10)]
-    # Output: [1, 2, 4, 8, 16, 32, 64, 128, 256, 512]
-    print(pow2)
+pow2 = [2 ** x for x in range(10)]
+# Output: [1, 2, 4, 8, 16, 32, 64, 128, 256, 512]
+print(pow2)
 ```
 
 This code is equivalent to
 
 ```py
-    pow2 = []
-    for x in range(10):
-       pow2.append(2 ** x)
+pow2 = []
+for x in range(10):
+    pow2.append(2 ** x)
 ```
 
 A list comprehension can optionally contain more for or if statements. An optional if statement can filter out items for the new list. Here are some examples.
 
 ```py
-    >>> pow2 = [2 ** x for x in range(10) if x > 5]
-    >>> pow2
-    [64, 128, 256, 512]
-    >>> odd = [x for x in range(20) if x % 2 == 1]
-    >>> odd
-    [1, 3, 5, 7, 9, 11, 13, 15, 17, 19]
-    >>> [x+y for x in ['Python ','C '] for y in ['Language','Programming']]
-    ['Python Language', 'Python Programming', 'C Language', 'C Programming']
+>>> pow2 = [2 ** x for x in range(10) if x > 5]
+>>> pow2
+[64, 128, 256, 512]
+>>> odd = [x for x in range(20) if x % 2 == 1]
+>>> odd
+[1, 3, 5, 7, 9, 11, 13, 15, 17, 19]
+>>> [x+y for x in ['Python ','C '] for y in ['Language','Programming']]
+['Python Language', 'Python Programming', 'C Language', 'C Programming']
 ```
 
 # Other List Operations in Python
@@ -748,13 +753,13 @@ A list comprehension can optionally contain more for or if statements. An option
 We can test if an item exists in a list or not, using the keyword in.
 
 ```py
-    my_list = ['p','r','o','b','l','e','m']
-    # Output: True
-    print('p' in my_list)
-    # Output: False
-    print('a' in my_list)
-    # Output: True
-    print('c' not in my_list)
+my_list = ['p','r','o','b','l','e','m']
+# Output: True
+print('p' in my_list)
+# Output: False
+print('a' in my_list)
+# Output: True
+print('c' not in my_list)
 ```
 
 ## Iterating Through a List
@@ -762,8 +767,8 @@ We can test if an item exists in a list or not, using the keyword in.
 Using a for loop we can iterate though each item in a list.
 
 ```py
-    for fruit in ['apple','banana','mango']:
-        print("I like",fruit)
+for fruit in ['apple','banana','mango']:
+    print("I like",fruit)
 ```
 
 ---
@@ -779,53 +784,53 @@ A tuple is created by placing all the items (elements) inside parentheses (), se
 A tuple can have any number of items and they may be of different types (integer, float, list, string, etc.).
 
 ```py
-    # Empty tuple
-    my_tuple = ()
-    print(my_tuple)  # Output: ()
+# Empty tuple
+my_tuple = ()
+print(my_tuple)  # Output: ()
 
-    # Tuple having integers
-    my_tuple = (1, 2, 3)
-    print(my_tuple)  # Output: (1, 2, 3) 
+# Tuple having integers
+my_tuple = (1, 2, 3)
+print(my_tuple)  # Output: (1, 2, 3) 
 
-    # tuple with mixed datatypes
-    my_tuple = (1, "Hello", 3.4)
-    print(my_tuple)  # Output: (1, "Hello", 3.4)  
+# tuple with mixed datatypes
+my_tuple = (1, "Hello", 3.4)
+print(my_tuple)  # Output: (1, "Hello", 3.4)  
 
-    # nested tuple
-    my_tuple = ("mouse", [8, 4, 6], (1, 2, 3))
+# nested tuple
+my_tuple = ("mouse", [8, 4, 6], (1, 2, 3))
 
-    # Output: ("mouse", [8, 4, 6], (1, 2, 3)) 
-    print(my_tuple)
+# Output: ("mouse", [8, 4, 6], (1, 2, 3)) 
+print(my_tuple)
 ```
 
 A tuple can also be created without using parentheses. This is known as tuple packing.
 
 ```py
-    my_tuple = 3, 4.6, "dog"
-    print(my_tuple)   # Output: 3, 4.6, "dog" 
+my_tuple = 3, 4.6, "dog"
+print(my_tuple)   # Output: 3, 4.6, "dog" 
 
-    # tuple unpacking is also possible
-    a, b, c = my_tuple
+# tuple unpacking is also possible
+a, b, c = my_tuple
 
-    print(a)      # 3
-    print(b)      # 4.6 
-    print(c)      # dog 
+print(a)      # 3
+print(b)      # 4.6 
+print(c)      # dog 
 ```
 Creating a tuple with one element is a bit tricky.
 
 Having one element within parentheses is not enough. We will need a trailing comma to indicate that it is, in fact, a tuple.
 
 ```py
-    my_tuple = ("hello")
-    print(type(my_tuple))  # <class 'str'>
+my_tuple = ("hello")
+print(type(my_tuple))  # <class 'str'>
 
-    # Creating a tuple having one element
-    my_tuple = ("hello",)  
-    print(type(my_tuple))  # <class 'tuple'> 
+# Creating a tuple having one element
+my_tuple = ("hello",)  
+print(type(my_tuple))  # <class 'tuple'> 
 
-    # Parentheses is optional
-    my_tuple = "hello",
-    print(type(my_tuple))  # <class 'tuple'> 
+# Parentheses is optional
+my_tuple = "hello",
+print(type(my_tuple))  # <class 'tuple'> 
 ```
 
 ## Access Tuple Elements
@@ -843,24 +848,24 @@ The index must be an integer; so we cannot use float or other types. This will r
 Likewise, nested tuples are accessed using nested indexing, as shown in the example below.
 
 ```py
-    my_tuple = ('p','e','r','m','i','t')
+my_tuple = ('p','e','r','m','i','t')
 
-    print(my_tuple[0])   # 'p' 
-    print(my_tuple[5])   # 't'
+print(my_tuple[0])   # 'p' 
+print(my_tuple[5])   # 't'
 
-    # IndexError: list index out of range
-    # print(my_tuple[6])
+# IndexError: list index out of range
+# print(my_tuple[6])
 
-    # Index must be an integer
-    # TypeError: list indices must be integers, not float
-    # my_tuple[2.0]
+# Index must be an integer
+# TypeError: list indices must be integers, not float
+# my_tuple[2.0]
 
-    # nested tuple
-    n_tuple = ("mouse", [8, 4, 6], (1, 2, 3))
+# nested tuple
+n_tuple = ("mouse", [8, 4, 6], (1, 2, 3))
 
-    # nested index
-    print(n_tuple[0][3])       # 's'
-    print(n_tuple[1][1])       # 4
+# nested index
+print(n_tuple[0][3])       # 's'
+print(n_tuple[1][1])       # 4
 ```
 
 ### 2. Negative Indexing
@@ -870,13 +875,13 @@ Python allows negative indexing for its sequences.
 The index of -1 refers to the last item, -2 to the second last item and so on.
 
 ```py
-    my_tuple = ('p','e','r','m','i','t')
+my_tuple = ('p','e','r','m','i','t')
 
-    # Output: 't'
-    print(my_tuple[-1])
+# Output: 't'
+print(my_tuple[-1])
 
-    # Output: 'p'
-    print(my_tuple[-6])
+# Output: 'p'
+print(my_tuple[-6])
 ```
 
 ### 3. Slicing
@@ -884,23 +889,23 @@ The index of -1 refers to the last item, -2 to the second last item and so on.
 We can access a range of items in a tuple by using the slicing operator - colon ":".
 
 ```py
-    my_tuple = ('p','y','t','h','o','n',' ','c','o','u','r','s','e')
+my_tuple = ('p','y','t','h','o','n',' ','c','o','u','r','s','e')
 
-    # elements 2nd to 4th
-    # Output: ('r', 'o', 'g')
-    print(my_tuple[1:4])
+# elements 2nd to 4th
+# Output: ('r', 'o', 'g')
+print(my_tuple[1:4])
 
-    # elements beginning to 2nd
-    # Output: ('p', 'r')
-    print(my_tuple[:-7])
+# elements beginning to 2nd
+# Output: ('p', 'r')
+print(my_tuple[:-7])
 
-    # elements 8th to end
-    # Output: ('i', 'z')
-    print(my_tuple[7:])
+# elements 8th to end
+# Output: ('i', 'z')
+print(my_tuple[7:])
 
-    # elements beginning to end
-    # Output: ('p','y','t','h','o','n',' ','c','o','u','r','s','e')
-    print(my_tuple[:])
+# elements beginning to end
+# Output: ('p','y','t','h','o','n',' ','c','o','u','r','s','e')
+print(my_tuple[:])
 ```
 
 Slicing can be best visualized by considering the index to be between the elements as shown below. So if we want to access a range, we need the index that will slice the portion from the tuple.
@@ -1498,10 +1503,9 @@ for i in squares:
     print(squares[i])
 ```
 
-## Built-in Functions with Dictionary
+## Built-in Functions with Python
 
-Built-in functions like all(), any(), len(), cmp(), sorted() etc. are commonly used with dictionary to perform different tasks.
-Built-in Functions with Dictionary
+Built-in functions like all(), any(), len(), cmp(), sorted() etc. are commonly used with list, tuple, set and dictionary to perform different tasks.
 
 Function |	Description
 ------- |   ----------
