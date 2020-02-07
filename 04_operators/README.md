@@ -90,13 +90,17 @@ print('x <= y is',x<=y)
 
 Logical operators are the `and`, `or`, `not` operators.
 
+> Something to remember: If `variable` has a value of `1` in it, then its boolean value it *_True_*, In any other case the boolean value is *_False_*. 
+> If value is not defined, then python3 will give you *_NameError_*,
+
 Operator | Meaning | Example
 ------- | -------- | ----------
 and |	True if both the operands are true |	x and y
 or 	|   True if either of the operands is true 	| x or y
 not | 	True if operand is false (complements the operand) | not x
 
-Example : Logical Operators in Python
+Example : Logical Operators in Python3
+
 ```py
 x = True
 y = False
@@ -122,7 +126,6 @@ False |	False |	False
 
 ####  The truth table for *_or_* operator is given below:
 
-Truth table for or
 A |	B |	A or B
 -- | -- | ---
 True | True | True
@@ -132,7 +135,6 @@ False | False | False
 
 #### The truth table for *_not_* is given below:
 
-Truth tabel for not 
 A |	not A
 -- | --
 True |	False
