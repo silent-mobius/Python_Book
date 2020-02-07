@@ -92,7 +92,7 @@ print(type(x))
 print(type(y))
 ```
 
-<! -- print(type(z)) -->
+<!-- print(type(z)) -->
 
 
 ### Int
@@ -246,7 +246,7 @@ Python allows negative indexing for its sequences.
 The index of -1 refers to the last item, -2 to the second last item and so on. We can access a range of items in a string by using the slicing operator (colon).
 
 ```py
-str = 'programiz'
+str = 'pyclass'
 print('str = ', str)
 
 #first character
@@ -280,13 +280,13 @@ If we want to access a range, we need the index that will slice the portion from
 
 ## How to change or delete a string?
 
-Strings are immutable. This means that elements of a string cannot be changed once it has been assigned. We can simply reassign different strings to the same name.
+Strings are `immutable`. This means that elements of a string cannot be changed once it has been assigned. We can simply reassign different strings to the same name.
 
 ```py
-    >>> del my_string[1]
+    >>> del my_string[1]  #deleting second character in my_string, which is impossible (don't imagine 9gag memes)
     ...
     TypeError: 'str' object doesn't support item deletion
-    >>> del my_string
+    >>> del my_string #deleting whole string
     >>> my_string
     ...
     NameError: name 'my_string' is not defined
@@ -499,10 +499,10 @@ We can even format strings like the old sprintf() style used in C programming la
 There are numerous methods available with the string object. The format() method that we mentioned above is one of them. Some of the commonly used methods are lower(), upper(), join(), split(), find(), replace() etc. Here is a complete list of all the built-in methods to work with strings in Python.
 
 ```py
-    >>> "PrOgRaMiZ".lower()
-    'programiz'
-    >>> "PrOgRaMiZ".upper()
-    'PROGRAMIZ'
+    >>> "PyCLass".lower()
+    'pyclass'
+    >>> "PyCLass".upper()
+    'pyclass'
     >>> "This will split all words into a list".split()
     ['This', 'will', 'split', 'all', 'words', 'into', 'a', 'list']
     >>> ' '.join(['This', 'will', 'join', 'all', 'words', 'into', 'a', 'string'])
@@ -831,6 +831,7 @@ Having one element within parentheses is not enough. We will need a trailing com
 ## Access Tuple Elements
 
 There are various ways in which we can access the elements of a tuple.
+
 ### 1. Indexing
 
 We can use the index operator [] to access an item in a tuple where the index starts from 0.
@@ -907,7 +908,7 @@ Slicing can be best visualized by considering the index to be between the elemen
 
 ## Changing a Tuple
 
-Unlike lists, tuples are immutable.
+Unlike lists, tuples are [`immutable`](https://en.wikipedia.org/wiki/Immutable_object).
 
 This means that elements of a tuple cannot be changed once it has been assigned. But, if the element is itself a mutable datatype like list, its nested items can be changed.
 
@@ -1076,7 +1077,7 @@ my_set = set([1,2,3,2])
 print(my_set)
 ```
 
-Creating an empty set is a bit tricky.
+> Creating an empty set is a bit tricky.
 
 Empty curly braces {} will make an empty dictionary in Python. To make a set without any elements we use the set() function without any argument.
 
