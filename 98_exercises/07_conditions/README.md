@@ -1,3 +1,5 @@
+# Conditions Exercises
+<!--
 a=100
 b=2
 
@@ -26,3 +28,4 @@ if num1 == num2:
     print(num1,"is same as" , num2)
 else:
     print(num1,"is NOT same as", num2)
+-->

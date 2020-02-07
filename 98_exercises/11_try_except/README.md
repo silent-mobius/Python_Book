@@ -1,4 +1,4 @@
-# Python Exceptions
+# Exception Exercises
 
 1. Write a program that receives user numbers in the loop and for each received number prints its root. Alert the user if they enter a non-number value, or enter a negative number.
 
