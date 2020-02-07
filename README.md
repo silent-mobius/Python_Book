@@ -1,5 +1,9 @@
 # Python3  Book 
 
+Welcome to My book of Python3 programming - hope you'll enjoy and gain all you need to become solid [pythonista](https://en.wiktionary.org/wiki/Pythonista)
+
+
+Table of contents:
 
 - [00 Intro](./00_intro/README.md)
 - [01 Syntax](./01_syntax/README.md)
@@ -14,4 +18,5 @@
 - [10 Functions](./10_functions/README.md)
 - [11 Exception Handling](./11_try_except/README.md)
 - [12 Standard Library](./12_standard_library/README.md)
+- [13 OOP with Python](./13_oop/README.md) .... still not done --> maybe some day.
 - [Exercises](./98_exercises/README.md)

@@ -1,7 +1,7 @@
 # Python Exercises
 
 
-
+- [01 Syntax/REPL](./01_repl/README.md)
 - [02 Data Types](./02_data_types/README.md)
 - [03 Variables](./03_variables/README.md)
 - [04 Operators](./04_operators/README.md)

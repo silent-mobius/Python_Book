@@ -1,6 +1,6 @@
 # Python Essentials
 
-<h2 style='background-color:lightgreen'>
+<h2 style='background-color:lightgreen'>    
     <center style='color:black'>
         Python 101
     </center>
