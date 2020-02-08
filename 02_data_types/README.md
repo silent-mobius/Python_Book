@@ -140,6 +140,13 @@ print(type(x))
 print(type(y))
 print(type(z))
 ```
+The Output should look like this:
+```txt
+35000.0
+120000.0
+-8.77e+101
+
+```
 
 <!--
 Complex
@@ -160,7 +167,10 @@ Type Conversion
 You can convert from one type to another with the int(), float(), and complex() methods:
 -->
 
-Convert from one type to another:
+When ever we decalte a type of  data. it usualyy stay that way until the program/script finishes it run. but a quwstion that is raised:what if your program/script requires to take that previously declared data and to view it in different point of view ?
+That's where the `conversion` between types comes into a play. 
+`Conversion` is a process of changing one type of data into another, for example: integer in to float, or float to integer and so on.
+To `convert` one type to another we can use built-in function/structures : `int()`, `float()`  and many other.
 
 ```py
 x = 1 # int
@@ -168,27 +178,25 @@ y = 2.8 # float
 ```
 
 <!-- z = 1j # complex -->
+```py
+#convert from int to float:
+a = float(5)
+print(a)
 
-> convert from int to float:
-  > a = float(x)
-
-
-> convert from float to int:
-  > b = int(y)
-
+#convert from float to int:
+b = int(4.5)
+print(b)
+```
 <!--
 #convert from int to complex:
 c = complex(x)
 -->
 
-```py
-print(a)
-print(b)
-print(c)
+The print out for all those commands above should look like this:
+```txt
 
-print(type(a))
-print(type(b))
-print(type(c))
+5.0
+4
 ```
 <!--
 > **Note: You cannot convert complex numbers into another number type.**
