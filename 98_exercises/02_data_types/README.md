@@ -1,6 +1,7 @@
 # Data Type Exercises
 
 ## Ex0
+
 - open Terminal/Command line/Powershell:
   - in it open python running environment:
     - print example of data types
@@ -17,6 +18,7 @@
 
 
 ## Ex1
+
 - Open Terminal/Command line/Powershell:
   - in it open python running environment:
   - create a variable that stores value of 10 --> pay attenttion: it is an int !!!
@@ -29,6 +31,7 @@
 
 
 ## Ex2
+
 - Open Terminal/Command line/Powershell:
   - in it open python running environment:
   - create a variable that stores value of 12.4 --> pay attenttion: it is an float !!!
@@ -40,6 +43,7 @@
     - print the value of variable
 
 ## Ex3
+
 - Open Terminal/Command line/Powershell:
   - in it open python running environment:
     - create a variable that stores value of 'limp biscuit' --> pay attenttion: it is an string !!!
@@ -56,5 +60,15 @@
 
 
 ## Ex4
+
 - Open Terminal/Command line/Powershell:
   - in it open python running environment:
+    - create a variable that is an empty list:
+      - add to it next details:
+        - name
+        - last name
+        - your favorite tshirt
+        - your favorite animal
+        - your favorite comics hero/villain
+          - string explaining why your hero/villain is your hero.(nothing too long, just few words)
+      - print that vairable to screen.
