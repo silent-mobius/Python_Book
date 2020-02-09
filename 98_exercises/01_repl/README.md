@@ -1,19 +1,20 @@
 # Syntax / REPL exrcises
 
-# Ex0
+## Ex0
 - Open Terminal/Command line/Powershell:
-- try to calculate expressions below:
-  - 5 + 2 / 4 ** 2
-  - ((6 - 1) **2) **2
-  - 5 % 3
-  - 169 // 4
-  - 'a' + 5 * 'z'
-  - 'alpha' * 10
-  - [1,2,3]+[4,5,6]
-  - [23,45,67]-[23,67,45]
+  - in it open python running environment:
+    - try to calculate expressions below:
+      - 5 + 2 / 4 ** 2
+      - ((6 - 1) **2) **2
+      - 5 % 3
+      - 169 // 4
+      - 'a' + 5 * 'z'
+      - 'alpha' * 10
+      - [1,2,3]+[4,5,6]
+      - [23,45,67]-[23,67,45]
 
 
-# Ex1
+## Ex1
 
 - Open Terminal/Command line/Powershell:
   - in it open python running environment:
