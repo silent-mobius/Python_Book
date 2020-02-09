@@ -93,7 +93,7 @@
         - your favorite tshirt
         - your favorite animal
         - your favorite comics hero/villain
-          - string explaining why your hero/villain is your hero.(nothing too long, just few words)
+          - short string explaining why your hero/villain is your favorite hero.(nothing too long, just few words)
       - print that vairable to screen.
       - check with `in` operator if your name is in the variable.
         - print it to screen.
