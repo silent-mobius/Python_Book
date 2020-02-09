@@ -51,7 +51,7 @@
       - save in different variable the word "biscuit" that is cut from first variable.
       - print latest variable with string of : "served with tea"
       - print all variables to screen.
-  - exist the python environment.
+  - exit the python environment.
   - enter python environment once again:
     - try printing those vairables again:
       - did you succeed?
@@ -63,7 +63,7 @@
 
 - Open Terminal/Command line/Powershell:
   - in it open python running environment:
-    - create a variable that is an empty list:
+    - create a variable that is an empty `list`:
       - add to it next details:
         - name
         - last name
@@ -72,3 +72,28 @@
         - your favorite comics hero/villain
           - string explaining why your hero/villain is your hero.(nothing too long, just few words)
       - print that vairable to screen.
+      - check with `in` operator if your name is in the variable.
+        - print it to screen.
+  - exit the python environment.
+  - enter python environment once again:
+    - try printing those vairables again:
+      - did you succeed?
+        - yes ? why ?
+        - no  ? why ? 
+
+
+## Ex5
+
+ Open Terminal/Command line/Powershell:
+  - in it open python running environment:
+    - create a variable that is an empty `tuple`:
+      - add to it next details:
+        - name
+        - last name
+        - your favorite tshirt
+        - your favorite animal
+        - your favorite comics hero/villain
+          - string explaining why your hero/villain is your hero.(nothing too long, just few words)
+      - print that vairable to screen.
+      - check with `in` operator if your name is in the variable.
+        - print it to screen.
