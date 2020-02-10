@@ -1,2 +1,12 @@
 # Input Exercises
 <!-- talking about input, standard input and how to use them in python3-->
+
+## Ex1
+ Create a script that asks you of your details:
+   * name
+   * lastname
+   * date of birth
+   * address
+   * job
+    the script should print will be your age in 8 more years.
+    it also should print out your favorite instructors name.
