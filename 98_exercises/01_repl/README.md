@@ -1,6 +1,7 @@
 # Syntax / REPL exrcises
 
-## Ex0
+### Create a folder named variables and save all the exercises below in it.
+ Ex0
 - Open Terminal/Command line/Powershell:
   - in it open python running environment:
     - try to calculate expressions below:
@@ -14,7 +15,7 @@
       - [23,45,67]-[23,67,45]
 
 
-## Ex1
+### Ex1
 
 - Open Terminal/Command line/Powershell:
   - in it open python running environment:
