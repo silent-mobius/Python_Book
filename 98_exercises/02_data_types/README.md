@@ -176,3 +176,11 @@
       -  what is the length of `longest_word`
       -  what is the length of `longest_word_list`
       -  bonus: what is the length of each individiual word in `longest_word_list`
+
+
+## Ex11
+
+###### **Note**: Make sure you have text editor installed.
+- Open your text editor
+  - create file for each exercise mentioned above:
+    - write the exercise and execute.
