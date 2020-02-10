@@ -140,5 +140,3 @@
   - create a three variables that hold your details: name, last name, id.
   - join those variables into one variable with `join()` function.
   - print joined variable to screen.
-
-
