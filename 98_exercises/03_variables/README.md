@@ -112,3 +112,4 @@
 
 - Open your text editor:
   - Create a Python program/script and name it as exercise number (Ex9.py)
+  - write a script that has your name  saved under a variable and prints ascii values of your name <!--https://www.w3resource.com/python-exercises/python-basic-exercise-86.php -->
