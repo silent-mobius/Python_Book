@@ -1,6 +1,9 @@
 # Data Type Exercises
 
-## Ex0
+## Create a folder named variables and save all the exercises below in it.
+
+
+### Ex0
 
 - open Terminal/Command line/Powershell:
   - in it open python running environment:
@@ -17,11 +20,11 @@
     - take a screenshoot and print it for later use.
 
 
-## Ex1
+### Ex1
 
 - Open Terminal/Command line/Powershell:
   - in it open python running environment:
-  - create a variable that stores value of 10 --> pay attenttion: it is an int !!!
+  - start with value 10 : ---> pay attenttion: it is an `int` !!!
     - add 2
     - subtract 4
     - divede by 4
@@ -30,11 +33,11 @@
     - print the value of variable
 
 
-## Ex2
+### Ex2
 
 - Open Terminal/Command line/Powershell:
   - in it open python running environment:
-  - create a variable that stores value of 12.4 --> pay attenttion: it is an float !!!
+  - start with value 12.4 : ---> pay attenttion: it is an `float` !!!
     - add 2
     - subtract 4
     - divede by 4
@@ -42,11 +45,11 @@
     - get its root
     - print the value of variable
 
-## Ex3
+### Ex3
 
 - Open Terminal/Command line/Powershell:
   - in it open python running environment:
-    - create a variable that stores value of 'limp biscuit' --> pay attenttion: it is an string !!!
+    - create a string that stores value of 'limp biscuit' --> pay attenttion: it is an `string` !!!
       - add to string : "yes  - i am joking"
       - save in different variable the word "biscuit" that is cut from first variable.
       - print latest variable with string of : "served with tea"
@@ -59,11 +62,11 @@
         - no  ? why ? 
 
 
-## Ex4
+### Ex4
 
 - Open Terminal/Command line/Powershell:
   - in it open python running environment:
-    - create a variable that is an empty `list`:
+    - create an empty `list`:
       - add to it next details:
         - name
         - last name
@@ -82,11 +85,11 @@
         - no  ? why ? 
 
 
-## Ex5
+### Ex5
 
 - Open Terminal/Command line/Powershell:
   - in it open python running environment:
-    - create a variable that is an empty `tuple`:
+    - create an empty `tuple`:
       - add to it next details:
         - name
         - last name
@@ -99,11 +102,11 @@
         - print it to screen.
 
 
-## Ex6
+### Ex6
 
 - Open Terminal/Command line/Powershell:
   - in it open python running environment:
-    - create a variable that is an empty `set`:
+    - create an empty `set`:
       - add to it next details:
         - name
         - last name
@@ -120,11 +123,11 @@
         - no  ? why ? 
 
 
-## Ex7
+### Ex7
 
 - Open Terminal/Command line/Powershell:
   - in it open python running environment:
-    - create a variable that is an empty `dict`:
+    - create an empty `dict`:
       - add to it next keys with values:
         - name: your name
         - lname: your last name
@@ -141,7 +144,7 @@
         - no  ? why ? 
 
 
-## Ex8:
+### Ex8:
 
 - in some exercises, you were asked to enter python environment, then exit it, then to access it again:
   - what did you learn from that action ?
@@ -152,13 +155,16 @@
     - explain ?
 
 
-## Ex9:
+### Ex9:
 
 - Open Terminal/Command line/Powershell:
   - in it open python running environment:
     - using `range()` builtin function create a list of numbers 2-37.
 
-## Ex10
+
+###### **Note**: little bit advanced, so don't do it if we have not talked about variables
+
+### Ex10
 
 - Open Terminal/Command line/Powershell:
   - in it open python running environment:
@@ -178,7 +184,7 @@
       -  bonus: what is the length of each individiual word in `longest_word_list`
 
 
-## Ex11
+### Ex11
 
 ###### **Note**: Make sure you have text editor installed.
 - Open your text editor
