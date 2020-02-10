@@ -2,9 +2,28 @@
 
 ### Creating Variables
 
-In computer programming, a `variable` or `scalar` is a storage address (identified by a memory address) paired with an associated symbolic name, which contains some known or unknown quantity of information referred to as a value. The variable name is the usual way to reference the stored value, in addition to referring to the variable itself, depending on the context.(Essentially, variables are containers for storing data values.) This separation of name and content allows the name to be used independently of the exact information it represents. The identifier in computer source code can be bound to a value during run time, and the value of the variable may thus change during the course of program execution.
+In computer programming, __a `variable` or `scalar` is a storage address (identified by a memory address) paired with an associated symbolic name, which contains some known or unknown quantity of information referred to as a value__. The variable name is the usual way to reference the stored value, in addition to referring to the variable itself, depending on the context.(Essentially, variables are containers for storing data values.) This separation of name and content allows the name to be used independently of the exact information it represents. The identifier in computer source code can be bound to a value during run time, and the value of the variable may thus change during the course of program execution.
 
-Unlike other programming languages, Python has no command for declaring a variable. A variable is created the moment you first assign a value to it.
+As an a example, here is a C language code: (it's fine if you don't know what it means, you have explanation below)
+
+```c
+
+int main(*arg,**kwarg){
+
+  int var;
+  float foo;
+  var = 3;
+  foo = 4.6;
+
+    printf("%d\n %f",var,foo);
+
+return 0;
+}
+
+```
+It declares variables `var` of type __int__ and `foo` of type __float__. Then the values of 3 and 4.6 are assingned to them respectively. Later we print them to standard output . at the end we exit the main code with `return 0`, meaning that code has been executed successfully and program if finished running.
+
+Unlike C programming languages, Python has no command for declaring a variable. A variable is created the moment you first assign a value to it.
 
 ```py
 x = 7
