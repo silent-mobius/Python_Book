@@ -152,6 +152,13 @@ True
 
 ### Bitwise operators
 
+Before getting it to this subject, one must first understand several things:
+- __binary number__ is a number expressed in the base-2 numeral system or binary numeral system, which uses only two symbols: typically "0" (zero) and "1" (one). 
+- __ASCII code__ or  short name for 'The American Standard Code for Information Interchange' uses a 7-bit binary code to represent text and other characters within computers, communications equipment, and other devices. Each letter or symbol is assigned a number from 0 to 127. For example, lowercase "a" is represented by 1100001 as a bit string (which is "97" in decimal).
+- __a bitwise operation__ operates on one or more bit patterns or binary numerals at the level of their individual bits. It is a fast and simple action, directly supported by the processor, and is used to manipulate values for comparisons and calculations. 
+
+for more info please read [here](https://en.wikipedia.org/wiki/Binary)
+
 Bitwise operators act on operands as if they were string of binary digits. It operates bit by bit, hence the name.
 
 For example, 2 is 10 in binary and 7 is 111.
@@ -159,14 +166,15 @@ For example, 2 is 10 in binary and 7 is 111.
 In the table below: Let x = 10 (0000 1010 in binary) and y = 4 (0000 0100 in binary)
 
 Bitwise operators in Python 
-Operator | Meaning |	Example
-------- | ------ | --------
-& |	Bitwise AND |	x& y = 0 (0000 0000)
-\||	Bitwise OR 	| x \| y = 14 (0000 1110)
-~ |	Bitwise NOT |	~x = -11 (1111 0101)
-^ |	Bitwise XOR |	x ^ y = 14 (0000 1110)
->> |	Bitwise right shift |	x>> 2 = 2 (0000 0010)
-<< |	Bitwise left shift |	x<< 2 = 40 (0010 1000)
+Operator | Meaning | What Does It Do? | Example
+-------  | ------  | ------------     | --------
+& |	Bitwise AND | Each bit of the output is 1 if the corresponding bit of x AND of y is 1, otherwise it's 0. 	| x & y = 0 (0000 0000)
+\||	Bitwise OR 	| Each bit of the output is 0 if the corresponding bit of x AND of y is 0, otherwise it's 1.| x \| y = 14 (0000 1110)
+>> | Bitwise right shift | Returns x with the bits shifted to the right by y places. This is the same as //'ing x by 2**y. 	| x >> 2 = 2 (0000 0010)
+<< | Bitwise left shift  | Returns x with the bits shifted to the right by y places. This is the same as multiplying x by 2**y. 
+x	| x << 2 = 40 (0010 1000)
+~ |	Bitwise NOT | Returns the complement of x - the number you get by switching each 1 for a 0 and each 0 for a 1.| ~x = -11 (1111 0101)
+^ |	Bitwise XOR | Each bit of the output is the same as the corresponding bit in x if that bit in y is 0, and it's the complement of the bit in x if that bit in y is 1. | x ^ y = 14 (0000 1110)
 
 
 
