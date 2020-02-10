@@ -8,8 +8,10 @@
 ########################################################################
 
 import os
+import re
 import sys
 import datetime
+
 from zipfile import ZipFile
 
 today = datetime.date.today()
