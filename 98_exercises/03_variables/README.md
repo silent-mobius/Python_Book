@@ -1,13 +1,14 @@
 # Variable Exercises
 
-## Create a folder named variables and save all the exercises below in it.
+## Create a folder named 03_variables and save all the exercises below in it.
 
 
 ###### **Note**: Make sure that you have Text Editor installed
 
 ### Ex1
 
-- Create a Python program/script:
+- Open your text editor:
+  - Create a Python program/script and name it as exercise number (Ex1.py):
   - create next variable names and assign all of them value of `0`:
     - a
     - Alfa
@@ -113,3 +114,31 @@
 - Open your text editor:
   - Create a Python program/script and name it as exercise number (Ex9.py)
   - write a script that has your name  saved under a variable and prints ascii values of your name <!--https://www.w3resource.com/python-exercises/python-basic-exercise-86.php -->
+
+### Ex10
+
+- Open your text editor:
+  - Create a Python program/script and name it as exercise number (Ex10.py)
+  - create variable that holds your name and last name.
+    - use `format()` function to __insert it__ into string that starts with 'Hello'
+    - print the string to standard output.
+
+
+### Ex11
+
+- Open your text editor:
+  - Create a Python program/script and name it as exercise number (Ex11.py)
+  - create a string variable that holds your details: name, last name, id, address
+    - use `split()` function to __convert it__ into list
+    - print the converted variable to standard output.
+
+
+### Ex12
+
+- Open your text editor:
+  - Create a Python program/script and name it as exercise number (Ex12.py)
+  - create a three variables that hold your details: name, last name, id.
+  - join those variables into one variable with `join()` function.
+  - print joined variable to screen.
+
+
