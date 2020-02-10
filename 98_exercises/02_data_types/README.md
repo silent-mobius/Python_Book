@@ -84,7 +84,7 @@
 
 ## Ex5
 
- Open Terminal/Command line/Powershell:
+- Open Terminal/Command line/Powershell:
   - in it open python running environment:
     - create a variable that is an empty `tuple`:
       - add to it next details:
@@ -101,7 +101,7 @@
 
 ## Ex6
 
- Open Terminal/Command line/Powershell:
+- Open Terminal/Command line/Powershell:
   - in it open python running environment:
     - create a variable that is an empty `set`:
       - add to it next details:
@@ -122,7 +122,7 @@
 
 ## Ex7
 
- Open Terminal/Command line/Powershell:
+- Open Terminal/Command line/Powershell:
   - in it open python running environment:
     - create a variable that is an empty `dict`:
       - add to it next keys with values:
@@ -144,9 +144,35 @@
 ## Ex8:
 
 - in some exercises, you were asked to enter python environment, then exit it, then to access it again:
-  - what did you learn from that action?
-  - does it need to be fixed?
+  - what did you learn from that action ?
+  - does it need to be fixed ?
   - if yes:
-    - explain how?
+    - explain how ?
   - if no:
     - explain ?
+
+
+## Ex9:
+
+- Open Terminal/Command line/Powershell:
+  - in it open python running environment:
+    - using `range()` builtin function create a list of numbers 2-37.
+
+## Ex10
+
+- Open Terminal/Command line/Powershell:
+  - in it open python running environment:
+    - create variable `longest_word` and give it a value of: pneumonoultramicroscopicsilicovolcanoconiosis
+    - create variable `longest_word_list` and give it next values: (yes: these are real words. so check them in dictionary, what they mean)
+      - pneumonoultramicroscopicsilicovolcanoconiosis
+      - pseudopseudohypoparathyroidism 
+      - electroencephalographically
+      - flocci­nauci­nihili­pili­fication
+      - deinstitutionalization
+      - counterrevolutionaries
+      - supercalifragilisticexpialidocious
+      - semihemidemisemihemidemisemihemidemisemiquaver. 
+    - by using `len()` builtin function check:
+      -  what is the length of `longest_word`
+      -  what is the length of `longest_word_list`
+      -  bonus: what is the length of each individiual word in `longest_word_list`
