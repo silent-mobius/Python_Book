@@ -95,5 +95,58 @@
         - your favorite comics hero/villain
           - short string explaining why your hero/villain is your favorite hero.(nothing too long, just few words)
       - print that vairable to screen.
-      - check with `in` operator if your name is in the tuple.
+      - check with `in` operator if your name is in the `tuple`.
         - print it to screen.
+
+
+## Ex6
+
+ Open Terminal/Command line/Powershell:
+  - in it open python running environment:
+    - create a variable that is an empty `set`:
+      - add to it next details:
+        - name
+        - last name
+        - your favorite tshirt
+        - your favorite animal
+        - your favorite comics hero/villain
+      - print that vairable to screen.
+      - check with `in` operator if your name is in the `set`.
+        - print it to screen.
+    - enter python environment once again:
+    - try printing those vairables again:
+      - did you succeed?
+        - yes ? why ?
+        - no  ? why ? 
+
+
+## Ex7
+
+ Open Terminal/Command line/Powershell:
+  - in it open python running environment:
+    - create a variable that is an empty `dict`:
+      - add to it next keys with values:
+        - name: your name
+        - lname: your last name
+        - tshrit: your favorite tshirt
+        - animal: your favorite animal
+        - hero: your favorite comics hero/villain
+      - print that `dict` to screen.
+      - check with `in` operator if your name is in the `dict`.
+        - print it to screen.
+    - enter python environment once again:
+    - try printing those vairables again:
+      - did you succeed?
+        - yes ? why ?
+        - no  ? why ? 
+
+
+## Ex8:
+
+- in some exercises, you were asked to enter python environment, then exit it, then to access it again:
+  - what did you learn from that action?
+  - does it need to be fixed?
+  - if yes:
+    - explain how?
+  - if no:
+    - explain ?
