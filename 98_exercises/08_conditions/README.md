@@ -29,3 +29,6 @@ if num1 == num2:
 else:
     print(num1,"is NOT same as", num2)
 -->
+
+
+https://www.w3resource.com/python-exercises/python-basic-exercise-33.php
