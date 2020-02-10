@@ -66,12 +66,49 @@
 ### Ex4
 
 - Open your text editor:
-  - Create a Python program/script and name it as exercise number (Ex4.py
-  - create a variable name num_range
-    - generate with `range()` numbers from 0 to 100 as a `list`.
-  - create a variable name str_range
-    - generate with `range()` numbers from a to z as a `tuple`.
-  - print the variables to screen
+  - Create a Python program/script and name it as exercise number (Ex4.py)
+    - create a variable name num_range
+      - generate with `range()` numbers from 0 to 100 as a `list`.
+    - create a variable name str_range
+      - generate with `range()` numbers from a to z as a `tuple`.(needs use of `ord()` and `chr()` functions)
+    - print the variables to screen
 
 
 ### Ex5
+
+- Open your text editor:
+  - Create a Python program/script and name it as exercise number (Ex5.py)
+  - create vairables alfa, beta, gamma and delta and assign to each of them value:
+    - make it in one line.
+  - print to standard output all variables in one line
+
+
+### Ex6
+
+- Open your text editor:
+  - Create a Python program/script and name it as exercise number (Ex6.py)
+  - create two variables.
+    - print them to screen.
+  - swap their values.
+    - print them to screen again.
+
+
+### Ex7 
+
+- Open your text editor:
+  - Create a Python program/script and name it as exercise number (Ex7.py)
+    - create a list and in it save several strings.
+    - create another list and save in it some other strings.
+    - join the list by concatenating them in to one list.
+
+### Ex8
+
+- Open your text editor:
+  - Create a Python program/script and name it as exercise number (Ex8.py)
+  - Write a program to encrypt/hash a word  <!--https://www.w3resource.com/python-exercises/python-basic-exercise-74.php-->
+
+
+### Ex9
+
+- Open your text editor:
+  - Create a Python program/script and name it as exercise number (Ex9.py)
