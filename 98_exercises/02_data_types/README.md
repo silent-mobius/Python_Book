@@ -72,7 +72,7 @@
         - your favorite comics hero/villain
           - string explaining why your hero/villain is your hero.(nothing too long, just few words)
       - print that vairable to screen.
-      - check with `in` operator if your name is in the variable.
+      - check with `in` operator if your name is in the list.
         - print it to screen.
   - exit the python environment.
   - enter python environment once again:
@@ -95,5 +95,5 @@
         - your favorite comics hero/villain
           - short string explaining why your hero/villain is your favorite hero.(nothing too long, just few words)
       - print that vairable to screen.
-      - check with `in` operator if your name is in the variable.
+      - check with `in` operator if your name is in the tuple.
         - print it to screen.
