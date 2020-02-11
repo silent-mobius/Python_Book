@@ -26,8 +26,6 @@
 
 
 
-
-
 ### Comparisant
 
 #### Ex1 
