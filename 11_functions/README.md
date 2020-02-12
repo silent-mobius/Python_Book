@@ -239,3 +239,8 @@ def avg_number(x, y):
     print("Average of ",x," and ",y, " is ",(x+y)/2)
 
 ```
+
+
+[back to top](#arithmetic-operators)
+Or
+[back to main](../README.md)

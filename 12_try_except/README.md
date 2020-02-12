@@ -32,3 +32,8 @@ finally:
 f.close()
 ```
 This type of statement makes sure that the file is closed whether an exception occurs or not.
+
+
+[back to top](#arithmetic-operators)
+Or
+[back to main](../README.md)

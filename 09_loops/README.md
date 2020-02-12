@@ -378,3 +378,9 @@ for x in range(7):
 5
 
 In the above example, the for loop prints all the numbers from 0 to 6 except 3 and 6 as the continue statement returns the control of the loop to the top
+
+
+
+[back to top](#arithmetic-operators)
+Or
+[back to main](../README.md)

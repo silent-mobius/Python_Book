@@ -187,3 +187,8 @@ myfunc()
 
 print("Python is " + x)
 ```
+
+
+[back to top](#python-syntax)
+Or
+[back to main](../README.md)

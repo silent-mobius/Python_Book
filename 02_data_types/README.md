@@ -1534,3 +1534,8 @@ print(len(squares))
 # Output: [1, 3, 5, 7, 9]
 print(sorted(squares))
 ```
+
+
+[back to top](#python-syntax)
+Or
+[back to main](../README.md)

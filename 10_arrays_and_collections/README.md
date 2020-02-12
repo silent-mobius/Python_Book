@@ -461,3 +461,9 @@ Check this page to learn more about Python array and array methods:
 Lists are much more flexible than arrays. They can store elements of different data types including string. Also, lists are faster than arrays. And, if you need to do mathematical computation on arrays and matrices, you are much better off using something like NumPy library.
 
 Unless you don't really need arrays (array module may be needed to interface with C code), don't use them.
+
+
+
+[back to top](#arithmetic-operators)
+Or
+[back to main](../README.md)

@@ -1,6 +1,6 @@
 # Python Essentials
 
-<h2 style='background-color:lightgreen'>
+<h2 style='background-color:lightgreen'>    
     <center style='color:black'>
         Python 101
     </center>
@@ -13,30 +13,32 @@ A set of instructions for how a computer should react to various inputs and outp
 
 
 ### History Lesson:
+
 *   Punch cards - [read it for history sake](https://en.wikipedia.org/wiki/Punched_card)
 ---
 *   Assembly language:
     *   Processor specific --> not portable
     *   Binary correspondence
     *   Easier to read than punch cards or binary
-    *   more info [here](https://en.wikipedia.org/wiki/Assembly_language)
+    *   more info go [here](https://en.wikipedia.org/wiki/Assembly_language)
 ---
 *   "Higher level" languages
       *   Fortran, Cobol, C, C++, C#:
       *   Easier to read and write
       *   Slightly more portable
-      *   more infor [here](https://en.wikipedia.org/wiki/High-level_programming_language)
+      *   more info go  [here](https://en.wikipedia.org/wiki/High-level_programming_language)
   
 ---
 *    Scripting languages:
      *    JS, Python, Ruby, Groovy, Bash:
-     *    more info [here](https://en.wikipedia.org/wiki/Scripting_language)
+     *    more info go [here](https://en.wikipedia.org/wiki/Scripting_language)
 
-###   `Types of languages`
+### `Types of languages`
 
 *  Compiled Languages:
   -  C, C++, C#, Objective-C
   -  [read about compiler](https://en.wikipedia.org/wiki/Compiler)
+  
 *  Scripting languages:
   - Python, Ruby, Javascript, Lua
   - [read about run time environment](https://en.wikipedia.org/wiki/Runtime_system)
@@ -50,7 +52,7 @@ A set of instructions for how a computer should react to various inputs and outp
 
 ### Procedural Languages
 
-Procedural programming is a programming paradigm, derived from structured programming,based on the concept of the procedure call. Procedures, also known as routines, subroutines, or functions, simply contain a series of computational steps to be carried out. Any given procedure might be called at any point during a program's execution, including by other procedures or itself.
+Procedural programming is a programming paradigm, derived from structured programming, based on the concept of the procedure call. Procedures, also known as routines, subroutines, or functions, simply contain a series of computational steps to be carried out. Any given procedure might be called at any point during a program's execution, including by other procedures or itself.
 
 *   Procedures/Routines/Subroutines/Functions that include series of functions
 *   [link](https://en.wikipedia.org/wiki/Procedural_programming)
@@ -95,31 +97,33 @@ REPL's are interactive, by which i mean that they interact with the user by succ
 
 Although running in REPL is fun and all, one must always run the list of commands from somewhere, mostly because it misses point of programming if you'll run all the commands manually. 
 
-list of python (or any other high level language) commands that are saved in to the file is usually called as `code`.
+list of python (or any other high level language) commands that are saved into the file is usually called as `code`.
 
 To write code, we use a type of `text editor` to write and run it. There are many text editor on www, here is short list of ones that i'd suggest for this course:
 
 - GEANY --> a lightweight IDE for general purpose of development.
   - ![GEANY](../.img/geany.png) 
-- ATOM --> a extencible text editor with bunch tools that can be added.
+- ATOM --> a extencible text editor with bunch of tools that can be added.
   - ![ATOM](../.img/atom.png) 
 - VSCODIUM --> a clone project of atom and vscode with more native OpenSource licensing and agenda.
   - ![VSCODIUM](../.img/vscode.png) 
+
+
 
 # Python Syntax
 ---
 
 
-Python syntax can be executed by writing directly in the Command Line: [img]
+Python syntax can be executed by writing directly in the Command Line: ![](./../.img/terminal_run.png)
 
-Or by creating a python file on the server, using the .py file extension, and running it in the Command Line: [img]
+Or by creating a python file on the server, using the .py file extension, and running it in the Command Line: ![](../.img/editor_run.png)
 
 
 ### Python Indentation
 
 Indentation refers to the spaces at the beginning of a code line.
 Where in other programming languages the indentation in code is for readability only, the indentation in Python is very important.
-Python uses indentation to indicate a block of code.
+Python uses indentation to indicate a block of code:
 ```py
 if 5 > 2:
     print("Five is greater than two!")      #<-- 4 space indentation
@@ -139,21 +143,19 @@ In Python variables are created the moment you assign a value to it:
 x = 5
 y = "Hello, World!
 ```
-Python has no command for declaring a variable.
 Unlike other programming languages, Python has no command for declaring a variable.
-A variable is created the moment you first assign a value to it.
+A variable is created in memory, the moment you first assign a value to it.
 
 
 ### Comments
 
-Comments can be used to explain Python code.
+In computer programming, a comment is a programmer-readable explanation or annotation in the source code of a computer program. They are added with the purpose of making the source code easier for humans to understand, and are generally ignored by compilers and interpreters. The syntax of comments in various programming languages varies considerably. 
 
-Comments can be used to make the code more readable.
 
-Comments can be used to prevent execution when testing code.
-Creating a Comment
 
-Comments starts with a #, and Python will ignore them:
+#### Creating a Comment
+
+In Python , in general, comments starts with a `#`, and once Python gets to line where they reside , it will ignore them:
 
 ```py
 #This is a comment
@@ -186,6 +188,7 @@ print("Hello, World!")
 
 Or, not quite as intended, you can use a multiline string.
 Since Python will ignore string literals that are not assigned to a variable, you can add a multiline string (triple quotes) in your code, and place your comment inside it:
+
 ```py
 """
 This is a comment
@@ -195,7 +198,6 @@ more than just one line
 print("Hello, World!")
 ```
 As long as the string is not assigned to a variable, Python will read the code, but then ignore it, and you have made a multiline comment.
-
 
 
 # Python Data Types
@@ -272,7 +274,7 @@ x = memoryview(bytes(5)) 	#memoryview
 
 ### Python Numbers
 
-There are three numeric types in Python:
+There are two <!--three--> numeric types in Python:
 
 * int
 * float
@@ -292,7 +294,7 @@ print(type(x))
 print(type(y))
 ```
 
-<! -- print(type(z)) -->
+<!-- print(type(z)) -->
 
 
 ### Int
@@ -340,6 +342,13 @@ print(type(x))
 print(type(y))
 print(type(z))
 ```
+The Output should look like this:
+```txt
+35000.0
+120000.0
+-8.77e+101
+
+```
 
 <!--
 Complex
@@ -360,7 +369,10 @@ Type Conversion
 You can convert from one type to another with the int(), float(), and complex() methods:
 -->
 
-Convert from one type to another:
+When ever we decalte a type of  data. it usualyy stay that way until the program/script finishes it run. but a quwstion that is raised:what if your program/script requires to take that previously declared data and to view it in different point of view ?
+That's where the `conversion` between types comes into a play. 
+`Conversion` is a process of changing one type of data into another, for example: integer in to float, or float to integer and so on.
+To `convert` one type to another we can use built-in function/structures : `int()`, `float()`  and many other.
 
 ```py
 x = 1 # int
@@ -368,30 +380,31 @@ y = 2.8 # float
 ```
 
 <!-- z = 1j # complex -->
+```py
+#convert from int to float:
+a = float(5)
+print(a)
 
-> convert from int to float:
-  > a = float(x)
-
-
-> convert from float to int:
-  > b = int(y)
-
+#convert from float to int:
+b = int(4.5)
+print(b)
+```
 <!--
 #convert from int to complex:
 c = complex(x)
 -->
 
-```py
-print(a)
-print(b)
-print(c)
+The print out for all those commands above should look like this:
+```txt
 
-print(type(a))
-print(type(b))
-print(type(c))
+5.0
+4
 ```
-
+<!--
 > **Note: You cannot convert complex numbers into another number type.**
+-->
+> **Note: In Previous versions of python, there were additional data types such as `long`, which is very big `int`.**
+> **Note: There is additional type that we didn't touch at all, called `complex` and you are welcome to read about it [here](https://docs.python.org/2/library/stdtypes.html#numeric-types-int-float-long-complex), [here](https://stackoverflow.com/questions/24812444/why-are-complex-numbers-in-python-denoted-with-j-instead-of-i) and [here](https://docs.python.org/3/c-api/complex.html)**
 
 ---
 
@@ -406,6 +419,7 @@ Even though you may see characters on your screen, internally it is stored and m
 This conversion of character to a number is called encoding, and the reverse process is decoding. 
 ASCII and Unicode are some of the popular encoding used.
 In Python, string is a sequence of Unicode character. Unicode was introduced to include every character in all languages and bring uniformity in encoding. 
+
 You can learn more about Unicode from [here](https://en.wikipedia.org/wiki/Unicode).
 
 ## How to create a string in Python?
@@ -438,6 +452,7 @@ Hello
 Hello, welcome to
            the world of Python
 ```
+> Note: there is an indent with output text, because triple quotes preserve the strings as they are stored.
 
 ## How to access characters in a string?
 
@@ -446,7 +461,7 @@ Python allows negative indexing for its sequences.
 The index of -1 refers to the last item, -2 to the second last item and so on. We can access a range of items in a string by using the slicing operator (colon).
 
 ```py
-str = 'programiz'
+str = 'pyclass'
 print('str = ', str)
 
 #first character
@@ -465,14 +480,14 @@ print('str[5:-2] = ', str[5:-2])
 If we try to access index out of the range or use decimal number, we will get errors.
 
 ```py
-    # index must be in range
-    >>> my_string[15]  
-    ...
-    IndexError: string index out of range
-    # index must be an integer
-    >>> my_string[1.5] 
-    ...
-    TypeError: string indices must be integers
+# index must be in range
+>>> my_string[15]  
+...
+IndexError: string index out of range
+# index must be an integer
+>>> my_string[1.5] 
+...
+TypeError: string indices must be integers
 ```
 
 Slicing can be best visualized by considering the index to be between the elements as shown below.
@@ -480,16 +495,16 @@ If we want to access a range, we need the index that will slice the portion from
 
 ## How to change or delete a string?
 
-Strings are immutable. This means that elements of a string cannot be changed once it has been assigned. We can simply reassign different strings to the same name.
+Strings are `immutable`. This means that elements of a string cannot be changed once it has been assigned. We can simply reassign different strings to the same name.
 
 ```py
-    >>> del my_string[1]
-    ...
-    TypeError: 'str' object doesn't support item deletion
-    >>> del my_string
-    >>> my_string
-    ...
-    NameError: name 'my_string' is not defined
+>>> del my_string[1]  #deleting second character in my_string, which is impossible (don't imagine 9gag memes)
+...
+TypeError: 'str' object doesn't support item deletion
+>>> del my_string #deleting whole string
+>>> my_string
+...
+NameError: name 'my_string' is not defined
 ```
 
 ## Python String Operations
@@ -520,14 +535,14 @@ Writing two string literals together also concatenates them like + operator.
 If we want to concatenate strings in different lines, we can use parentheses.
 
 ```py
-    >>> # two string literals together
-    >>> 'Hello ''World!'
-    'Hello World!'
-    >>> # using parentheses
-    >>> s = ('Hello '
-    ...      'World')
-    >>> s
-    'Hello World'
+>>> # two string literals together
+>>> 'Hello ''World!'
+'Hello World!'
+>>> # using parentheses
+>>> s = ('Hello '
+...      'World')
+>>> s
+'Hello World'
 ```
 
 ## Iterating Through String
@@ -547,10 +562,10 @@ print(count,'letters found')
 We can test if a sub string exists within a string or not, using the keyword in.
 
 ```py
-    >>> 'a' in 'program'
-    True
-    >>> 'at' not in 'battle'
-    False
+>>> 'a' in 'program'
+True
+>>> 'at' not in 'battle'
+False
 ```
 
 ## Built-in functions to Work with Python
@@ -579,12 +594,12 @@ print('len(str) = ', len(str))
 If we want to print a text like -He said, "What's there?"- we can neither use single quote or double quotes. This will result into SyntaxError as the text itself contains both single and double quotes.
 
 ```py
-    >>> print("He said, "What's there?"")
-    ...
-    SyntaxError: invalid syntax
-    >>> print('He said, "What's there?"')
-    ...
-    SyntaxError: invalid syntax
+>>> print("He said, "What's there?"")
+...
+SyntaxError: invalid syntax
+>>> print('He said, "What's there?"')
+...
+SyntaxError: invalid syntax
 ```
 One way to get around this problem is to use triple quotes. Alternatively, we can use escape sequences.
 
@@ -623,13 +638,13 @@ Escape Sequence | Description
 
 Here are some examples
 ```py
-    >>> print("\\")
-    \
-    >>> print("This is printed\nin two lines")
-    This is printed
-    in two lines
-    >>> print("This is \x48\x45\x58 representation")
-    This is HEX representation
+>>> print("\\")
+\
+>>> print("This is printed\nin two lines")
+This is printed
+in two lines
+>>> print("This is \x48\x45\x58 representation")
+This is HEX representation
 ```
 
 ### Raw String to ignore escape sequence
@@ -637,11 +652,11 @@ Here are some examples
 Sometimes we may wish to ignore the escape sequences inside a string. To do this we can place r or R in front of the string. This will imply that it is a raw string and any escape sequence inside it will be ignored.
 
 ```py
-   >>> print("This is \x41 \ngood example")
-    This is A
-    good example
-   >>> print(r"This is \x41 \ngood example")
-    This is \x41 \ngood example
+>>> print("This is \x41 \ngood example")
+This is A
+good example
+>>> print(r"This is \x41 \ngood example")
+This is \x41 \ngood example
 ```
 
 ### The format() Method for Formatting Strings
@@ -670,28 +685,28 @@ print(keyword_order)
 The format() method can have optional format specifications. They are separated from field name using colon. For example, we can left-justify <, right-justify > or center ^ a string in the given space. We can also format integers as binary, hexadecimal etc. and floats can be rounded or displayed in the exponent format. There are a ton of formatting you can use. Visit here for all the string formatting available with the format() method.
 
 ```py
-    >>> # formatting integers
-    >>> "Binary representation of {0} is {0:b}".format(12)
-    'Binary representation of 12 is 1100'
-    >>> # formatting floats
-    >>> "Exponent representation: {0:e}".format(1566.345)
-    'Exponent representation: 1.566345e+03'
-    >>> # round off
-    >>> "One third is: {0:.3f}".format(1/3)
-    'One third is: 0.333'
-    >>> # string alignment
-    >>> "|{:<10}|{:^10}|{:>10}|".format('butter','bread','ham')
-    '|butter    |  bread   |       ham|'
+>>> # formatting integers
+>>> "Binary representation of {0} is {0:b}".format(12)
+'Binary representation of 12 is 1100'
+>>> # formatting floats
+>>> "Exponent representation: {0:e}".format(1566.345)
+'Exponent representation: 1.566345e+03'
+>>> # round off
+>>> "One third is: {0:.3f}".format(1/3)
+'One third is: 0.333'
+>>> # string alignment
+>>> "|{:<10}|{:^10}|{:>10}|".format('butter','bread','ham')
+'|butter    |  bread   |       ham|'
 ```
 ### Old style formatting
 
 We can even format strings like the old sprintf() style used in C programming language. We use the % operator to accomplish this.
 ```py
-    >>> x = 12.3456789
-    >>> print('The value of x is %3.2f' %x)
-    The value of x is 12.35
-    >>> print('The value of x is %3.4f' %x)
-    The value of x is 12.3457
+>>> x = 12.3456789
+>>> print('The value of x is %3.2f' %x)
+The value of x is 12.35
+>>> print('The value of x is %3.4f' %x)
+The value of x is 12.3457
 ```
 
 ### Common Python String Methods
@@ -699,18 +714,18 @@ We can even format strings like the old sprintf() style used in C programming la
 There are numerous methods available with the string object. The format() method that we mentioned above is one of them. Some of the commonly used methods are lower(), upper(), join(), split(), find(), replace() etc. Here is a complete list of all the built-in methods to work with strings in Python.
 
 ```py
-    >>> "PrOgRaMiZ".lower()
-    'programiz'
-    >>> "PrOgRaMiZ".upper()
-    'PROGRAMIZ'
-    >>> "This will split all words into a list".split()
-    ['This', 'will', 'split', 'all', 'words', 'into', 'a', 'list']
-    >>> ' '.join(['This', 'will', 'join', 'all', 'words', 'into', 'a', 'string'])
-    'This will join all words into a string'
-    >>> 'Happy New Year'.find('ew')
-    7
-    >>> 'Happy New Year'.replace('Happy','Brilliant')
-    'Brilliant New Year'
+>>> "PyCLass".lower()
+'pyclass'
+>>> "PyCLass".upper()
+'pyclass'
+>>> "This will split all words into a list".split()
+['This', 'will', 'split', 'all', 'words', 'into', 'a', 'list']
+>>> ' '.join(['This', 'will', 'join', 'all', 'words', 'into', 'a', 'string'])
+'This will join all words into a string'
+>>> 'Happy New Year'.find('ew')
+7
+>>> 'Happy New Year'.replace('Happy','Brilliant')
+'Brilliant New Year'
 ```
 
 ---
@@ -725,12 +740,12 @@ In Python programming, a list is created by placing all the items (elements) ins
 It can have any number of items and they may be of different types (integer, float, string etc.).
 
 ```py
-    # empty list
-    my_list = []
-    # list of integers
-    my_list = [1, 2, 3]
-    # list with mixed datatypes
-    my_list = [1, "Hello", 3.4]
+# empty list
+my_list = []
+# list of integers
+my_list = [1, 2, 3]
+# list with mixed datatypes
+my_list = [1, "Hello", 3.4]
 ```
 
 Also, a list can even have another list as an item. This is called nested list.
@@ -751,22 +766,22 @@ Trying to access an element other that this will raise an IndexError. The index 
 Nested list are accessed using nested indexing.
 
 ```py
-    my_list = ['p','r','o','b','e']
-    # Output: p
-    print(my_list[0])
-    # Output: o
-    print(my_list[2])
-    # Output: e
-    print(my_list[4])
-    # Error! Only integer can be used for indexing
-    # my_list[4.0]
-    # Nested List
-    n_list = ["Happy", [2,0,1,5]]
-    # Nested indexing
-    # Output: a
-    print(n_list[0][1])    
-    # Output: 5
-    print(n_list[1][3])
+my_list = ['p','r','o','b','e']
+# Output: p
+print(my_list[0])
+# Output: o
+print(my_list[2])
+# Output: e
+print(my_list[4])
+# Error! Only integer can be used for indexing
+# my_list[4.0]
+# Nested List
+n_list = ["Happy", [2,0,1,5]]
+# Nested indexing
+# Output: a
+print(n_list[0][1])    
+# Output: 5
+print(n_list[1][3])
 ```
 
 ## Negative indexing
@@ -774,30 +789,31 @@ Nested list are accessed using nested indexing.
 Python allows negative indexing for its sequences. The index of -1 refers to the last item, -2 to the second last item and so on.
 
 ```py
-    my_list = ['p','r','o','b','e']
-    # Output: e
-    print(my_list[-1])
-    # Output: p
-    print(my_list[-5])
+my_list = ['p','r','o','b','e']
+# Output: e
+print(my_list[-1])
+# Output: p
+print(my_list[-5])
 ```
 
 ## How to slice lists in Python?
 
 We can access a range of items in a list by using the slicing operator (colon).
+Slicing can be best visualized by considering the index to be between the elements as shown below. So if we want to access a range, we need two indices that will slice that portion from the list.
 
 ```py
-    my_list = ['p','y','t','h','o','n',' ','c','o','u','r','s','e']
-    # elements 3rd to 5th
-    print(my_list[2:5])
-    # elements beginning to 4th
-    print(my_list[:-5])
-    # elements 6th to end
-    print(my_list[5:])
-    # elements beginning to end
-    print(my_list[:])
+my_list = ['p','y','t','h','o','n',' ','c','o','u','r','s','e']
+# elements 3rd to 5th
+print(my_list[2:5])
+# elements beginning to 4th
+print(my_list[:-5])
+# elements 6th to end
+print(my_list[5:])
+# elements beginning to end
+print(my_list[:])
 ```
 
-Slicing can be best visualized by considering the index to be between the elements as shown below. So if we want to access a range, we need two indices that will slice that portion from the list.
+
 
 ## How to change or add elements to a list?
 
@@ -806,52 +822,51 @@ List are mutable, meaning, their elements can be changed unlike string or tuple.
 We can use assignment operator (=) to change an item or a range of items.
 
 ```py
-
-    # mistake values
-    odd = [2, 4, 6, 8]
-    # change the 1st item
-    odd[0] = 1
-    # Output: [1, 4, 6, 8]
-    print(odd)
-    # change 2nd to 4th items
-    odd[1:4] = [3, 5, 7]  
-    # Output: [1, 3, 5, 7]
-    print(odd)
+# mistake values
+odd = [2, 4, 6, 8]
+# change the 1st item
+odd[0] = 1
+# Output: [1, 4, 6, 8]
+print(odd)
+# change 2nd to 4th items
+odd[1:4] = [3, 5, 7]  
+# Output: [1, 3, 5, 7]
+print(odd)
 ```
 
 We can add one item to a list using append() method or add several items using extend() method.
 
 ```py
-    odd = [1, 3, 5]
-    odd.append(7)
-    # Output: [1, 3, 5, 7]
-    print(odd)
-    odd.extend([9, 11, 13])
-    # Output: [1, 3, 5, 7, 9, 11, 13]
-    print(odd)
+odd = [1, 3, 5]
+odd.append(7)
+# Output: [1, 3, 5, 7]
+print(odd)
+odd.extend([9, 11, 13])
+# Output: [1, 3, 5, 7, 9, 11, 13]
+print(odd)
 ```
 
 We can also use + operator to combine two lists. This is also called concatenation.
 The * operator repeats a list for the given number of times.
 
 ```py
-    odd = [1, 3, 5]
-    # Output: [1, 3, 5, 9, 7, 5]
-    print(odd + [9, 7, 5])
-    #Output: ["re", "re", "re"]
-    print(["re"] * 3)
+odd = [1, 3, 5]
+# Output: [1, 3, 5, 9, 7, 5]
+print(odd + [9, 7, 5])
+#Output: ["re", "re", "re"]
+print(["re"] * 3)
 ```
 
 Furthermore, we can insert one item at a desired location by using the method insert() or insert multiple items by squeezing it into an empty slice of a list.
 
 ```py
-    odd = [1, 9]
-    odd.insert(1,3)
-    # Output: [1, 3, 9] 
-    print(odd)
-    odd[2:2] = [5, 7]
-    # Output: [1, 3, 5, 7, 9]
-    print(odd)
+odd = [1, 9]
+odd.insert(1,3)
+# Output: [1, 3, 9] 
+print(odd)
+odd[2:2] = [5, 7]
+# Output: [1, 3, 5, 7, 9]
+print(odd)
 ```
 
 ## How to delete or remove elements from a list?
@@ -859,19 +874,19 @@ Furthermore, we can insert one item at a desired location by using the method in
 We can delete one or more items from a list using the keyword del. It can even delete the list entirely.
 
 ```py
-    my_list = ['p','r','o','b','l','e','m']
-    # delete one item
-    del my_list[2]
-    # Output: ['p', 'r', 'b', 'l', 'e', 'm']
-    print(my_list)
-    # delete multiple items
-    del my_list[1:5]  
-    # Output: ['p', 'm']
-    print(my_list)
-    # delete entire list
-    del my_list
-    # Error: List not defined
-    print(my_list)
+my_list = ['p','r','o','b','l','e','m']
+# delete one item
+del my_list[2]
+# Output: ['p', 'r', 'b', 'l', 'e', 'm']
+print(my_list)
+# delete multiple items
+del my_list[1:5]  
+# Output: ['p', 'm']
+print(my_list)
+# delete entire list
+del my_list
+# Error: List not defined
+print(my_list)
 ```
 
 We can use remove() method to remove the given item or pop() method to remove an item at the given index.
@@ -879,33 +894,33 @@ The pop() method removes and returns the last item if index is not provided. Thi
 We can also use the clear() method to empty a list.
 
 ```py
-    my_list = ['p','r','o','b','l','e','m']
-    my_list.remove('p')
-    # Output: ['r', 'o', 'b', 'l', 'e', 'm']
-    print(my_list)
-    # Output: 'o'
-    print(my_list.pop(1))
-    # Output: ['r', 'b', 'l', 'e', 'm']
-    print(my_list)
-    # Output: 'm'
-    print(my_list.pop())
-    # Output: ['r', 'b', 'l', 'e']
-    print(my_list)
-    my_list.clear()
-    # Output: []
-    print(my_list)
+my_list = ['p','r','o','b','l','e','m']
+my_list.remove('p')
+# Output: ['r', 'o', 'b', 'l', 'e', 'm']
+print(my_list)
+# Output: 'o'
+print(my_list.pop(1))
+# Output: ['r', 'b', 'l', 'e', 'm']
+print(my_list)
+# Output: 'm'
+print(my_list.pop())
+# Output: ['r', 'b', 'l', 'e']
+print(my_list)
+my_list.clear()
+# Output: []
+print(my_list)
 ```
 
 Finally, we can also delete items in a list by assigning an empty list to a slice of elements.
 
 ```py
-    >>> my_list = ['p','r','o','b','l','e','m']
-    >>> my_list[2:3] = []
-    >>> my_list
-    ['p', 'r', 'b', 'l', 'e', 'm']
-    >>> my_list[2:5] = []
-    >>> my_list
-    ['p', 'r', 'm']
+>>> my_list = ['p','r','o','b','l','e','m']
+>>> my_list[2:3] = []
+>>> my_list
+['p', 'r', 'b', 'l', 'e', 'm']
+>>> my_list[2:5] = []
+>>> my_list
+['p', 'r', 'm']
 ```
 
 ## List Comprehension: Elegant way to create new List
@@ -915,30 +930,30 @@ List comprehension consists of an expression followed by for statement inside sq
 Here is an example to make a list with each item being increasing power of 2.
 
 ```py
-    pow2 = [2 ** x for x in range(10)]
-    # Output: [1, 2, 4, 8, 16, 32, 64, 128, 256, 512]
-    print(pow2)
+pow2 = [2 ** x for x in range(10)]
+# Output: [1, 2, 4, 8, 16, 32, 64, 128, 256, 512]
+print(pow2)
 ```
 
 This code is equivalent to
 
 ```py
-    pow2 = []
-    for x in range(10):
-       pow2.append(2 ** x)
+pow2 = []
+for x in range(10):
+    pow2.append(2 ** x)
 ```
 
 A list comprehension can optionally contain more for or if statements. An optional if statement can filter out items for the new list. Here are some examples.
 
 ```py
-    >>> pow2 = [2 ** x for x in range(10) if x > 5]
-    >>> pow2
-    [64, 128, 256, 512]
-    >>> odd = [x for x in range(20) if x % 2 == 1]
-    >>> odd
-    [1, 3, 5, 7, 9, 11, 13, 15, 17, 19]
-    >>> [x+y for x in ['Python ','C '] for y in ['Language','Programming']]
-    ['Python Language', 'Python Programming', 'C Language', 'C Programming']
+>>> pow2 = [2 ** x for x in range(10) if x > 5]
+>>> pow2
+[64, 128, 256, 512]
+>>> odd = [x for x in range(20) if x % 2 == 1]
+>>> odd
+[1, 3, 5, 7, 9, 11, 13, 15, 17, 19]
+>>> [x+y for x in ['Python ','C '] for y in ['Language','Programming']]
+['Python Language', 'Python Programming', 'C Language', 'C Programming']
 ```
 
 # Other List Operations in Python
@@ -948,13 +963,13 @@ A list comprehension can optionally contain more for or if statements. An option
 We can test if an item exists in a list or not, using the keyword in.
 
 ```py
-    my_list = ['p','r','o','b','l','e','m']
-    # Output: True
-    print('p' in my_list)
-    # Output: False
-    print('a' in my_list)
-    # Output: True
-    print('c' not in my_list)
+my_list = ['p','r','o','b','l','e','m']
+# Output: True
+print('p' in my_list)
+# Output: False
+print('a' in my_list)
+# Output: True
+print('c' not in my_list)
 ```
 
 ## Iterating Through a List
@@ -962,8 +977,8 @@ We can test if an item exists in a list or not, using the keyword in.
 Using a for loop we can iterate though each item in a list.
 
 ```py
-    for fruit in ['apple','banana','mango']:
-        print("I like",fruit)
+for fruit in ['apple','banana','mango']:
+    print("I like",fruit)
 ```
 
 ---
@@ -979,58 +994,59 @@ A tuple is created by placing all the items (elements) inside parentheses (), se
 A tuple can have any number of items and they may be of different types (integer, float, list, string, etc.).
 
 ```py
-    # Empty tuple
-    my_tuple = ()
-    print(my_tuple)  # Output: ()
+# Empty tuple
+my_tuple = ()
+print(my_tuple)  # Output: ()
 
-    # Tuple having integers
-    my_tuple = (1, 2, 3)
-    print(my_tuple)  # Output: (1, 2, 3) 
+# Tuple having integers
+my_tuple = (1, 2, 3)
+print(my_tuple)  # Output: (1, 2, 3) 
 
-    # tuple with mixed datatypes
-    my_tuple = (1, "Hello", 3.4)
-    print(my_tuple)  # Output: (1, "Hello", 3.4)  
+# tuple with mixed datatypes
+my_tuple = (1, "Hello", 3.4)
+print(my_tuple)  # Output: (1, "Hello", 3.4)  
 
-    # nested tuple
-    my_tuple = ("mouse", [8, 4, 6], (1, 2, 3))
+# nested tuple
+my_tuple = ("mouse", [8, 4, 6], (1, 2, 3))
 
-    # Output: ("mouse", [8, 4, 6], (1, 2, 3)) 
-    print(my_tuple)
+# Output: ("mouse", [8, 4, 6], (1, 2, 3)) 
+print(my_tuple)
 ```
 
 A tuple can also be created without using parentheses. This is known as tuple packing.
 
 ```py
-    my_tuple = 3, 4.6, "dog"
-    print(my_tuple)   # Output: 3, 4.6, "dog" 
+my_tuple = 3, 4.6, "dog"
+print(my_tuple)   # Output: 3, 4.6, "dog" 
 
-    # tuple unpacking is also possible
-    a, b, c = my_tuple
+# tuple unpacking is also possible
+a, b, c = my_tuple
 
-    print(a)      # 3
-    print(b)      # 4.6 
-    print(c)      # dog 
+print(a)      # 3
+print(b)      # 4.6 
+print(c)      # dog 
 ```
 Creating a tuple with one element is a bit tricky.
 
 Having one element within parentheses is not enough. We will need a trailing comma to indicate that it is, in fact, a tuple.
 
 ```py
-    my_tuple = ("hello")
-    print(type(my_tuple))  # <class 'str'>
+my_tuple = ("hello")
+print(type(my_tuple))  # <class 'str'>
 
-    # Creating a tuple having one element
-    my_tuple = ("hello",)  
-    print(type(my_tuple))  # <class 'tuple'> 
+# Creating a tuple having one element
+my_tuple = ("hello",)  
+print(type(my_tuple))  # <class 'tuple'> 
 
-    # Parentheses is optional
-    my_tuple = "hello",
-    print(type(my_tuple))  # <class 'tuple'> 
+# Parentheses is optional
+my_tuple = "hello",
+print(type(my_tuple))  # <class 'tuple'> 
 ```
 
 ## Access Tuple Elements
 
 There are various ways in which we can access the elements of a tuple.
+
 ### 1. Indexing
 
 We can use the index operator [] to access an item in a tuple where the index starts from 0.
@@ -1042,24 +1058,24 @@ The index must be an integer; so we cannot use float or other types. This will r
 Likewise, nested tuples are accessed using nested indexing, as shown in the example below.
 
 ```py
-    my_tuple = ('p','e','r','m','i','t')
+my_tuple = ('p','e','r','m','i','t')
 
-    print(my_tuple[0])   # 'p' 
-    print(my_tuple[5])   # 't'
+print(my_tuple[0])   # 'p' 
+print(my_tuple[5])   # 't'
 
-    # IndexError: list index out of range
-    # print(my_tuple[6])
+# IndexError: list index out of range
+# print(my_tuple[6])
 
-    # Index must be an integer
-    # TypeError: list indices must be integers, not float
-    # my_tuple[2.0]
+# Index must be an integer
+# TypeError: list indices must be integers, not float
+# my_tuple[2.0]
 
-    # nested tuple
-    n_tuple = ("mouse", [8, 4, 6], (1, 2, 3))
+# nested tuple
+n_tuple = ("mouse", [8, 4, 6], (1, 2, 3))
 
-    # nested index
-    print(n_tuple[0][3])       # 's'
-    print(n_tuple[1][1])       # 4
+# nested index
+print(n_tuple[0][3])       # 's'
+print(n_tuple[1][1])       # 4
 ```
 
 ### 2. Negative Indexing
@@ -1069,13 +1085,13 @@ Python allows negative indexing for its sequences.
 The index of -1 refers to the last item, -2 to the second last item and so on.
 
 ```py
-    my_tuple = ('p','e','r','m','i','t')
+my_tuple = ('p','e','r','m','i','t')
 
-    # Output: 't'
-    print(my_tuple[-1])
+# Output: 't'
+print(my_tuple[-1])
 
-    # Output: 'p'
-    print(my_tuple[-6])
+# Output: 'p'
+print(my_tuple[-6])
 ```
 
 ### 3. Slicing
@@ -1083,23 +1099,23 @@ The index of -1 refers to the last item, -2 to the second last item and so on.
 We can access a range of items in a tuple by using the slicing operator - colon ":".
 
 ```py
-    my_tuple = ('p','y','t','h','o','n',' ','c','o','u','r','s','e')
+my_tuple = ('p','y','t','h','o','n',' ','c','o','u','r','s','e')
 
-    # elements 2nd to 4th
-    # Output: ('r', 'o', 'g')
-    print(my_tuple[1:4])
+# elements 2nd to 4th
+# Output: ('r', 'o', 'g')
+print(my_tuple[1:4])
 
-    # elements beginning to 2nd
-    # Output: ('p', 'r')
-    print(my_tuple[:-7])
+# elements beginning to 2nd
+# Output: ('p', 'r')
+print(my_tuple[:-7])
 
-    # elements 8th to end
-    # Output: ('i', 'z')
-    print(my_tuple[7:])
+# elements 8th to end
+# Output: ('i', 'z')
+print(my_tuple[7:])
 
-    # elements beginning to end
-    # Output: ('p','y','t','h','o','n',' ','c','o','u','r','s','e')
-    print(my_tuple[:])
+# elements beginning to end
+# Output: ('p','y','t','h','o','n',' ','c','o','u','r','s','e')
+print(my_tuple[:])
 ```
 
 Slicing can be best visualized by considering the index to be between the elements as shown below. So if we want to access a range, we need the index that will slice the portion from the tuple.
@@ -1107,7 +1123,7 @@ Slicing can be best visualized by considering the index to be between the elemen
 
 ## Changing a Tuple
 
-Unlike lists, tuples are immutable.
+Unlike lists, tuples are [`immutable`](https://en.wikipedia.org/wiki/Immutable_object).
 
 This means that elements of a tuple cannot be changed once it has been assigned. But, if the element is itself a mutable datatype like list, its nested items can be changed.
 
@@ -1276,7 +1292,7 @@ my_set = set([1,2,3,2])
 print(my_set)
 ```
 
-Creating an empty set is a bit tricky.
+> Creating an empty set is a bit tricky.
 
 Empty curly braces {} will make an empty dictionary in Python. To make a set without any elements we use the set() function without any argument.
 
@@ -1697,10 +1713,9 @@ for i in squares:
     print(squares[i])
 ```
 
-## Built-in Functions with Dictionary
+## Built-in Functions with Python
 
-Built-in functions like all(), any(), len(), cmp(), sorted() etc. are commonly used with dictionary to perform different tasks.
-Built-in Functions with Dictionary
+Built-in functions like all(), any(), len(), cmp(), sorted() etc. are commonly used with list, tuple, set and dictionary to perform different tasks.
 
 Function |	Description
 ------- |   ----------
@@ -1720,6 +1735,197 @@ print(len(squares))
 
 # Output: [1, 3, 5, 7, 9]
 print(sorted(squares))
+```
+
+
+# Python Variables
+
+### Creating Variables
+
+In computer programming, __a `variable` or `scalar` is a storage address (identified by a memory address) paired with an associated symbolic name, which contains some known or unknown quantity of information referred to as a value__. The variable name is the usual way to reference the stored value, in addition to referring to the variable itself, depending on the context.(Essentially, variables are containers for storing data values.) This separation of name and content allows the name to be used independently of the exact information it represents. The identifier in computer source code can be bound to a value during run time, and the value of the variable may thus change during the course of program execution.
+
+As an a example, here is a C language code: (it's fine if you don't know what it means, you have explanation below)
+
+```c
+
+int main(*arg,**kwarg){
+
+  int var;
+  float foo;
+  var = 3;
+  foo = 4.6;
+
+    printf("%d\n %f",var,foo);
+
+return 0;
+}
+
+```
+It declares variables `var` of type __int__ and `foo` of type __float__. Then the values of 3 and 4.6 are assingned to them respectively. Later we print them to standard output . at the end we exit the main code with `return 0`, meaning that code has been executed successfully and program if finished running.
+
+Unlike C programming languages, Python has no command for declaring a variable. A variable is created the moment you first assign a value to it.
+
+```py
+x = 7
+y = "Alex "
+print(x)
+print(y)
+```
+
+Variables do not need to be declared with any particular type and can even change type after they have been set.
+
+```py
+x = 4 # x is of type int
+x = "rhcp" # x is now of type str
+print(x)
+```
+
+String variables can be declared either by using single or double quotes:
+
+```py
+x = "John"
+# is the same as
+x = 'John'
+```
+
+### Variable Names
+
+A variable can have a short name (like x and y) or a more descriptive name (age, carname, total_volume). Rules for Python variables:
+- Variable name must start with a letter or the underscore character.
+- Variable name cannot start with a number.
+- Variable name can only contain alpha-numeric characters and underscores (A-z, 0-9, and _ ).
+- Variable names are case-sensitive (age, Age and AGE are three different variables)
+
+> **Remember that variable names are case-sensitive**
+
+### Assign Value to Multiple Variables
+
+Python allows you to assign values to multiple variables in one line:
+
+```py
+x, y, z = "Orange", "Banana", "Cherry"
+print(x)
+print(y)
+print(z)
+```
+
+And you can assign the same value to multiple variables in one line:
+
+```py
+x = y = z = "Orange"
+print(x)
+print(y)
+print(z)
+```
+
+### Output Variables
+
+The Python print statement is often used to output variables.
+To combine both text and a variable, Python uses the + character:
+
+```py
+x = "awesome"
+print("Python is " + x)
+```
+
+You can also use the + character to add a variable to another variable:
+
+```py
+x = "Python is "
+y = "awesome"
+z =  x + y
+print(z)
+```
+
+For numbers, the + character works as a mathematical operator:
+```py
+x = 5
+y = 10
+print(x + y)
+```
+
+If you try to combine a string and a number, Python will give you an error:
+
+```py
+x = 5
+y = "John"
+print(x + y)
+```
+---
+---
+
+### Somewhat Advanced
+### Random Number
+
+Python does not have a random() function to make a random number, but Python has a built-in module called random that can be used to make random numbers:
+
+Import the random module, and display a random number between 1 and 9:
+import random
+
+print(random.randrange(1,10))
+In our Random Module Reference you will learn more about the Random module.
+
+---
+
+## Some What Advanced
+### Global Variables
+
+Variables that are created outside of a function (as in all of the s above) are known as global variables.
+Global variables can be used by everyone, both inside of functions and outside.
+
+Create a variable outside of a function, and use it inside the function
+
+```py
+x = "awesome"
+
+def myfunc():
+  print("Python is " + x)
+
+myfunc()
+```
+
+If you create a variable with the same name inside a function, this variable will be local, and can only be used inside the function. The global variable with the same name will remain as it was, global and with the original value.
+Create a variable inside a function, with the same name as the global variable
+
+```py
+x = "awesome"
+
+def myfunc():
+  x = "fantastic"
+  print("Python is " + x)
+
+myfunc()
+
+print("Python is " + x)
+```
+
+### The global Keyword
+
+Normally, when you create a variable inside a function, that variable is local, and can only be used inside that function.
+To create a global variable inside a function, you can use the global keyword.
+If you use the global keyword, the variable belongs to the global scope:
+
+```py
+def myfunc():
+  global x
+  x = "fantastic"
+
+myfunc()
+
+print("Python is " + x)
+```
+Also, use the global keyword if you want to change a global variable inside a function.
+To change the value of a global variable inside a function, refer to the variable by using the global keyword:
+
+```py
+x = "awesome"
+def myfunc():
+  global x
+  x = "fantastic"
+
+myfunc()
+
+print("Python is " + x)
 ```
 
 # Python Operators
@@ -1810,9 +2016,12 @@ print('x >= y is',x>=y)
 print('x <= y is',x<=y)
 ```
 
-Logical operators
+### Logical operators
 
-Logical operators are the and, or, not operators.
+Logical operators are the `and`, `or`, `not` operators.
+
+> Something to remember: If `variable` has a value of `1` in it, then its boolean value it *_True_*, In any other case the boolean value is *_False_*. 
+> If value is not defined, then python3 will give you *_NameError_*,
 
 Operator | Meaning | Example
 ------- | -------- | ----------
@@ -1820,7 +2029,8 @@ and |	True if both the operands are true |	x and y
 or 	|   True if either of the operands is true 	| x or y
 not | 	True if operand is false (complements the operand) | not x
 
-Example : Logical Operators in Python
+Example : Logical Operators in Python3
+
 ```py
 x = True
 y = False
@@ -1834,7 +2044,8 @@ print('not x is',not x)
 
 
 The truth table for and is given below:
-#### Truth table for *_and_*
+
+#### The truth table for *_and_* operator
 
 A |	B |	A and B
 -- \| -- | --- 
@@ -1843,9 +2054,8 @@ True |	False |	False
 False |	True |	False
 False |	False |	False
 
-####  The truth table for *_or_* is given below:
+####  The truth table for *_or_* operator is given below:
 
-Truth table for or
 A |	B |	A or B
 -- | -- | ---
 True | True | True
@@ -1855,7 +2065,6 @@ False | False | False
 
 #### The truth table for *_not_* is given below:
 
-Truth tabel for not 
 A |	not A
 -- | --
 True |	False
@@ -1873,6 +2082,13 @@ True
 
 ### Bitwise operators
 
+Before getting it to this subject, one must first understand several things:
+- __binary number__ is a number expressed in the base-2 numeral system or binary numeral system, which uses only two symbols: typically "0" (zero) and "1" (one). 
+- __ASCII code__ or  short name for 'The American Standard Code for Information Interchange' uses a 7-bit binary code to represent text and other characters within computers, communications equipment, and other devices. Each letter or symbol is assigned a number from 0 to 127. For example, lowercase "a" is represented by 1100001 as a bit string (which is "97" in decimal).
+- __a bitwise operation__ operates on one or more bit patterns or binary numerals at the level of their individual bits. It is a fast and simple action, directly supported by the processor, and is used to manipulate values for comparisons and calculations. 
+
+for more info please read [here](https://en.wikipedia.org/wiki/Binary)
+
 Bitwise operators act on operands as if they were string of binary digits. It operates bit by bit, hence the name.
 
 For example, 2 is 10 in binary and 7 is 111.
@@ -1880,14 +2096,15 @@ For example, 2 is 10 in binary and 7 is 111.
 In the table below: Let x = 10 (0000 1010 in binary) and y = 4 (0000 0100 in binary)
 
 Bitwise operators in Python 
-Operator | Meaning |	Example
-------- | ------ | --------
-& |	Bitwise AND |	x& y = 0 (0000 0000)
-\||	Bitwise OR 	| x \| y = 14 (0000 1110)
-~ |	Bitwise NOT |	~x = -11 (1111 0101)
-^ |	Bitwise XOR |	x ^ y = 14 (0000 1110)
->> |	Bitwise right shift |	x>> 2 = 2 (0000 0010)
-<< |	Bitwise left shift |	x<< 2 = 40 (0010 1000)
+Operator | Meaning | What Does It Do? | Example
+-------  | ------  | ------------     | --------
+& |	Bitwise AND | Each bit of the output is 1 if the corresponding bit of x AND of y is 1, otherwise it's 0. 	| x & y = 0 (0000 0000)
+\||	Bitwise OR 	| Each bit of the output is 0 if the corresponding bit of x AND of y is 0, otherwise it's 1.| x \| y = 14 (0000 1110)
+>> | Bitwise right shift | Returns x with the bits shifted to the right by y places. This is the same as //'ing x by 2**y. 	| x >> 2 = 2 (0000 0010)
+<< | Bitwise left shift  | Returns x with the bits shifted to the right by y places. This is the same as multiplying x by 2**y. 
+x	| x << 2 = 40 (0010 1000)
+~ |	Bitwise NOT | Returns the complement of x - the number you get by switching each 1 for a 0 and each 0 for a 1.| ~x = -11 (1111 0101)
+^ |	Bitwise XOR | Each bit of the output is the same as the corresponding bit in x if that bit in y is 0, and it's the complement of the bit in x if that bit in y is 1. | x ^ y = 14 (0000 1110)
 
 
 
@@ -1924,14 +2141,16 @@ Operator |	Example |	Equivatent to
 >>= |	x >>= 5 |	x = x >> 5
 <<= |	x <<= 5 |	x = x << 5
 
-### Special operators
+### Identity operators
 
 Python language offers some special type of operators like the identity operator or the membership operator. They are described below with examples.
 Identity operators
 
 is and is not are the identity operators in Python. They are used to check if two values (or variables) are located on the same part of the memory. Two variables that are equal does not imply that they are identical.
 
+
 Identity operators in Python 
+
 Operator |	Meaning |	Example
 ------- | ------- | ---------
 is |	True if the operands are identical (refer to the same object)  |	x is True
@@ -1945,18 +2164,20 @@ x2 = 'Hello'
 y2 = 'Hello'
 x3 = [1,2,3]
 y3 = [1,2,3]
-# Output: False
-print(x1 is not y1)
-# Output: True
-print(x2 is y2)
-# Output: False
-print(x3 is y3)
+print(x1 is not y1) # Output: False
+
+print(x2 is y2)     # Output: True
+
+print(x3 is y3)    # Output: False
+
 ```
 
 Here, we see that x1 and y1 are integers of same values, so they are equal as well as identical. Same is the case with x2 and y2 (strings).
 
 But x3 and y3 are list. They are equal but not identical. It is because interpreter locates them separately in memory although they are equal.
-Membership operators
+
+
+### Membership operators
 
 in and not in are the membership operators in Python. They are used to test whether a value or variable is found in a sequence (string, list, tuple, set and dictionary).
 
@@ -1980,6 +2201,8 @@ print(1 in y)
 print('a' in y)
 ```
 Here, 'H' is in x but 'hello' is not present in x (remember, Python is case sensitive). Similary, 1 is key and 'a' is the value in dictionary y. Hence, 'a' in y returns False.
+
+
 
 # Python Printout
 
@@ -2310,6 +2533,214 @@ Then, the program prints it to screen with a little message:
 > Hello Alex
 
 
+# Working with files
+
+Does not matter what type of  work you are doing, with python, or any other programming language, working with files, is a valuable task.
+
+Luckily, Python has few functions for creating, reading, updating, and deleting files, that do not need to many parameters to be passed.(No pointers and no file descriptors)
+
+## File Handling
+
+The first and probably most important function for working with files in Python is the `open()` function.
+
+The `open()` function takes two parameters; `filename`, and `mode`(e.g. how you wish your file to be opened).
+
+There are four different methods (modes) for opening a file:
+
+type | what it stands for | explanations
+--- |  ----------------- | --------------------
+"r" | Read | Default value. Opens a file for reading, error if the file does not exist
+"a" | Append | Opens a file for appending, creates the file if it does not exist
+"w" | Write |Opens a file for writing, creates the file if it does not exist
+"x" | Create | Creates the specified file, returns an error if the file exists
+
+
+In addition you can specify if the file should be handled as binary or text mode
+
+type | what it stands for | explanations
+--- |  ----------------- | --------------------
+"t" | Text | Default value. Text mode
+"b" | Binary | Binary mode (e.g. images, pcaps,)
+
+### Syntax
+
+To open a file for reading it is enough to specify the name of the file:
+
+```py
+f = open("data.txt")
+```
+The code above is the same as:
+```py
+f = open("data.txt", "rt")
+```
+Because "r" for read, and "t" for text are the default values, you do not need to specify them.
+
+> *_> *_Note_*_*: Make sure the file exists, or else you will get an error.
+
+
+### Open a File
+
+Assume we have the following file, located in the same folder as Python:
+
+```txt
+
+Hello! Welcome to imaginary world of python programming
+
+If you are reading this, then it means, that file is open.
+
+Good Luck!
+
+Never Give Up Your Dreams!!!
+
+We Cheer for you!!!
+```
+To open the file, use the built-in `open()` function.
+
+The `open()` function returns a file object, which has a `read()` method for reading the content of the file:
+
+```py
+f = open("data.txt", "r")
+print(f.`read()`)
+```
+### Read Only Parts of the File
+
+By default the `read()` method returns the whole text, but you can also specify how many characters you want to return.
+Return the `5 first characters` of the file:
+```py
+f = open("data.txt", "r")
+print(f.read(5))
+```
+### Read Lines
+
+You can return one line by using the readline() method:
+
+
+Read one line of the file:
+```py
+f = open("data.txt", "r")
+print(f.readline())
+```
+By calling readline() two times, you can read the two first lines:
+
+
+Read two lines of the file:
+f = open("data.txt", "r")
+print(f.readline())
+print(f.readline())
+
+By looping through the lines of the file, you can read the whole file, line by line:
+
+
+Loop through the file line by line:
+f = open("data.txt", "r")
+for x in f:
+  print(x)
+Close Files
+
+It is a good practice to always close the file when you are done with it.
+
+
+Close the file when you are finish with it:
+f = open("data.txt", "r")
+print(f.readline())
+f.close()
+
+> *_> *_Note_*_*: You should always close your files, in some cases, due to buffering, changes made to a file may not show until you close the file.
+
+
+Write to an Existing File
+
+To write to an existing file, you must add `a` or `w` parameters to the `open()` function, but once that is done  you also need to use [Object Method](object) to write data to file. 
+
+type | what it stands for | explanations
+--- |  ----------------- | --------------------
+"a" | Append | will append to the end of the file
+"w" | Write |will overwrite any existing content
+
+
+Open the file "data2.txt" and append content to the file:
+```py
+f = open("data2.txt", "a")
+f.write("Now the file has more content!")
+f.close()
+#open and read the file after the appending:
+f = open("data2.txt", "r")
+print(f.read())
+```
+
+Open the file "data3.txt" and overwrite the content:
+```py
+f = open("data3.txt", "w")
+f.write("Woops! I have deleted the content!")
+f.close()
+
+#open and read the file after the appending:
+f = open("data3.txt", "r")
+print(f.read())
+```
+> *_Note_*: the "w" method will overwrite the entire file.
+
+> `**Object Method**` : I know i just dropped a name bomb on you and then continued like nothing happend
+
+
+## Create a New File
+
+Just like before, to create a new files in Python, use the `open()` method, with one of the following parameters:
+
+
+type | what it stands for | explanations
+--- |  ----------------- | --------------------
+"x" | Create | will create a file, returns an error if the file exist
+"a" | Append | will create a file if the specified file does not exist
+"w" | Write  | will create a file if the specified file does not exist
+
+
+Create a file called "myfile.txt":
+```py
+f = open("myfile.txt", "x")
+```
+Result: a new empty file is created!
+
+
+Create a new file if it does not exist:
+```py
+f = open("myfile.txt", "w")
+```
+## Delete a File
+
+To delete a file, you must import the OS module, and run its os.remove() function:
+
+
+Remove the file "data.txt":
+```py
+import os
+os.remove("data.txt")
+Check if File exist:
+```
+To avoid getting an error, you might want to check if the file exists before you try to delete it:
+
+
+Check if file exists, then delete it:
+```py
+import os
+if os.path.exists("data.txt"):
+  os.remove("data.txt")
+else:
+  print("The file does not exist")
+```
+
+## Delete Folder
+
+To delete an entire folder, use the os.rmdir() method:
+
+Remove the folder "myfolder":
+```py
+import os
+os.rmdir("myfolder")
+```
+> *_Note_*: You can only remove empty folders.
+
+
 # Python Operators, Conditions and If statements
 
 ## Python Arithmetic, Comparison and Logical Operators
@@ -2499,7 +2930,6 @@ Output :
 >Tic kit price is $20
 
 In the above example age is set to 38, therefore the first expression (age >= 11) evaluates to True and the associated print statement prints the string "You are eligible to see the Football match". There after program control goes to next if statement and the condition ( 38 is outside <=20 or >=60) is matched and prints "Tic ket price is $12".
-
 
 # Python Loops
 
@@ -2881,6 +3311,7 @@ for x in range(7):
 5
 
 In the above example, the for loop prints all the numbers from 0 to 6 except 3 and 6 as the continue statement returns the control of the loop to the top
+
 
 <center> Collections </center>
 ===
@@ -3347,7 +3778,6 @@ Lists are much more flexible than arrays. They can store elements of different d
 Unless you don't really need arrays (array module may be needed to interface with C code), don't use them.
 
 
-
 # Python Functions
 
 In all programming and scripting language, a function is a block of program statements which can be used repetitively in a program. It saves the time of a developer. In Python concept of function is same as in other languages. There are some built-in functions which are part of Python. Besides that, we can defines functions according to our need.
@@ -3589,6 +4019,7 @@ def avg_number(x, y):
 
 ```
 
+
 # Try and Except
 
 In exception handling in Python, we use the try and except statements to catch and handle exceptions. The code within the try clause is executed statement by statement.
@@ -3623,4 +4054,5 @@ finally:
 f.close()
 ```
 This type of statement makes sure that the file is closed whether an exception occurs or not.
+
 
