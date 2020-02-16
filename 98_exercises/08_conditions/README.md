@@ -1,4 +1,11 @@
 # Conditions Exercises
+
+## Create a folder named 08_conditions and save all the exercises below in it.
+
+### Print Out
+
+#### Ex1
+
 <!--
 a=100
 b=2

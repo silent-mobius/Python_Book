@@ -41,10 +41,43 @@
       - are they equal ?
     - print the answers to standard out put.
 
+#### Ex2
 
+- Create a Python program/script and name it as exercise number (Ex2.py):
+  - create two variables: num1 and num2 and assign them any values:
+    - compare them by using short comparisant: (e.g `x += 1`)
+      - is 1st bigger ?
+      - is 1st lesser ? 
+      - is 2nd bigger on equal to 1st ?
+      - is 2nd lesser or equal to 1st ?
+      - are they not equal ?
+      - are they equal ?
+    - print the answers to standard out put.
 
 ### Logic
 
+#### Ex1 
+
+- Create a Python program/script and name it as exercise number (Ex1.py):
+  - create two variables: num_x and num_y and assign them any values:
+    - compare them:
+      - is 1st bigger ?
+      - is 1st lesser ? 
+      - is 2nd bigger on equal to 1st ?
+      - is 2nd lesser or equal to 1st ?
+      - are they not equal ?
+      - are they equal ?
+    - print the answers to standard out put.
+
+
 ### Identity 
+
+#### Ex1 
+
+- Create a Python program/script and name it as exercise number (Ex1.py):
+  - create two variables: var_x and var_y and assign them the same values:(e.g [1,2,3])
+    - check if they are equal.
+    - check if they have the same identity.
+  - print the answers to standard out put.
 
 ### Bitwise
