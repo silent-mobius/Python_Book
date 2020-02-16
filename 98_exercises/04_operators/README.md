@@ -75,9 +75,21 @@
 #### Ex1 
 
 - Create a Python program/script and name it as exercise number (Ex1.py):
-  - create two variables: var_x and var_y and assign them the same values:(e.g [1,2,3])
+  - create two variables: var_x and var_y and assign them the same values of collection:(e.g [1,2,3])
     - check if they are equal.
     - check if they have the same identity.
   - print the answers to standard out put.
+  - create two variables: dat_x and dat_y and assign them the same values of primitives:(e.g 5 or '2')
+    - check if they are equal.
+    - check if they have the identity.
+  - print the answers to standard out put.
+
+
+#### Ex2
+
+- Create a Python program/script and name it as exercise number (Ex2.py):
+  - create a variable num_x that has a value of 5.
+    - check if the type of num_x is not integer.
+  - print the answer to standard out put. <!--https://www.geeksforgeeks.org/python-membership-identity-operators-not-not/-->
 
 ### Bitwise
