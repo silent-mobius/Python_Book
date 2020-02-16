@@ -59,15 +59,17 @@
 #### Ex1 
 
 - Create a Python program/script and name it as exercise number (Ex1.py):
-  - create two variables: num_x and num_y and assign them any values:
-    - compare them:
-      - is 1st bigger ?
-      - is 1st lesser ? 
-      - is 2nd bigger on equal to 1st ?
-      - is 2nd lesser or equal to 1st ?
-      - are they not equal ?
-      - are they equal ?
-    - print the answers to standard out put.
+  - create two variables: log_x and log_y and assign them any boolean values:
+    - print log_x and log_y operator output.
+    - print log_x or log_y operator output.
+    - print  not log_y operator output.
+
+
+#### Ex2
+- Create a Python program/script and name it as exercise number (Ex2.py):
+  - create two variables: is_weekend and is_friday and assign them any boolean values:
+    - check if both of them is true and print "party time"
+    - if only one is true, then print "next time"
 
 
 ### Identity 
@@ -93,3 +95,10 @@
   - print the answer to standard out put. <!--https://www.geeksforgeeks.org/python-membership-identity-operators-not-not/-->
 
 ### Bitwise
+
+
+#### Ex1 
+
+- Create a Python program/script and name it as exercise number (Ex1.py):
+  - create two variables: bin_x and bin_y and assign them any binary values:(e.g 1010 and 1000)
+    - 
