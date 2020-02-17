@@ -1,4 +1,4 @@
-# Try and Except
+# Exception handeling
 
 In exception handling in Python, we use the try and except statements to catch and handle exceptions. The code within the try clause is executed statement by statement.
 
@@ -34,6 +34,6 @@ f.close()
 This type of statement makes sure that the file is closed whether an exception occurs or not.
 
 
-[back to top](#arithmetic-operators)
+[back to top](#exception-handeling)
 Or
 [back to main](../README.md)
