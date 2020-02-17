@@ -100,5 +100,18 @@
 #### Ex1 
 
 - Create a Python program/script and name it as exercise number (Ex1.py):
-  - create two variables: bin_x and bin_y and assign them any binary values:(e.g 1010 and 1000)
-    - 
+  - print binary description of all numbers from 0-128.(yes, use range() function for it)
+  - try to learn some/all of it by heart.
+
+#### Ex2
+
+- Create a Python program/script and name it as exercise number (Ex2.py):
+  - Declare two variable with binaray value of 5 and 2.
+    - use next binary operation while printing them:
+      - left shift 
+      - right shift
+      - and 
+      - or 
+      - xor
+      - not
+

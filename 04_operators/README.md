@@ -272,6 +272,40 @@ print('a' in y)
 ```
 Here, 'H' is in x but 'hello' is not present in x (remember, Python is case sensitive). Similary, 1 is key and 'a' is the value in dictionary y. Hence, 'a' in y returns False.
 
+
+### Operator Precedence (Order of Operations)
+
+In Python, every operator is assigned a precedence.
+
+Operator Precedence determines which operations are performed before which other operations.
+Operators of highest precedence are performed first.
+Any operators of equal precedence are performed in left-to-right order.
+
+Precedence	| Operator |	Description
+----------------- | ------- | -------
+lowest precedence |	or	| Boolean OR
+next in line | and	| Boolean AND
+next in line| not	| Boolean NOT
+next in line| ==, ! =, <, <=, >, >=, is, is not | 	comparisons, identity
+next in line| \|     | bitwise OR
+next in line| ^	     | bitwise XOR
+next in line| &	     | bitwise AND
+next in line| <<, >> |	bit shis
+next in line| +, –	 | addition, subtraction
+next in line| *, /, //, %	|multiplication, division, floor division, modulo
+next in line| +x, -x, ~x	| unary positive, unary negation, bitwise negation
+highest precedence|	**|	exponentiation
+
+
+
+
+
+
+
+
+
+
+
 [back to top](#arithmetic-operators)
 Or
 [back to main](../README.md)
