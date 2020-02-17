@@ -241,6 +241,6 @@ def avg_number(x, y):
 ```
 
 
-[back to top](#arithmetic-operators)
+[back to top](#python-functions)
 Or
 [back to main](../README.md)

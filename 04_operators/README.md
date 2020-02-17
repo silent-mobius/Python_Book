@@ -306,6 +306,6 @@ highest precedence|	**|	exponentiation
 
 
 
-[back to top](#arithmetic-operators)
+[back to top](#python-operators)
 Or
 [back to main](../README.md)

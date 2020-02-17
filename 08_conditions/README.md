@@ -189,6 +189,6 @@ Output :
 In the above example age is set to 38, therefore the first expression (age >= 11) evaluates to True and the associated print statement prints the string "You are eligible to see the Football match". There after program control goes to next if statement and the condition ( 38 is outside <=20 or >=60) is matched and prints "Tic ket price is $12".
 
 
-[back to top](#arithmetic-operators)
+[back to top](#python-operators-conditions-and-if-statements)
 Or
 [back to main](../README.md)

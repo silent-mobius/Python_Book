@@ -206,6 +206,6 @@ os.rmdir("myfolder")
 > *_Note_*: You can only remove empty folders.
 
 
-[back to top](#python-syntax)
+[back to top](#working-with-files)
 Or
 [back to main](../README.md)

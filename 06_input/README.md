@@ -36,6 +36,6 @@ Then, the program prints it to screen with a little message:
 > Hello Alex
 
 
-[back to top](#python-syntax)
+[back to top](#python-command-line-input)
 Or
 [back to main](../README.md)

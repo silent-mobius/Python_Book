@@ -1,315 +1,16 @@
-<center> Collections </center>
-===
-> ***Note**** : Please go over the data types before reading this material
-# Python Loops
+# Collections
 
-## Python for Loop
+**Note** : Please go over the data types before reading this material
 
-### What is for loop in Python?
 
-The for loop in Python is used to iterate over a sequence (list, tuple, string) or other iterable objects. Iterating over a sequence is called traversal.
-Syntax of for Loop
-
-```py
-for val in sequence:
-	Body of for
-```
-
-Here, val is the variable that takes the value of the item inside the sequence on each iteration.
-Loop continues until we reach the last item in the sequence. The body of for loop is separated from the rest of the code using indentation.
-
-#### Example: Python for Loop
-
-```py
-# Program to find the sum of all numbers stored in a list
-
-# List of numbers
-numbers = [6, 5, 3, 8, 4, 2, 5, 4, 11]
-
-# variable to store the sum
-sum = 0
-
-# iterate over the list
-for val in numbers:
-	sum = sum+val
-
-# Output: The sum is 48
-print("The sum is", sum)
-```
-
-### The range() function
-
-We can generate a sequence of numbers using range() function. range(10) will generate numbers from 0 to 9 (10 numbers).
-We can also define the start, stop and step size as range(start,stop,step size). step size defaults to 1 if not provided.
-This function does not store all the values in memory, it would be inefficient. So it remembers the start, stop, step size and generates the next number on the go.
-To force this function to output all the items, we can use the function list().
-The following example will clarify this.
-
-```py
-# Output: range(0, 10)
-print(range(10))
-
-# Output: [0, 1, 2, 3, 4, 5, 6, 7, 8, 9]
-print(list(range(10)))
-
-# Output: [2, 3, 4, 5, 6, 7]
-print(list(range(2, 8)))
-
-# Output: [2, 5, 8, 11, 14, 17]
-print(list(range(2, 20, 3)))
-```
-
-We can use the range() function in for loops to iterate through a sequence of numbers. It can be combined with the len() function to iterate though a sequence using indexing. Here is an example.
-
-```py
-# Program to iterate through a list using indexing
-
-genre = ['pop', 'rock', 'jazz']
-
-# iterate over the list using index
-for i in range(len(genre)):
-	print("I like", genre[i])
-```
-
-When you run the program, the output will be:
-
-```txt
-I like pop
-I like rock
-​I like jazz
-```
-
-## for loop with else
-
-A for loop can have an optional **else** block as well. The else part is executed if the items in the sequence used in for loop exhausts.
-**break** statement can be used to stop a for loop. In such case, the else part is ignored.
-Hence, a for loop's else part runs if no break occurs.
-Here is an example to illustrate this.
-
-```py
-digits = [0, 1, 5]
-
-for i in digits:
-    print(i)
-else:
-    print("No items left.")
-
-```
-
-When you run the program, the output will be:
-
-```txt
-0
-1
-5
-No items left.
-```
-
-Here, the for loop prints items of the list until the loop exhausts. When the for loop exhausts, it executes the block of code in the else and prints
-
-```txt
-No items left.
-```
-
----
-
-## Python while Loop
-
-### What is while loop in Python?
-
-The while loop in Python is used to iterate over a block of code as long as the test expression (condition) is true.
-We generally use this loop when we don't know beforehand, the number of times to iterate.
-
-Syntax of while Loop in Python:
-
-```py
-while test_expression:
-    Body of while
-```
-
-In while loop, test expression is checked first. The body of the loop is entered only if the test_expression evaluates to True. After one iteration, the test expression is checked again. This process continues until the test_expression evaluates to False.
-
-In Python, the body of the while loop is determined through indentation.
-Body starts with indentation and the first unindented line marks the end.
-Python interprets any non-zero value as True. None and 0 are interpreted as False
-
-```py
-# Program to add natural
-# numbers upto 
-# sum = 1+2+3+...+n
-
-# To take input from the user,
-# n = int(input("Enter n: "))
-
-n = 10
-
-# initialize sum and counter
-sum = 0
-i = 1
-
-while i <= n:
-    sum = sum + i
-    i = i+1    # update counter
-
-# print the sum
-print("The sum is", sum)
-```
-
-When you run the program, the output will be:
-
-```txt
-Enter n: 10
-The sum is 55
-```
-In the above program, the test expression will be True as long as our counter variable i is less than or equal to n.
-
-We need to increase the value of counter variable in the body of the loop. This is very important. Failing to do so will result in an infinite loop (loop that goes on forever).
-
-Finally the result is displayed
-
-
-### while loop with else
-
-Same as that of for loop, we can have an optional else block with while loop as well.
-The **else** part is executed if the condition in the while loop evaluates to False.
-The while loop can be terminated with a break statement. In such case, the else part is ignored. Hence, a while loop's else part runs if no break occurs and the condition is false.
-Here is an example to illustrate this.
-```py
-# Example to illustrate
-# the use of else statement
-# with the while loop
-
-counter = 0
-
-while counter < 3:
-    print("Inside loop")
-    counter = counter + 1
-else:
-    print("Inside else")
-```
-
-Output
-
-```txt
-Inside loop
-Inside loop
-Inside loop
-Inside else
-```
-
-Here, we use a counter variable to print the string Inside loop three times.
-On the forth iteration, the condition in while becomes False. Hence, the else part is executed
-
----
-# Python break and continue
-
-## What is the use of break and continue in Python?
-
-In Python, break and continue statements can alter the flow of a normal loop.
-Loops iterate over a block of code until test expression is false, but sometimes we wish to terminate the current iteration or even the whole loop without checking test expression.
-The **break** and **continue** statements are used in these cases.
-
-### Python break statement
-
-The **break** statement terminates the loop containing it. Control of the program flows to the statement immediately after the body of the loop.
-If break statement is inside a nested loop (loop inside another loop), break will terminate the innermost loop.
-Syntax of break
-
-```py
-break
-```
-Example: Python break
-```py
-for val in "string":
-    if val == "i":
-        break
-    print(val)
-
-print("The end")
-```
-
-Output
-```txt
-s
-t
-r
-The end
-```
-
-In this program, we iterate through the "string" sequence. We check if the letter is "i", upon which we break from the loop. Hence, we see in our output that all the letters up till "i" gets printed. After that, the loop terminates.
-
-### Python continue statement
-
-The **continue** statement is used to skip the rest of the code inside a loop for the current iteration only. Loop does not terminate but continues on with the next iteration.
-Syntax of Continue
-
-```py
-continue
-```
-
-Example: Python continue
-
-```py
-for val in "string":
-    if val == "i":
-        continue
-    print(val)
-
-print("The end")
-```
-
-Output
-```txt
-s
-t
-r
-n
-g
-The end
-```
-
-This program is same as the above example except the break statement has been replaced with continue.
-We continue with the loop, if the string is "i", not executing the rest of the block. Hence, we see in our output that all the letters except "i" gets printed.
-
----
-
-# Python pass statement
-
-## What is pass statement in Python?
-
-In Python programming, pass is a null statement. The difference between a comment and pass statement in Python is that, while the interpreter ignores a comment entirely, pass is not ignored.
-
-However, nothing happens when pass is executed. It results into no operation (NOP).
-Syntax of pass
-
-```py
-pass
-```
-
-We generally use it as a placeholder.
-
-Suppose we have a loop or a function that is not implemented yet, but we want to implement it in the future. They cannot have an empty body. The interpreter would complain. So, we use the pass statement to construct a body that does nothing.
-
-```py
-# pass is just a placeholder for
-# functionality to be added later.
-sequence = {'p', 'a', 's', 's'}
-for val in sequence:
-    pass
-```
-
-
-
----
-
-# Python Arrays
+## Python Arrays
 
 In programming, an array is a collection of elements of the same type.
 Arrays are popular in most programming languages like Java, C/C++, JavaScript and so on. However, in Python, they are not that common. When people talk about Python arrays, more often than not, they are talking about Python lists. If you don't know what lists are, you should definitely check Python list article.
 
 That being said, array of numeric values are supported in Python by the array module.
 
-## Python Lists Vs array Module as Arrays
+## Python Lists VS. array Module as Arrays
 
 We can treat lists as arrays. However, we cannot constrain the type of elements stored in a list. For example:
 
@@ -321,7 +22,7 @@ If you create arrays using the array module, all elements of the array must be o
 
 ```py
 import array as arr
-a = arr.array('d', [1, 3.5, "Hello"])   // Error
+a = arr.array('d', [1, 3.5, "Hello"])   # Error
 ```
 
 ### How to create arrays?
@@ -426,7 +127,11 @@ We can concatenate two arrays using + operator.
     odd = arr.array('i', [1, 3, 5])
     even = arr.array('i', [2, 4, 6])
     numbers = arr.array('i')   # creating empty array of integer
-    numbers = odd + even
+    numbers = odd + even<!--
+
+
+-->
+
     print(numbers)    
 ```
 
@@ -464,6 +169,10 @@ Unless you don't really need arrays (array module may be needed to interface wit
 
 
 
-[back to top](#arithmetic-operators)
+
+
+
+
+[back to top](#collections)
 Or
 [back to main](../README.md)
