@@ -1,5 +1,7 @@
 # Loops Exercises
 
+###### **Note**: Make sure that you have Text Editor installed
+
 ## Create a folder named 09_loops and save all the exercises below in it.
 
 ### Print Out
