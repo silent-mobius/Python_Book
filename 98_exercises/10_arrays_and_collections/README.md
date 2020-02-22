@@ -1,4 +1,8 @@
 # Collections and Arrays Exercises
+
+###### **Note**: Make sure that you have Text Editor installed
+
+
 <!--
 1. Write a program that receives two strings from the user: one for name and the other for password. If the login information (name and password) matches one of the users of the table below, type "Welcome Master", otherwise "INTRUDER ALERT" should be printed. The proper login details are:
 
