@@ -1,5 +1,8 @@
 # Input Exercises
 <!-- talking about input, standard input and how to use them in python3-->
+
+###### **Note**: Make sure that you have Text Editor installed
+
 ## Create a folder named 06_InPut and save all the exercises below in it.
 
 ### Input
