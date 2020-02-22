@@ -1,5 +1,8 @@
 # Exception Exercises
 
+###### **Note**: Make sure that you have Text Editor installed
+
+
 1. Write a program that receives user numbers in the loop and for each received number prints its root. Alert the user if they enter a non-number value, or enter a negative number.
 
 2. Write a program that receives a file name at the command line and prints the number of lines in the file. If the file does not exist, an appropriate message must be printed for the user. Here's what a sample session of the program looks like:
