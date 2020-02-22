@@ -1,5 +1,8 @@
 # Conditions Exercises
 
+###### **Note**: Make sure that you have Text Editor installed
+
+
 ## Create a folder named 08_conditions and save all the exercises below in it.
 
 ### Print Out
