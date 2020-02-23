@@ -1,5 +1,7 @@
 # Python Command Line Input
 
+## Input() Function
+
 Python allows for command line input.
 That means we are able to ask the user for input.
 The method is a bit different in Python 3.6 than Python 2.7.
@@ -24,17 +26,38 @@ print("Hello ", x)
 ```
 
 > Save this file as demo_input.py, and load it through the command line/poweshell:
-C:\Users\Your Name>python demo_input.py
-
+```sh
+python3 demo_input.py
+```
 Our program will prompt the user for a string:
 Enter your name:
 
+```txt
 The user now enters a name:
 Alex
-
+```
 Then, the program prints it to screen with a little message:
 > Hello Alex
 
+
+## Standard File Objects
+
+Like many other languages, there are built-in file objects representing standard input, output, and error. These are in the sys module and are called stdin, stdout, and stderr. There are also immutable copies of these in __stdin__, __stdout__, and __stderr__.
+
+You must import the sys module to use the special stdin, stdout, stderr I/O handles.
+
+```py
+import sys
+```
+For finer control over input, use sys.stdin.read(). In order to implement the UNIX 'cat' program in Python, you could do something like this:
+
+```py
+import sys
+for line in sys.stdin:
+    print line,
+```
+
+Note that sys.stdin.read() will read from standard input till EOF. (which is usually Ctrl+D.)
 
 [back to top](#python-command-line-input)
 Or
