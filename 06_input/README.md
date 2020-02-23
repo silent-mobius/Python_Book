@@ -59,6 +59,39 @@ for line in sys.stdin:
 
 Note that sys.stdin.read() will read from standard input till EOF. (which is usually Ctrl+D.)
 
+## Parsing command line
+
+Command-line arguments passed to a Python program are stored in `sys.argv` list. The first item in the list is name of the Python program, which may or may not contain the full path depending on the manner of invocation. sys.argv list is modifiable.
+
+Printing all passed arguments except for the program name itself:
+```py
+import sys
+for arg in sys.argv[1:]:
+  print arg
+```
+Parsing passed arguments for passed minus options:
+```py
+import sys
+option_f = False
+option_p = False
+option_p_argument = ""
+i = 1
+while i < len(sys.argv):
+  if sys.argv[i] == "-f":
+    option_f = True
+    sys.argv.pop(i)
+  elif sys.argv[i] == "-p":
+    option_p = True
+    sys.argv.pop(i)
+    option_p_argument = sys.argv.pop(i)
+  else:
+    i += 1
+```
+Above, the arguments at which options are found are removed so that `sys.argv` can be looped for all remaining arguments.
+
+Parsing of command-line arguments is further supported by library modules optparse (deprecated), argparse (since Python 2.7) and getopt (to make life easy for C programmers).
+
+
 [back to top](#python-command-line-input)
 Or
 [back to main](../README.md)
