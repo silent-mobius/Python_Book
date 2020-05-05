@@ -13,11 +13,11 @@ Table of contents:
 - [05 PrintOut](./05_printout/README.md)
 - [06 Input](./06_input/README.md)
 - [07 Working With Files](./07_working_with_files/README.md)
-- [08 Conditions](./07_conditions/README.md)
-- [09 Loops](./08_loops/README.md)
-- [10 Collectios](./09_arrays_and_collections/README.md)
-- [11 Functions](./10_functions/README.md)
-- [12 Exception Handling](./11_try_except/README.md)
-- [13 Standard Library](./12_standard_library/README.md)
-- [14 OOP with Python](./13_oop/README.md) .... still not done --> maybe some day.
+- [08 Conditions](./08_conditions/README.md)
+- [09 Loops](./09_loops/README.md)
+- [10 Collectios](./10_arrays_and_collections/README.md)
+- [11 Functions](./11_functions/README.md)
+- [12 Exception Handling](./12_try_except/README.md)
+- [13 Standard Library](./13_standard_library/README.md)
+- [14 OOP with Python](./14_oop/README.md) .... still not done --> maybe some day.
 - [Exercises](./98_exercises/README.md)
