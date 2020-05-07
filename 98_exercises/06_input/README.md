@@ -22,3 +22,18 @@ it also should print out your favorite instructors name.
 #### Ex2
 
 Create a script that will ask your name and will print it in all capital name.
+
+#### Ex3
+
+Create a script that will ask your name and will print it in all swapcased name.
+
+#### Ex4
+
+Create a script that will ask you to insert a long string with letters, numbers and special characters:
+- loop through the inserted string:
+  - if character is alpha print to user with message.
+  - if character is number print to user with message.
+  - if character is special print to user with message.
+
+
+
