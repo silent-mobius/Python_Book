@@ -8,16 +8,34 @@
 
 #### Ex1
 
+Write a Python program to get the least common multiple (LCM) of two positive integers.
 
-### Ex8
+#### Ex2
 
-- Open your text editor:
-  - Create a Python program/script and name it as exercise number (Ex8.py)
-  - Write a program to encrypt/hash a word  
+Write a Python program to compute the greatest common divisor (GCD) of two positive integers.
 
-<!--https://www.w3resource.com/python-exercises/python-basic-exercise-74.php-->
+#### Ex3
+
+Write a Python script to run until the input of user will be a character:
+- while running, check if the inserted number has LCM 
+  - if yes: print it
+  - if no: pass
+- also check if the same number has GCD
+  - if yes: print it
+  - if no: pass
+
+#### Ex3
+
+Write a Python program to hash a word with ord() and chr().
+
+#### Ex4
+
+- Create a Python program/script and name it as exercise number (Ex8.py)
+- Write a program to encrypt/hash a word  
+
+<!-- https://www.w3resource.com/python-exercises/python-basic-exercise-74.php -->
 
 
-https://www.w3resource.com/python-exercises/python-basic-exercise-32.php
+<!-- https://www.w3resource.com/python-exercises/python-basic-exercise-32.php -->
 
-https://www.w3resource.com/python-exercises/python-basic-exercise-31.php
+<!-- https://www.w3resource.com/python-exercises/python-basic-exercise-31.php -->
