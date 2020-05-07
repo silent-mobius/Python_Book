@@ -2,6 +2,19 @@
 
 ###### **Note**: Make sure that you have Text Editor installed
 
+###
+
+#### Ex1
+
+Write a Python program that iterate over elements repeating each as many times as its count.
+
+#### Ex2
+
+Write a Python program to find the most common elements and their counts of a specified text.
+
+#### Ex3
+
+
 
 <!--
 1. Write a program that receives two strings from the user: one for name and the other for password. If the login information (name and password) matches one of the users of the table below, type "Welcome Master", otherwise "INTRUDER ALERT" should be printed. The proper login details are:
