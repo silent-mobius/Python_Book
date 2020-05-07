@@ -17,7 +17,7 @@ Table of contents:
 - [09 Loops](./09_loops/README.md)
 - [10 Collections](./10_arrays_and_collections/README.md)
 - [11 Functions](./11_functions/README.md)
-- [12 Exception Handling](./12_try_except/README.md)
+- [12 Exception Handling](./12_exception_handeling/README.md)
 - [13 Standard Library](./13_standard_library/README.md)
 - [14 OOP with Python](./14_oop/README.md) .... still not done --> maybe some day.
 - [Exercises](./98_exercises/README.md)
