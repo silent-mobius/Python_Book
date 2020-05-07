@@ -23,3 +23,8 @@ function,WITHOUT the “*” operator.
 
 Write a function that receives a number ( 2 power of some number - 16,64,256...) and print it’s
 half in recursion . E.g: 32 - > Print : 32,16,8,4,2,1
+
+#### Ex4.
+
+Write a function that recives a collection (list, tuple, set or dict) and deconstructs is. e.g.:
+Use next list [ 2 , “ Hello” , [ “Bye” , [ 6, 3, 1, { “nums” : [10,20,30] } ] ] ], and deconstruct it with your function.

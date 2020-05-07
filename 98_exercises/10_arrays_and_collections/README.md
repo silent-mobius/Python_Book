@@ -14,6 +14,16 @@ Write a Python program to find the most common elements and their counts of a sp
 
 #### Ex3
 
+Prompt the user to enter numbers (one by one) and insert those numbers into array, until the the user enters a number that is bigger than 10
+    •  Verify that there aren’t any elements that repeat themselves 
+    •  Remove the numbers one by one and print them 
+
+#### Ex4
+Implement a data structure that will hold a key:value pairs in a variable named:”students”, the key should be an integer and the value should be a list with AT LEAST three INTEGER elements, prompt the user to enter an ID, validate if the ID is in the dictionary and print out the highest grade in the value’s list.
+
+#### Ex5
+Build the following array:
+[ 2 , “ Hello” , [ “Bye” , [ 6, 3, 1, { “nums” : [10,20,30] } ] ] ] and Replace the [10,20,30] array with their sum (60)
 
 
 <!--
