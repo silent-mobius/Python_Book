@@ -6,10 +6,10 @@ address="Somewhere over the rainbow"
 size_of_pi=3.14 # atlease the beggining
 size_of_byte=8 #bit
 Engaged = True #yes --< its a boolean
-Married False #ring was for bday
+Married = False #ring was for bday
 
 
-print(name,lname,age,gpa, address,size_of_pi,size_of_byte, "Engaged: "+Engaged, :Married:" + Married, end=' ')
+print(name,lname,age,gpa, address,size_of_pi,size_of_byte, "Engaged: " + Engaged, "Married: " + Married, end=' ')
 ################################################################################################
 print("####################################################################################################")
 print("\n\n\n")
